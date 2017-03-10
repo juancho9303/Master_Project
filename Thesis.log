@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.1)  10 MAR 2017 17:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.1)  10 MAR 2017 18:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -668,40 +668,35 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 
 [2
 
-]) (./Chapters/Chapter3.tex [3 <./images/m15.jpg>]
+]) (./Chapters/Chapter3.tex [3 <./images/m15.jpg>] [4]
 Chapter 3.
 ------------------------------------------------------------------------------
  3 Observational Procedures
 ------------------------------------------------------------------------------
-) (./Chapters/Chapter4.tex [4
+) (./Chapters/Chapter4.tex [5
 
 ]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Study of images
 ------------------------------------------------------------------------------
-) (./Chapters/Chapter5.tex [5
+) (./Chapters/Chapter5.tex [6
 
 ]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Conclusions
 ------------------------------------------------------------------------------
-) [6
+) [7
 
 ]
 No file Thesis.bbl.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
-[7
+[8
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
- (./Thesis.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+ (./Thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 288.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 288.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
@@ -710,11 +705,14 @@ Package rerunfilecheck Info: File `Thesis.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 288.
  ) 
 Here is how much of TeX's memory you used:
- 13121 strings out of 493069
- 185816 string characters out of 6138223
+ 13122 strings out of 493069
+ 185823 string characters out of 6138223
  259882 words of memory out of 5000000
  16393 multiletter control sequences out of 15000+600000
  15514 words of font info for 56 fonts, out of 8000000 for 9000
@@ -735,10 +733,10 @@ s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Thesis.pdf (15 pages, 681347 bytes).
+Output written on Thesis.pdf (16 pages, 682566 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 216 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
+ 260 PDF objects out of 1000 (max. 8388607)
+ 220 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
  139 words of extra memory for PDF output out of 10000 (max. 10000000)
 
