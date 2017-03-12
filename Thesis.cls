@@ -204,7 +204,7 @@
       {\LARGE \textbf \authornames \par}
       \vfill
       {\Large Advisor: \par}
-      {\Large \textbf{Henk Hoekstra} \par}   
+      {\Large \textbf{Dr. Henk Hoekstra} \par}   
        {\large $ \quad $ \par}    
       
 %      {\large A thesis submitted in partial fulfillment for the \par}
