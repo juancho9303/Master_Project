@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  11 MAR 2017 23:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  12 MAR 2017 16:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -648,12 +648,12 @@ Chapter 1.
 
 
 
-]) (./Chapters/Chapter2.tex
+] [2]) (./Chapters/Chapter2.tex
 Chapter 2.
 ------------------------------------------------------------------------------
  2 Theoretical Framework
 ------------------------------------------------------------------------------
-<images/GC.jpg, id=143, 1284.8pt x 1166.3575pt>
+<images/GC.jpg, id=155, 1284.8pt x 1166.3575pt>
 File: images/GC.jpg Graphic file (type jpg)
  <use images/GC.jpg>
 Package pdftex.def Info: images/GC.jpg used on input line 15.
@@ -663,33 +663,33 @@ Package pdftex.def Info: images/GC.jpg used on input line 15.
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 (Font)              using `OT1/cmr/bx/n' instead on input line 16.
 
-[2
+[3
 
-] [3 <./images/GC.jpg>]) (./Chapters/Chapter3.tex [4]
+] [4 <./images/GC.jpg>]) (./Chapters/Chapter3.tex [5]
 Chapter 3.
 ------------------------------------------------------------------------------
  3 Observational Procedures
 ------------------------------------------------------------------------------
-) (./Chapters/Chapter4.tex [5
+) (./Chapters/Chapter4.tex [6
 
 ]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Study of images
 ------------------------------------------------------------------------------
-) (./Chapters/Chapter5.tex [6
+) (./Chapters/Chapter5.tex [7
 
 ]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Conclusions
 ------------------------------------------------------------------------------
-) [7
+) [8
 
 ]
 No file Thesis.bbl.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
-[8
+[9
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
@@ -697,7 +697,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 288.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 288.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8113EFC05C8A5AE41EF0743155CD8244;2112.
+(rerunfilecheck)             Checksum: D412106AB156D20156B27C0164493AB5;2116.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -705,8 +705,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 288.
  ) 
 Here is how much of TeX's memory you used:
- 13108 strings out of 494910
- 185524 string characters out of 6179836
+ 13112 strings out of 494910
+ 185565 string characters out of 6179836
  254298 words of memory out of 5000000
  16140 multiletter control sequences out of 15000+600000
  15514 words of font info for 56 fonts, out of 8000000 for 9000
@@ -727,10 +727,10 @@ s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Thesis.pdf (16 pages, 616830 bytes).
+Output written on Thesis.pdf (17 pages, 624250 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 226 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
  139 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,14 +6,14 @@
 \contentsline {chapter}{List of Tables}{vi}{dummy.6}
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.8}
-\contentsline {chapter}{\numberline {2}Theoretical Framework}{2}{chapter.9}
-\contentsline {section}{\numberline {2.1}Galaxy Clusters}{2}{section.10}
-\contentsline {section}{\numberline {2.2}Gravitational Lensing}{4}{section.13}
-\contentsline {section}{\numberline {2.3}IMF in BCGs}{4}{section.14}
-\contentsline {chapter}{\numberline {3}Observational Procedures}{5}{chapter.15}
-\contentsline {section}{\numberline {3.1}Sextractor}{5}{section.16}
-\contentsline {section}{\numberline {3.2}Galfit}{5}{section.17}
-\contentsline {section}{\numberline {3.3}Color images}{5}{section.18}
-\contentsline {chapter}{\numberline {4}Study of images}{6}{chapter.19}
-\contentsline {chapter}{\numberline {5}Conclusions}{7}{chapter.20}
-\contentsline {chapter}{Bibliography}{8}{chapter*.21}
+\contentsline {chapter}{\numberline {2}Theoretical Framework}{3}{chapter.12}
+\contentsline {section}{\numberline {2.1}Galaxy Clusters}{3}{section.13}
+\contentsline {section}{\numberline {2.2}Gravitational Lensing}{5}{section.16}
+\contentsline {section}{\numberline {2.3}IMF in BCGs}{5}{section.17}
+\contentsline {chapter}{\numberline {3}Observational Procedures}{6}{chapter.18}
+\contentsline {section}{\numberline {3.1}Sextractor}{6}{section.19}
+\contentsline {section}{\numberline {3.2}Galfit}{6}{section.20}
+\contentsline {section}{\numberline {3.3}Color images}{6}{section.21}
+\contentsline {chapter}{\numberline {4}Study of images}{7}{chapter.22}
+\contentsline {chapter}{\numberline {5}Conclusions}{8}{chapter.23}
+\contentsline {chapter}{Bibliography}{9}{chapter*.24}
