@@ -74,7 +74,16 @@ The concentration parameter c is strongly correlated with Hubble type, c=2.6 sep
 
 The surface mass density is given by:
 
-(long equation from Wright paper)
+\begin{equation}
+\Sigma_{\text{NFW}}(x) = \left\lbrace
+\begin{array}{lll}
+\frac{2r_{s}\delta_{c}\rho_{c}}{\left(x^{2}-1\right)}\left[1-\frac{2}{\sqrt{1-x^{2}}}\arctanh\sqrt{\frac{1-x}{1+x}}\right](x<1) & (x<1)\\\\
+\frac{2r_{s}\delta_{c}\rho_{c}}{3}(x=1) & (x=1)\\\\
+\frac{2r_{s}\delta_{c}\rho_{c}}{\left(x^{2}-1\right)}\left[1-\frac{2}{\sqrt{x^{2}-1}}\arctan\sqrt{\frac{x-1}{1+x}}\right](x<1) & (x>1)
+\end{array}
+\right.
+\end{equation} 
+
 
 then the concentration parameter for ABELL1068 is about 7.9 supposing a mass of the galaxy of $10^{12.5}M_{\odot}$
 
