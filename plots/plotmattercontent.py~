@@ -15,11 +15,11 @@ x1 = np.arange(0.001,1,0.00001)
 plt.plot(x1,((2*r_s*delta_c*rho_c)/((x1*x1)-1))*(1-(2)/(np.sqrt(1-(x1*x1)))*np.arctanh(np.sqrt((1-x1)/(1+x1)))))
 x2 = 1
 plt.plot(x2,(2*r_s*delta_c*rho_c)/3)
-x3 = np.arange(1.00001,500,0.00001)
+x3 = np.arange(1.00001,1000,0.00001)
 plt.plot(x3,((2*r_s*delta_c*rho_c)/((x3*x3)-1))*(1-(2)/(np.sqrt((x3*x3)-1))*np.arctanh(np.sqrt((x3-1)/(1+x3)))))
 
-x = np.arange(0.001,500,0.0001)
-plt.plot(x,I_e*np.exp(-b*((x/R_e)**(0.25)-1)))
+x = np.arange(0.04,40000,0.0001)
+plt.plot(x/r_s,4*I_e*np.exp(-b*(((x/r_s)/R_e)**(0.25)-1)))  #4*I(R) where I(R) is de Vaucouleurs
 
 plt.yscale('log')
 plt.xscale('log')

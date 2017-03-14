@@ -16,15 +16,10 @@ Galaxy clusters contain a population of stars gravitationally unbound to individ
 \caption[M]{G}
 \end{figure}
 
-The image of galaxy cluster MACS J1206.2-0847 (or MACS 1206) is part of a broad survey with NASA Hubble Space Telescope.The distorted shapes in the cluster are distant galaxies from which the light is bent by the gravitational pull of an invisible material called dark matter within the cluster of galaxies. This cluster is an early target in a survey that will allow astronomers to construct the most detailed dark matter maps of more galaxy clusters than ever before.These maps are being used to test previous, but surprising, results that suggest that dark matter is more densely packed inside clusters than some models predict. This might mean that galaxy cluster assembly began earlier than commonly thought.
+Quoted (need to change this):The image of galaxy cluster MACS J1206.2-0847 (or MACS 1206) is part of a broad survey with NASA Hubble Space Telescope.The distorted shapes in the cluster are distant galaxies from which the light is bent by the gravitational pull of an invisible material called dark matter within the cluster of galaxies. This cluster is an early target in a survey that will allow astronomers to construct the most detailed dark matter maps of more galaxy clusters than ever before.These maps are being used to test previous, but surprising, results that suggest that dark matter is more densely packed inside clusters than some models predict. This might mean that galaxy cluster assembly began earlier than commonly thought.
 
 Scientists are planning to observe a total of 25 galaxy clusters under a project called CLASH (Cluster Lensing and Supernova survey with Hubble).One of the first objects observed for the new census is the galaxy cluster MACS J1206.2-0847. This conglomeration of galaxies is one of the most massive structures in the universe, and its gigantic gravitational pull causes stunning gravitational lensing. MACS 1206 lies 4 billion light-years from Earth. In addition to curving of light, gravitational lensing often produces double images of the same galaxy. In the new observation of cluster MACS J1206.2-0847, astronomers counted 47 multiple images of 12 newly identified galaxies.The era when the first clusters formed is not precisely known, but is estimated to be at least 9 billion years ago and possibly as far back as 12 billion years ago. If most of the clusters in the CLASH survey are found to have excessively high accumulations of dark matter in their central cores, then it may yield new clues to the early stages in the origin of structure in the universe.
 
-\begin{equation}
-I(R)\sigma_{p}^{2}(R)=\frac{2}{\Gamma}\int_{R}^{\infty}\left(1-\beta\frac{R^{2}}{r^{2}}\right)\frac{\nu\bar{v_{r}^{2}}rdr}{\sqrt{r^{2}-R^{2}}}
-\end{equation}
-
-Whuster.  
 
 \section{Gravitational Lensing}
 
@@ -34,21 +29,19 @@ In the paper of Russell Smith (a giant elliptical galaxy with a lightweight init
 
 Modelling the lensing configuration provides the total projection mass within an aperture.
 
-bulges have heavier IMFs than disks
-
-Several recent studies have presented evidence for "heavyweight" IMFs in giant ellipticals, with a mass-to-light-ratio twice that of a Milky Way like IMF.
-
 NFW profile for dark matter that is basically the dynamical mass of the cluster
 
 \section{IMF in BCGs}
 
+bulges have heavier IMFs than disks
+
+Several recent studies have presented evidence for "heavyweight" IMFs in giant ellipticals, with a mass-to-light-ratio twice that of a Milky Way like IMF.
+
 let's take the case of ABELL1068, it's magnitude in U is 21.94, in I is 18.46, in g is 20.09, in r is 19.5
 
-the distance to the galaxy is 591.42857 Mpc
+The bolometric luminosity of Abell1068 is $10^44$erg/s that in solar luminosities is $2.599\times 10^{10} L_sol$, this gives an effective brightness of $10^{6}M_{\odot}/kpc^2$.
 
-(but using the aparent magnitude and the distance, we get  L=2.9631e+9
-
-from the NASA webpage: 1.41e+45)	
+the distance to the galaxy is 591.42857 Mpc	
 
 salpeter mass function is $n(M)\propto M^{-2.3}$  
 
@@ -75,7 +68,15 @@ juank.png
 
 (grafica de Juank)
 
-then the concentration parameter for ABELL1068 is about 4.46 
+c = r200/rs
+
+The concentration parameter c is strongly correlated with Hubble type, c=2.6 separating early from late-type galaxies. Those galaxies with concentration incides c>2.6 are early-type galaxies reflecting the fact that the light is more concentrated towards their centres
+
+The surface mass density is given by:
+
+(long equation from Wright paper)
+
+then the concentration parameter for ABELL1068 is about 7.9 supposing a mass of the galaxy of $10^{12.5}M_{\odot}$
 
 so from the critical density:
 
@@ -83,15 +84,14 @@ so from the critical density:
 \rho_{c}=\frac{3H^2(z)}{8\pi G}
 \end{equation}
 
-the critical density would be: 2e-26 in SI units so in Msol/pc3 it is $2.9\times 10^{-7}$
+the critical density would be: $2\times 10^{-26}$ in SI units so in Msol/pc3 it is $2.9\times 10^{-7}$
 
 $H(z)=H_{0}(1+\Omega z)^{3/2}$
 
 the hubble parameter at z=0.138 is H(z)=85.6
 
-let's take a value of 40 kpc for the concentration parameter given by $r_{s}=r_{200}/c$
+delta c is 25315 (dimensionless)
 
-delta c is 6716.38 (dimensionless)
+From the paper of Lokas and Mamon, for constant mass-light-ratio we have $\Sigma_{M}(R)=\Gamma I(R)$ where I is the surface brightness.
 
-
-
+The characteristic radius is given by $r_{1/2}=1.34R_{e}$
