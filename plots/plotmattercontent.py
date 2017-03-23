@@ -27,7 +27,7 @@ plt.plot(x3*r_s,((2*r_s*delta_c*rho_c)/((x3*x3)-1))*(1-(2)/(np.sqrt((x3*x3)-1))*
 # Mass density profile from M/L ratio and de Vaucouleurs profile:
 
 R = np.arange(0.1,10000,0.001)
-plt.plot(R,4*I_e*np.exp(-b*(((R)/(R_e))**(0.25)-1)),label='Stellar surface mass')  #4*I(R) where I(R) is de Vaucouleurs
+plt.plot(R,4*I_e*np.exp(-b*(((R)/(R_e))**(0.25)-1)),label='Stellar Surface Mass')  #4*I(R) where I(R) is de Vaucouleurs
 
 # INTEGRATIONS:
 
