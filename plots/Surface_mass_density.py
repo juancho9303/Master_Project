@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib as mpl
 import matplotlib.patches as mpatches
 from scipy.integrate import quad
+from scipy import integrate
 mpl.rcParams['text.usetex'] = True
 
 # This plot is made for the cluster ABELL 1068
@@ -33,16 +34,18 @@ plt.plot(R,4*I_e*np.exp(-b*(((R)/(R_e))**(0.25)-1)),label='Stellar Surface Mass'
 
 # For the total luminosity:
 
-def surf_bright(x, I_e, b, R_e):
-	return 4*I_e*np.exp(-b*(((x)/(R_e))**(0.25)-1))
+def surf_bright(r, I_e, b, R_e):
+	return 4*I_e*np.exp(-b*(((r)/(R_e))**(0.25)-1))
 I1, I1err = quad(surf_bright, 0.1, 10000, args=(I_e,b,R_e))
+#r = np.arange(0.1,10,0.001)
+
 print 'Luminosity: %e' %(I1)
 
 # Projected masses found by integrating the projected surface mass density
 
 def NFW1(x1, delta_c, r_s, rho_c):
 	return 2*np.pi*x1*((2*r_s*delta_c*rho_c)/((x1*x1)-1))*(1-(2)/(np.sqrt(1-(x1*x1)))*np.arctanh(np.sqrt((1-x1)/(1+x1))))
-I2, I2err = quad(NFW1, 0.01, 1, args=(delta_c, r_s, rho_c))
+I2, I2err = quad(NFW1, 0.001, 1, args=(delta_c, r_s, rho_c))
 
 def NFW2(x3, delta_c, r_s, rho_c):
 	return 2*np.pi*x3*((2*r_s*delta_c*rho_c)/((x3*x3)-1))*(1-(2)/(np.sqrt((x3*x3)-1))*np.arctan(np.sqrt((x3-1)/(1+x3))))
