@@ -7,7 +7,8 @@ import matplotlib.pyplot as plt
 mpl.rcParams['text.usetex'] = True
 
 c        = 4.46           # concentration parameter (Paper Dutton and Maccio) this was checked many times 
-delta_c  = 6716.38        # Dimensionless overdensity using 4.46
+#delta_c  = 6716.38        # Dimensionless overdensity using 4.46
+delta_c = (200/3)*(c*c*c)/(np.log(1+c)-c/(1+c))
 rho_c    = 200            # Critical density in M_sun/kpc^3 (197.8)
 r_s      = 100            # Characteristic radius (kpc) 
 I_e      = 2.6*10**9      # Effective brightness I(Re) 2.6e6
@@ -25,7 +26,7 @@ def F(r):
         y,err = integrate.quad(surf_bright,0,val)
         res[i]=y
     return res
-plt.plot(R,F(R))
+plt.plot(R,F(R),label='Mass in Stars')
 
 #NOW FOR THE MASS OF THE NFW PROFILE
 
@@ -46,12 +47,12 @@ def Mass(x):
         y,err = integrate.quad(NFW,0,val)
         res2[j]=y
     return res2
-plt.plot(X*r_s,Mass(X))
+plt.plot(X*r_s,Mass(X),label='Dynamical Mass')
 
 plt.yscale('log')
 plt.xscale('log')
 plt.xlabel('$R(kpc)$')
-plt.ylabel('$M_{\odot }/ kpc^{2})$')
+plt.ylabel('$M_{\odot }$')
 plt.title('Enclosed Mass')
 plt.grid(True)
 plt.legend()

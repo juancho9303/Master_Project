@@ -9,7 +9,8 @@ mpl.rcParams['text.usetex'] = True
 # This plot is made for the cluster ABELL 1068
 
 c        = 4.46           # concentration parameter (Paper Dutton and Maccio) this was checked many times 
-delta_c  = 6716.38        # Dimensionless overdensity using 4.46
+#delta_c  = 6716.38        # Dimensionless overdensity using 4.46
+delta_c = (200/3)*(c*c*c)/(np.log(1+c)-c/(1+c))
 rho_c    = 200            # Critical density in M_sun/kpc^3 (197.8)
 r_s      = 100            # Characteristic radius (kpc) 
 I_e      = 2.6*10**9      # Effective brightness I(Re) 2.6e6
