@@ -70,13 +70,22 @@ from Munoz cuartas et. al. we see that the concentration parameter depends on th
 \includegraphics[width=12cm]{images/juank.png}
 \caption[M]{G}
 \end{figure}
-juank.png
+
 
 (grafica de Juank)
 
 $c=r_{200}/r_{s}$
 
 The concentration parameter c is strongly correlated with Hubble type, c=2.6 separating early from late-type galaxies. Those galaxies with concentration incides c>2.6 are early-type galaxies reflecting the fact that the light is more concentrated towards their centres
+
+From Dutton and Maccio 2014 we get the following image for the concentration parameter:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{images/dutton.png}
+\caption[M]{G}
+\end{figure}
+
 
 The surface mass density is given by:
 
@@ -110,6 +119,35 @@ From the paper of Lokas and Mamon, for constant mass-light-ratio we have $\Sigma
 
 The characteristic radius is given by $r_{1/2}=1.34R_{e}$
 
+The radial dependence on the shear is:
+
+\begin{equation}
+\gamma_{\text{NFW}}(x) = \left\lbrace
+\begin{array}{lll}
+\frac{r_{s}\delta_{c}\rho_{c}}{\Sigma_c}g_{<}(x) & (x<1)\\\\
+\frac{r_{s}\delta_{c}\rho_{c}}{\Sigma_c}\left[\frac{10}{3}+4 \ln \left(\frac{1}{2}\right)\right] & (x=1)\\\\
+\frac{r_{s}\delta_{c}\rho_{c}}{\Sigma_c}g_{>}(x) & (x>1)
+\end{array}
+\right.
+\end{equation} 
+
+where: 
+
+\begin{equation}
+g_{<}(x)=\frac{8 \arctanh \sqrt{\frac{1-x}{1+x}}}{x^{2}\sqrt{1-x^{2}}}+\frac{4}{x^{2}} \ln \left(\frac{x}{2}\right)-\frac{2}{\left(x^{2}-1\right)}+\frac{4 \arctanh \sqrt{\frac{1-x}{1+x}}}{\left(x^{2}-1\right)\left(1-x^{2}\right)^{1/2}}
+\end{equation}
+
+\begin{equation}
+g_{<}(x)=\frac{8 \arctan \sqrt{\frac{x-1}{1+x}}}{x^{2}\sqrt{x^{2}-1}}+\frac{4}{x^{2}}\ln \left(\frac{x}{2}\right)-\frac{2}{\left(x^{2}-1\right)}+\frac{4 \arctan \sqrt{\frac{x-1}{1+x}}}{\left(x^{2}-1\right){}^{3/2}}
+\end{equation} 
+
+and with teh critical surface mass density:
+
+\begin{equation}
+\Sigma_{c}\equiv\frac{c^{2}}{4\pi G}\frac{D_{s}}{D_{d}D_{ds}}
+\end{equation}
+
+these equations come from the paper Wright and Brainerd 1999
 
 \section{Photometric Redshift}
 
