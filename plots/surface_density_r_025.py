@@ -12,7 +12,7 @@ c        = 4.46           # concentration parameter (Paper Dutton and Maccio) th
 delta_c = (200./3)*(c**3)/(np.log(1+c)-c/(1+c))
 rho_c    = 197.8            # Critical density in M_sun/kpc^3 (197.8)
 r_s      = 100            # Characteristic radius (pc) 
-I_e      = 5.1*10**8     # Effective brightness I(Re) in L_sun per kpc^2
+I_e = 10**7
 b        = 7.67           # Lokas and Mamon paper
 R_e      = 73.7             # Half of the total light in kpc
 
@@ -43,18 +43,16 @@ print 'Luminosity: %e' %(I1)
 # Projected masses found by integrating the projected surface mass density
 
 def NFW1(x):
-	return 2*np.pi*x*((2*r_s*delta_c*rho_c)/((x*x)-1))*(1-(2)/(np.sqrt(1-(x*x)))*np.arctanh(np.sqrt((1-x)/(1+x))))
+	return 2.*np.pi*x*((2.*r_s*delta_c*rho_c)/((x*x)-1.))*(1.-2./(np.sqrt(1.-(x*x)))*np.arctanh(np.sqrt((1.-x)/(1.+x))))
 I2, I2err = quad(NFW1, 0.001, 1)
 
 def NFW2(x):
-	return 2*np.pi*x*((2*r_s*delta_c*rho_c)/((x*x)-1))*(1-(2)/(np.sqrt((x*x)-1))*np.arctan(np.sqrt((x-1)/(1+x))))
+	return 2.*np.pi*x*((2.*r_s*delta_c*rho_c)/((x*x)-1.))*(1.-2./(np.sqrt((x*x)-1.))*np.arctan(np.sqrt((x-1.)/(1.+x))))
 I3, I3err = quad(NFW2, 1.001, 100)
 IT = I2+I3
 print 'Dark Matter: %e' %(IT)
 
-#plt.yscale('log')
-#plt.xscale('log')
-plt.xlabel('$\log R^{1/4}(kpc)$')
+plt.xlabel('$R^{1/4}(kpc)$')
 plt.ylabel('$\log \Sigma_{NFW}(M_{\odot }/ kpc^{2})$')
 plt.title('Surface Mass Density')
 plt.grid(True)
