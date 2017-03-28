@@ -6,13 +6,13 @@ import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
 mpl.rcParams['text.usetex'] = True
 
-c        = 4.46           # concentration parameter (Paper Dutton and Maccio) this was checked many times 
-delta_c = (200./3)*(c*c*c)/(np.log(1+c)-c/(1+c))
-rho_c    = 197.8            # Critical density in M_sun/kpc^3 (197.8)
-r_s      = 100            # Characteristic radius (kpc) 
-I_e      = 5.1*10**8      # Effective brightness I(Re) 2.6e6
-b        = 7.67           # Lokas and Mamon paper
-R_e      = 73.7             # Half of the total light in kpc
+c        = 4.46                                   # concentration parameter (Paper Dutton and Maccio) this was checked many times 
+delta_c  = (200./3)*(c**3)/(np.log(1+c)-c/(1+c))
+rho_c    = 197.8                                  # Critical density in M_sun/kpc^3 (197.8)
+r_s      = 100                                    # Characteristic radius (kpc) 
+I_e      = 5.1*10**8                              # Effective brightness I(Re) 2.6e6
+b        = 7.67                                   # Lokas and Mamon paper
+R_e      = 73.7                                   # Half of the total light in kpc
 
 #MASS ENCLOSED BY LIGHT (DE VAUCOULEURS PROFILE)
 
@@ -57,3 +57,4 @@ plt.grid(True)
 plt.legend()
 plt.savefig("Enclosed Mass.png")
 plt.show()
+
