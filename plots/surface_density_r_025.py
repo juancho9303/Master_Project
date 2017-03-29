@@ -18,17 +18,17 @@ R_e      = 73.7                                      # Half of the total light i
 
 # Mass density profile from NFW density profile:
 
-x1 = np.arange(0.001,1,0.001)
-plt.plot((x1*r_s)**0.25,np.log10(((2*r_s*delta_c*rho_c)/((x1*x1)-1))*(1-(2)/(np.sqrt(1-(x1*x1)))*np.arctanh(np.sqrt((1-x1)/(1+x1))))))
-x2 = 1
-plt.plot((x2*r_s)**0.25,np.log10((2*r_s*delta_c*rho_c)/3))
-x3 = np.arange(1.0001,100,0.001)
-plt.plot((x3*r_s)**0.25,np.log10(((2*r_s*delta_c*rho_c)/((x3*x3)-1))*(1-(2)/(np.sqrt((x3*x3)-1))*np.arctan(np.sqrt((x3-1)/(1+x3))))),label=r'$\mathrm{NFW\:profile}$')
+r = np.arange(0.001,1,0.001)
+plt.plot((r*r_s)**0.25,np.log10(((2*r_s*delta_c*rho_c)/((r*r)-1))*(1-(2)/(np.sqrt(1-(r*r)))*np.arctanh(np.sqrt((1-r)/(1+r))))), lw = 2, c = 'blue')
+r = 1
+plt.plot((r*r_s)**0.25,np.log10((2*r_s*delta_c*rho_c)/3))
+r = np.arange(1.0001,100,0.001)
+plt.plot((r*r_s)**0.25,np.log10(((2*r_s*delta_c*rho_c)/((r*r)-1))*(1-(2)/(np.sqrt((r*r)-1))*np.arctan(np.sqrt((r-1)/(1+r))))),label=r'$\mathrm{NFW\:profile}$', lw=2, c='blue')
 
 # Mass density profile from M/L ratio and de Vaucouleurs profile:
 
 R = np.arange(0.01,10000,0.001)
-plt.plot(R**0.25,np.log10(4.*I_e*np.exp( -b*( ( R/R_e )**0.25 - 1. ) )),label=r'$\mathrm{Stellar\:Surface\:Mass}$')  #4*I(R) where I(R) is de Vaucouleurs
+plt.plot(R**0.25,np.log10(4.*I_e*np.exp( -b*( ( R/R_e )**0.25 - 1. ) )),label=r'$\mathrm{Stellar\:Surface\:Mass}$', lw=2)  #4*I(R) where I(R) is de Vaucouleurs
 
 plt.xlabel(r'$R^{1/4}(kpc)$',fontsize=18)
 plt.ylabel(r'$\log \Sigma_{NFW}(M_{\odot }/ kpc^{2})$',fontsize=18)
