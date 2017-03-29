@@ -1,9 +1,12 @@
-import numpy as np
-from scipy import integrate
-from scipy.integrate import quad
-import matplotlib as mpl
 import matplotlib.pyplot as plt
+import numpy as np
+import matplotlib as mpl
+import matplotlib.patches as mpatches
+from scipy.integrate import quad
+from scipy import integrate
 mpl.rcParams['text.usetex'] = True
+
+# This plot is made for the cluster ABELL 1068
 
 c        = 4.46                                      # Concentration parameter (Paper Dutton and Maccio) 
 delta_c  = ((200./3)*c**3)/(np.log(1.0+c)-c/(1.0+c)) # Characteristic overdensity of the halo
@@ -12,18 +15,16 @@ r_s      = 100                                       # Characteristic radius (kp
 I_e      = 10**7                                     # Effective brightness I(Re)
 b        = 7.67                                      # Lokas and Mamon paper
 R_e      = 73.7                                      # Half of the total light in kpc
-n_array  = [] 
-f_array  = []
-R        = np.arange(0.01, 10000, 10.)
 
-# MASS ENCLOSED BY LIGHT (DE VAUCOULEURS PROFILE)
+# Mass density profile from NFW density profile:
 
-def surf_bright(r):
-	return 8.0*np.pi*I_e*np.exp( -b*( ( r/R_e )**0.25 - 1.0 ) )
-I1, I1err = quad(surf_bright, 0.1, 10000)
-print 'Luminosity: %e' %(I1)
-# NOW FOR THE MASS OF THE NFW PROFILE
-
+r = np.arange(0.001,99.9,0.01)
+plt.loglog(r,( 2.0*r_s*delta_c*rho_c )/( (r/r_s)**2 - 1.0 ) *( 1.0 - 2.0/( np.sqrt( 1.0 - (r/r_s)**2 ) )*np.arctanh( np.sqrt( ( 1.0-r/r_s )/( 1.0 + r/r_s ) ) ) ))
+r1 = 100
+plt.loglog(r1,2.0*r_s*delta_c*rho_c/3.0)
+r2 = np.arange(100.01,10000,0.01)
+plt.loglog(r2,( 2.0*r_s*delta_c*rho_c )/( (r2/r_s)**2 - 1.0 ) *( 1.0 - 2.0/( np.sqrt( (r2/r_s)**2 - 1.0 ) )*np.arctan( np.sqrt( ( r2/r_s - 1.0 )/( 1 + r2/r_s ) ) ) ),label=r'$\mathrm{NFW\:profile}$')
+"""
 def NFW(r):
 	if (r < r_s):
 		surf_mass = 2.0*np.pi*r/r_s*( ( 2.0*r_s*delta_c*rho_c )/( (r/r_s)**2 - 1.0 ) )*( 1.0 - 2.0/( np.sqrt( 1.0 - (r/r_s)**2 ) )*np.arctanh( np.sqrt( ( 1.0-r/r_s )/( 1.0 + r/r_s ) ) ) )
@@ -32,28 +33,16 @@ def NFW(r):
 	else:
 		surf_mass = 2.0*np.pi*r/r_s*( ( 2.0*r_s*delta_c*rho_c )/( (r/r_s)**2 - 1.0 ) )*( 1.0 - 2.0/( np.sqrt( (r/r_s)**2 - 1.0 ) )*np.arctan( np.sqrt( ( r/r_s - 1.0 )/( 1 + r/r_s ) ) ) )
 	return surf_mass
-I2, I2err = quad(NFW, 0.01, 10000)
-print 'Dark Matter: %e' %(I2)
-	
-def F(val):
-  h = lambda x: surf_bright(x)
-  return integrate.quad(h, 0.1, val)[0]
+"""
+# Mass density profile from M/L ratio and de Vaucouleurs profile:
 
-def N(val):
-  g = lambda y: NFW(y)
-  return integrate.quad(g, 0.1, val)[0]
-      
-for i in range(len(R)):
-   f_array.append(np.log10(F(R[i])))
-   n_array.append(np.log10(N(R[i])))
-    
-plt.plot(np.log10(R), f_array, '-', c = 'r', label = r'$\mathrm{Stellar\:Mass}$')
-plt.plot(np.log10(R), n_array, '-', c = 'b', label = r'$\mathrm{NFW\:Profile\:Mass}$')
+R = np.arange(0.001,10000,0.001)
+plt.loglog(R,4.*I_e*np.exp( -b*( ( R/R_e )**0.25 - 1. ) ),label=r'$\mathrm{Stellar\:Surface\:Mass}$')  #4*I(R) where I(R) is de Vaucouleurs
+
 plt.xlabel(r'$\log R(kpc)$',fontsize=18)
-plt.ylabel(r'$\log M_{\odot }$',fontsize=18)
-plt.title(r'$\mathrm{Enclosed\:Mass}$',fontsize=18)
+plt.ylabel(r'$\log \Sigma_{NFW}(M_{\odot }/ kpc^{2})$',fontsize=18)
+plt.title(r'$\mathrm{Surface\:Mass\:Density}$',fontsize=20)
 plt.grid(True)
-plt.legend(bbox_to_anchor=(0.95, 0.2), loc=1, borderaxespad=0.)
-plt.savefig("Enclosed Mass.png")
-plt.show()
-plt.show()      
+plt.legend()
+plt.savefig("Surface_mass_density_log.png")
+plt.show() 

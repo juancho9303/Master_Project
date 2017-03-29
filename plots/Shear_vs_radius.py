@@ -34,9 +34,6 @@ plt.plot(x7*r_s,((r_s*delta_c*rho_c)/(sigma_c3))*( ((8.*np.arctan(np.sqrt((x7-1)
 
 plt.axhline(y=.5, xmin=0., xmax=10., linewidth=1, color = 'k')
 
-#plt.yscale('log')
-#plt.xscale('log')
-#plt.axis((y1,y2,0,3))
 plt.ylim(0,3)
 plt.xlabel('$R(kpc)$')
 plt.ylabel('$\gamma_{NFW}$')
