@@ -31,18 +31,6 @@ Modelling the lensing configuration provides the total projection mass within an
 
 NFW profile for dark matter that is basically the dynamical mass of the cluster
 
-\section{IMF in BCGs}
-
-For stars, measurements of the luminosity function can be
-used to derive the Initial Mass Function (IMF).
-For galaxies, this is more difficult because Mass to light ratio (M/L) of the stellar population
-depends upon the star formation history of
-the galaxy.
-
-bulges have heavier IMFs than disks
-
-Several recent studies have presented evidence for "heavyweight" IMFs in giant ellipticals, with a mass-to-light-ratio twice that of a Milky Way like IMF.
-
 let's take the case of ABELL1068, it's magnitude in U is 21.94, in I is 18.46, in g is 20.09, in r is 19.5, also $M_{200}=4.3\times 10^{14}M_{\odot}$
 
 The bolometric luminosity of Abell1068 is $10^44$erg/s that in solar luminosities is $2.599\times 10^{10} L_sol$, this gives an effective brightness of $10^{6}M_{\odot}/kpc^2$.
@@ -125,6 +113,28 @@ delta c is 25315 (dimensionless)
 
 The characteristic radius is given by $r_{1/2}=1.34R_{e}$
 
+Here the surface mass density for both the stellar content and the NFW profile:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{images/Surface_mass_density_log.png}
+\caption[M]{G}
+\end{figure}
+
+But we are more interested in the enclosed mass which can be done by integrating the surface mass density:
+
+\begin{equation}
+M(R)=\int_{0}^{R}2\pi R\Sigma(R)dR
+\end{equation}
+
+And the plot for the enclosed mass is:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{images/Enclosed Mass.png}
+\caption[M]{G}
+\end{figure}
+
 The radial dependence on the shear is:
 
 \begin{equation}
@@ -155,8 +165,28 @@ and with teh critical surface mass density:
 
 these equations come from the paper Wright and Brainerd 1999
 
-\section{Photometric Redshift}
+the plot of the radial dependence on the radius is:
 
-(using as reference Benitez, Narciso 2000)
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{images/Shear dependence on radius.png}
+\caption[M]{G}
+\end{figure}
+
+
+\section{IMF in BCGs}
+
+For stars, measurements of the luminosity function can be
+used to derive the Initial Mass Function (IMF).
+For galaxies, this is more difficult because Mass to light ratio (M/L) of the stellar population
+depends upon the star formation history of
+the galaxy.
+
+bulges have heavier IMFs than disks
+
+Several recent studies have presented evidence for "heavyweight" IMFs in giant ellipticals, with a mass-to-light-ratio twice that of a Milky Way like IMF.
+
+
+
  
  
