@@ -33,7 +33,6 @@ plt.plot(R**0.25,np.log10(4.*I_e*np.exp( -b*( ( R/R_e )**0.25 - 1. ) )),label=r'
 plt.xlabel(r'$R^{1/4}(kpc)$',fontsize=18)
 plt.ylabel(r'$\log \Sigma_{NFW}(M_{\odot }/ kpc^{2})$',fontsize=18)
 plt.title(r'$\mathrm{Surface\:Mass\:Density}$',fontsize=20)
-plt.grid(True)
-plt.legend()
+plt.legend(frameon=False,bbox_to_anchor=(0.45, 0.25), loc=1, borderaxespad=0.)
 plt.savefig("Surface_mass_density_r025.png")
 plt.show()
