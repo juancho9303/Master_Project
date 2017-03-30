@@ -23,7 +23,7 @@ Scientists are planning to observe a total of 25 galaxy clusters under a project
 
 \section{Gravitational Lensing}
 
-At small radii, stars dominate the lensing mass, so that lensing provides a direct probe of the stellar mas to light ratio, with only small corrections needed for darl matter.
+At small radii, stars dominate the lensing mass, so that lensing provides a direct probe of the stellar mas to light ratio, with only small corrections needed for dark matter.
 
 In the paper of Russell Smith (a giant elliptical galaxy with a lightweight initial mass funciton) they find a stellar mass to light ratio of 3.01 plus minus 0.25
 
@@ -33,7 +33,7 @@ NFW profile for dark matter that is basically the dynamical mass of the cluster
 
 let's take the case of ABELL1068, it's magnitude in U is 21.94, in I is 18.46, in g is 20.09, in r is 19.5, also $M_{200}=4.3\times 10^{14}M_{\odot}$
 
-The bolometric luminosity of Abell1068 is $10^44$erg/s that in solar luminosities is $2.599\times 10^{10} L_sol$, this gives an effective brightness of $10^{6}M_{\odot}/kpc^2$.
+The bolometric luminosity of Abell1068 is $10^44$erg/s that in solar luminosities is $1.9\times 10^{12} L_sol$, this gives an effective brightness of $2^{2}M_{\odot}/kpc^2$.
 
 the distance to the galaxy is 591.42857 Mpc	
 
@@ -113,6 +113,8 @@ delta c is 25315 (dimensionless)
 
 The characteristic radius is given by $r_{1/2}=1.34R_{e}$
 
+The mass to light ratio is $\gamma=4$
+
 Here the surface mass density for both the stellar content and the NFW profile:
 
 \begin{figure}[H]
@@ -126,6 +128,14 @@ But we are more interested in the enclosed mass which can be done by integrating
 \begin{equation}
 M(R)=\int_{0}^{R}2\pi R\Sigma(R)dR
 \end{equation}
+
+And we can recover our luminosity by integrating the surface brightness profile like this:
+
+\begin{equation}
+L=\int_{0}^{R}2\pi RI(R)dR
+\end{equation}
+
+That should give us a value comparable to the one found using Faber-Jackson relation: $L=C\times\sigma^{4}$
 
 And the plot for the enclosed mass is:
 
@@ -157,7 +167,7 @@ g_{<}(x)=\frac{8 \arctanh \sqrt{\frac{1-x}{1+x}}}{x^{2}\sqrt{1-x^{2}}}+\frac{4}{
 g_{<}(x)=\frac{8 \arctan \sqrt{\frac{x-1}{1+x}}}{x^{2}\sqrt{x^{2}-1}}+\frac{4}{x^{2}}\ln \left(\frac{x}{2}\right)-\frac{2}{\left(x^{2}-1\right)}+\frac{4 \arctan \sqrt{\frac{x-1}{1+x}}}{\left(x^{2}-1\right){}^{3/2}}
 \end{equation} 
 
-and with teh critical surface mass density:
+and with the critical surface mass density:
 
 \begin{equation}
 \Sigma_{c}\equiv\frac{c^{2}}{4\pi G}\frac{D_{s}}{D_{d}D_{ds}}
@@ -165,7 +175,7 @@ and with teh critical surface mass density:
 
 these equations come from the paper Wright and Brainerd 1999
 
-the plot of the radial dependence on the radius is:
+the plot of the shear dependence on the radius is:
 
 \begin{figure}[H]
 \centering
@@ -173,6 +183,22 @@ the plot of the radial dependence on the radius is:
 \caption[M]{G}
 \end{figure}
 
+The magnification tensor is:
+
+\begin{equation}
+\frac{\partial\beta}{\partial\theta}=\delta_{ij}-\frac{\partial^{2}\psi}{\partial\theta_{i}\partial\theta_{j}}=\left(\begin{array}{cc}
+1-\kappa-\gamma_{1} & -\gamma_{2}\\
+-\gamma_{2} & 1-\kappa+\gamma_{1}
+\end{array}\right)
+\end{equation}
+
+The total magnification $\mu$ is given by the determinant of the magnification tensor:
+
+\begin{equation}
+\mu = \frac{1}{(1-\kappa)^{2}-\gamma^{2}_{1}-\gamma^{2}_{2}}
+\end{equation}
+
+Where $\kappa$ is the convergence that determines the magnification and $\gamma_{1}$ and $\gamma_{2}$ are the shear components that determine the distorsion of the background objects.
 
 \section{IMF in BCGs}
 

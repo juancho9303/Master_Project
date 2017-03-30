@@ -16,28 +16,28 @@ sigma_c2 = 5.4*10**7                              # Critical surface mass densit
 sigma_c3 = 2*10**7                                # Critical surface mass density for z=2
 
 x = np.arange(0.001,0.99,0.0001)
-plt.plot(x*r_s,((r_s*delta_c*rho_c)/(sigma_c))*( ((8.*np.arctanh(np.sqrt((1-x)/(1+x))))/(x*x*np.sqrt(1-x*x))) + ((4*(np.log(x/2)))/(x*x)) - ((2)/(x*x-1)) + ((4*np.arctanh(np.sqrt((1-x)/(1+x))))/((x*x-1)*(1-x*x)**0.5))), c='blue', lw=1.5)
+plt.plot(x*r_s,((r_s*delta_c*rho_c)/(sigma_c))*( ((8.*np.arctanh(np.sqrt((1-x)/(1+x))))/(x*x*np.sqrt(1-x*x))) + ((4*(np.log(x/2)))/(x*x)) - (2/(x*x-1)) + ((4*np.arctanh(np.sqrt((1-x)/(1+x))))/((x*x-1)*(1-x*x)**0.5))), c='blue', lw=1.5)
 x = 1
 plt.plot(x*r_s,((r_s*delta_c*rho_c)/(sigma_c))*(10./3.+4.*np.log(0.5)))
 x = np.arange(1.0001,10,0.0001)
-plt.plot(x*r_s,((r_s*delta_c*rho_c)/(sigma_c))*( ((8.*np.arctan(np.sqrt((x-1)/(1+x))))/(x*x*np.sqrt(x*x-1))) + ((4*(np.log(x/2)))/(x*x)) - ((2)/(x*x-1)) + ((4*np.arctan(np.sqrt((x-1)/(1+x))))/((x*x-1)**1.5))), label='z=1', c='blue', lw=1.5)
+plt.plot(x*r_s,((r_s*delta_c*rho_c)/(sigma_c))*( ((8.*np.arctan(np.sqrt((x-1)/(1+x))))/(x*x*np.sqrt(x*x-1))) + ((4*(np.log(x/2)))/(x*x)) - (2/(x*x-1)) + ((4*np.arctan(np.sqrt((x-1)/(1+x))))/((x*x-1)**1.5))), label='$z = 1$', c='blue', lw=1.5)
 
 x = np.arange(0.001,0.99,0.0001)
-plt.plot(x*r_s,((r_s*delta_c*rho_c)/(sigma_c2))*( ((8.*np.arctanh(np.sqrt((1-x)/(1+x))))/(x*x*np.sqrt(1-x*x))) + ((4*(np.log(x/2)))/(x*x)) - ((2)/(x*x-1)) + ((4*np.arctanh(np.sqrt((1-x)/(1+x))))/((x*x-1)*(1-x*x)**0.5))), c='red', lw=1.5)
+plt.plot(x*r_s,((r_s*delta_c*rho_c)/(sigma_c2))*( ((8.*np.arctanh(np.sqrt((1-x)/(1+x))))/(x*x*np.sqrt(1-x*x))) + ((4*(np.log(x/2)))/(x*x)) - (2/(x*x-1)) + ((4*np.arctanh(np.sqrt((1-x)/(1+x))))/((x*x-1)*(1-x*x)**0.5))), c='red', lw=1.5)
 x = np.arange(1.0001,10,0.0001)
-plt.plot(x*r_s,((r_s*delta_c*rho_c)/(sigma_c2))*( ((8.*np.arctan(np.sqrt((x-1)/(1+x))))/(x*x*np.sqrt(x*x-1))) + ((4*(np.log(x/2)))/(x*x)) - ((2)/(x*x-1)) + ((4*np.arctan(np.sqrt((x-1)/(1+x))))/((x*x-1)**1.5))), label='z=1.5', c='red', lw=1.5)
+plt.plot(x*r_s,((r_s*delta_c*rho_c)/(sigma_c2))*( ((8.*np.arctan(np.sqrt((x-1)/(1+x))))/(x*x*np.sqrt(x*x-1))) + ((4*(np.log(x/2)))/(x*x)) - (2/(x*x-1)) + ((4*np.arctan(np.sqrt((x-1)/(1+x))))/((x*x-1)**1.5))), label='$z = 1.5$', c='red', lw=1.5)
 
 x = np.arange(0.001,0.99,0.0001)
-plt.plot(x*r_s,((r_s*delta_c*rho_c)/(sigma_c3))*( ((8.*np.arctanh(np.sqrt((1-x)/(1+x))))/(x*x*np.sqrt(1-x*x))) + ((4*(np.log(x/2)))/(x*x)) - ((2)/(x*x-1)) + ((4*np.arctanh(np.sqrt((1-x)/(1+x))))/((x*x-1)*(1-x*x)**0.5))), c='green', lw=1.5)
+plt.plot(x*r_s,((r_s*delta_c*rho_c)/(sigma_c3))*( ((8.*np.arctanh(np.sqrt((1-x)/(1+x))))/(x*x*np.sqrt(1-x*x))) + ((4*(np.log(x/2)))/(x*x)) - (2/(x*x-1)) + ((4*np.arctanh(np.sqrt((1-x)/(1+x))))/((x*x-1)*(1-x*x)**0.5))), c='green', lw=1.5)
 x = np.arange(1.0001,10,0.0001)
-plt.plot(x*r_s,((r_s*delta_c*rho_c)/(sigma_c3))*( ((8.*np.arctan(np.sqrt((x-1)/(1+x))))/(x*x*np.sqrt(x*x-1))) + ((4*(np.log(x/2)))/(x*x)) - ((2)/(x*x-1)) + ((4*np.arctan(np.sqrt((x-1)/(1+x))))/((x*x-1)**1.5))), label='z=2', c='green', lw=1.5)
+plt.plot(x*r_s,((r_s*delta_c*rho_c)/(sigma_c3))*( ((8.*np.arctan(np.sqrt((x-1)/(1+x))))/(x*x*np.sqrt(x*x-1))) + ((4*(np.log(x/2)))/(x*x)) - (2/(x*x-1)) + ((4*np.arctan(np.sqrt((x-1)/(1+x))))/((x*x-1)**1.5))), label='$z = 2$', c='green', lw=1.5)
 
 plt.axhline(y=.5, xmin=0., xmax=10., linewidth=1, color = 'k')
 
 plt.ylim(0,3)
-plt.xlabel('$R(kpc)$')
-plt.ylabel('$\gamma_{NFW}$')
-plt.title('Shear dependence on radius')
+plt.xlabel(r'$R(kpc)$', fontsize=18) 
+plt.ylabel('$\gamma_{NFW}$', fontsize=18)
+plt.title(r'$\mathrm{Shear\:dependence\:on\:radius}$', fontsize=20)
 plt.grid(True)
 plt.legend()
 plt.savefig("Shear dependence on radius.png")
