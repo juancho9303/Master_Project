@@ -8,9 +8,9 @@ MegaCam wide field imager on the CFHT (Canada-France-Hawii Telescope). The clust
 
 58 clusters from the MENEACs (Multi-Epoch nearby cluster survey)
 
-The meneacs clusters represent all clusters in the BAX X-ray cluster database that are observable fof the CFHT
+The meneacs clusters represent all clusters in the BAX X-ray cluster database that are observable for the CFHT
 
-the redshifts of the clusters as given by C. Bildfell et. al. 2012 
+About 60 clusters, but we used only 30 for the final studies and paid special atention to 10, marked with *
 
 G, U, I and R images
 
@@ -51,15 +51,25 @@ A85*    & 0.055 & ~800           &  & 17.4182   \\
 A961    & 0.124 & ~800           &  & 16.1464   \\
 A990    & 0.144 & ~800           &  & 15.7778   
 \end{tabular}
-\caption{My caption}
+\caption{the redshifts of the clusters as given by C. Bildfell et. al. 2012 }
 \label{my-label}
 \end{table}
 
+The original omages have dimesions of [11000:11000] pixels but since our relevant region is the center of the cluster where the BCG is located, we cut the images with dimension of [1000,1000] for the color analyisis and [4000:4000] to characterize the colors and discriminate between cluster and non-cluster members.
+
+The INT images were multiple exposures so it was neccesary to make a mosaic of them using SWARP.
+
 \section{Sextractor}
 
-Stars and selection of galaxies
+Segmentation image that will be used as a mask image (bad pixels) for galfit
+
+We need to discriminate between field stars and the galaxies of the cluster so in order to do this, we used some of the parameters found by sextractor that allow us to constraint the fitted data. These are class-star, flux\_radius, and FWHM (full wicth half maximum). Class-star uses the neural network star/galaxy of sextractor that will give values close to 1 for stars and 0 for galaxies. flux\_radius, and FWHM are closely related to each other and give the radius which contains half of the light of the object so it will be small for stars and bigger for extended objects.
+
+
 
 Color magnitude diagram for A1068
+
+we used a zero point magnitude of 30
 
 \begin{figure}[H]
 \centering
@@ -76,6 +86,20 @@ Mag vs flux rad to discriminate
 \end{figure}
 
 \section{Galfit}
+
+galfit fits two dimensional profiles so it is a useful tool to remove the light from the BCG and allow us to observe background objects
+
+Fit sersic profiles with n=4 which is de vacouleurs profile. 
+
+A first run gives us a rough idea of the true position of the center of the BCG so we can set this values in a second run for each cluster. We needed to combine different sersic parameters, as well as Fourier and bending modes for some of the BCGs.
+
+We use the segmentation masks given by sextractor to mask bright objects in the fitting of the BCG
+
+the fitting of many objects (not only the BCG)
+
+the best results were given when we masked the innermost region of the BCG so the fitting will put more weight in the rest of the profile, thus reducing most of the light that hides the background objetcs.
+
+we have to take into account the magnification bias
 
  The parameters C0, B1, B2, F1, F2, etc. listed below are hidden 
  from the user unless he/she explicitly requests them.  These can  be tagged on to the end of any previous components except, of 
@@ -106,6 +130,8 @@ C0) 0.1         0       traditional diskyness(-)/boxyness(+)
 
 
 In er.  
+
+Here we take an isothermal sphere to model the Einstein ring in a distance of background objects of z=1
 
 \begin{figure}[H]
 \centering
