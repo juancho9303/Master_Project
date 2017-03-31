@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {3.1}Sextractor}{12}{section.36}
 \contentsline {section}{\numberline {3.2}Galfit}{15}{section.39}
 \contentsline {section}{\numberline {3.3}Color images}{16}{section.42}
-\contentsline {section}{\numberline {3.4}Photometric Redshift}{18}{section.45}
-\contentsline {chapter}{\numberline {4}Study of images}{19}{chapter.46}
-\contentsline {chapter}{\numberline {5}Conclusions}{20}{chapter.47}
-\contentsline {chapter}{Bibliography}{21}{chapter*.48}
+\contentsline {section}{\numberline {3.4}Photometric Redshift}{19}{section.46}
+\contentsline {chapter}{\numberline {4}Study of images}{20}{chapter.47}
+\contentsline {chapter}{\numberline {5}Conclusions}{21}{chapter.48}
+\contentsline {chapter}{Bibliography}{22}{chapter*.49}
