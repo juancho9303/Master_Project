@@ -26,9 +26,10 @@ d.text((410,20), "Cluster: A754", font=fnt, fill=(255,255,255,255))
 d.text((390,50), "Redshift = 0.054", font=fnt, fill=(255,255,255,255))
 d.text((320,80), "Einstein radius: 17.43\"", font=fnt, fill=(255,255,255,255))
 
-d.text((250,550), "10 kpc", font=fnt, fill=(255,255,255,255))
+d.text((250,410), "10 kpc", font=fnt, fill=(255,255,255,255))
+d.text((260,430), "8.9\" ", font=fnt, fill=(255,255,255,255))
 
-draw.line([(260,540),(308.18,540)], fill=(255,255,255,255), width=3)
+draw.line([(260,400),(308.18,400)], fill=(255,255,255,255), width=3)
 del draw
 im = Image.alpha_composite(im, txt)
 im.save("cA754_galfit.jpg")
