@@ -10,7 +10,7 @@ mat1 = genfromtxt("sA1068r.cat");
 x = mat0[:,1]
 y = mat1[:,1]
 
-filter = (mat0[:,4]<38.0)&(mat0[:,5]>0.0001)
+filter = (mat0[:,4]<38.0)&(mat0[:,5]>0.001)
 #filter = (mat0[:,4]<8.0)&(mat0[:,5]>0.029)   THIS IS THE REAL FILTER
 plt.plot(x[filter]-y[filter],y[filter], '*', label = r"$\mathrm{Stars}$")
 
