@@ -4,11 +4,14 @@ from PIL import ImageFont, Image, ImageDraw
 im = Image.open('A754_igu.eps').convert('RGBA')
 
 x, y =  im.size
-eX, eY = 188, 188 #Size of Bounding Box for circle
-
+eX, eY = 109, 109 #Size of Bounding Box for circle
+#print x,y
+#bbox = (300-eX,300-eY,300+eX,300+eY)
 bbox =  (x/2 - eX/2, y/2 - eY/2, x/2 + eX/2, y/2 + eY/2)
 draw = ImageDraw.Draw(im)
 draw.ellipse(bbox, outline = 'white')
+
+#circle3 = plt.Circle((10, 10), 2, color='g', clip_on=False)
 
 #eXb, eYb = 12,12    #Size of Bounding Box for circle
 

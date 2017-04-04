@@ -1,10 +1,10 @@
 import PIL
 from PIL import ImageFont, Image, ImageDraw
 
-im = Image.open('A754_igu.eps').convert('RGBA')
+im = Image.open('A754_igu_blanck.eps').convert('RGBA')
 
 x, y =  im.size
-eX, eY = 188, 188 #Size of Bounding Box for circle
+eX, eY = 110, 110 #Size of Bounding Box for circle
 
 bbox =  (x/2 - eX/2, y/2 - eY/2, x/2 + eX/2, y/2 + eY/2)
 draw = ImageDraw.Draw(im)
@@ -26,11 +26,11 @@ d.text((410,20), "Cluster: A754", font=fnt, fill=(255,255,255,255))
 d.text((390,50), "Redshift = 0.054", font=fnt, fill=(255,255,255,255))
 d.text((320,80), "Einstein radius: 17.43\"", font=fnt, fill=(255,255,255,255))
 
-d.text((250,410), "10 kpc", font=fnt, fill=(255,255,255,255))
-d.text((260,430), "8.9\" ", font=fnt, fill=(255,255,255,255))
+d.text((250,370), "10 kpc", font=fnt, fill=(255,255,255,255))
+d.text((260,390), "8.9\" ", font=fnt, fill=(255,255,255,255))
+draw.line([(270,360),(298.18,360)], fill=(255,255,255,255), width=3)
 
-draw.line([(260,400),(308.18,400)], fill=(255,255,255,255), width=3)
 del draw
 im = Image.alpha_composite(im, txt)
-im.save("cA754_galfit.jpg")
-#im.show()
+im.save("cA754.jpg")
+im.show()
