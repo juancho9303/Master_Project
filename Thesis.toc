@@ -9,12 +9,12 @@
 \contentsline {chapter}{\numberline {2}Theoretical Framework}{3}{chapter.9}
 \contentsline {section}{\numberline {2.1}Galaxy Clusters}{3}{section.10}
 \contentsline {section}{\numberline {2.2}Gravitational Lensing}{5}{section.12}
-\contentsline {section}{\numberline {2.3}IMF in BCGs}{11}{section.34}
-\contentsline {chapter}{\numberline {3}Observational Procedures}{12}{chapter.35}
-\contentsline {section}{\numberline {3.1}Sextractor}{12}{section.37}
-\contentsline {section}{\numberline {3.2}Galfit}{15}{section.40}
-\contentsline {section}{\numberline {3.3}Color images}{16}{section.43}
-\contentsline {section}{\numberline {3.4}Photometric Redshift}{19}{section.47}
-\contentsline {chapter}{\numberline {4}Study of images}{21}{chapter.48}
-\contentsline {chapter}{\numberline {5}Conclusions}{22}{chapter.49}
-\contentsline {chapter}{Bibliography}{23}{chapter*.50}
+\contentsline {section}{\numberline {2.3}IMF in BCGs}{12}{section.36}
+\contentsline {chapter}{\numberline {3}Observational Procedures}{13}{chapter.37}
+\contentsline {section}{\numberline {3.1}Sextractor}{13}{section.39}
+\contentsline {section}{\numberline {3.2}Galfit}{16}{section.42}
+\contentsline {section}{\numberline {3.3}Color images}{17}{section.45}
+\contentsline {section}{\numberline {3.4}Photometric Redshift}{20}{section.49}
+\contentsline {chapter}{\numberline {4}Study of images}{22}{chapter.50}
+\contentsline {chapter}{\numberline {5}Conclusions}{23}{chapter.51}
+\contentsline {chapter}{Bibliography}{24}{chapter*.52}
