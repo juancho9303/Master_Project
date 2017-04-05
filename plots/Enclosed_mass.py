@@ -28,7 +28,7 @@ def NFW(r):
 	if (r < r_s):
 		surf_mass = 2.0*np.pi*r/r_s*( ( 2.0*r_s*delta_c*rho_c )/( (r/r_s)**2 - 1.0 ) )*( 1.0 - 2.0/( np.sqrt( 1.0 - (r/r_s)**2 ) )*np.arctanh( np.sqrt( ( 1.0-r/r_s )/( 1.0 + r/r_s ) ) ) )
 	elif (r == r_s):
-		surf_mass = 2.0*r_s*delta_c*rho_c/3.0
+		surf_mass = 2.0*np.pi*r/r_s*2.0*r_s*delta_c*rho_c/3.0
 	else:
 		surf_mass = 2.0*np.pi*r/r_s*( ( 2.0*r_s*delta_c*rho_c )/( (r/r_s)**2 - 1.0 ) )*( 1.0 - 2.0/( np.sqrt( (r/r_s)**2 - 1.0 ) )*np.arctan( np.sqrt( ( r/r_s - 1.0 )/( 1 + r/r_s ) ) ) )
 	return surf_mass

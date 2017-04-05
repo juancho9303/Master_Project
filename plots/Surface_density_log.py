@@ -1,4 +1,4 @@
-"""
+
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib as mpl
@@ -39,8 +39,8 @@ plt.title(r'$\mathrm{Surface\:Mass\:Density}$',fontsize=20)
 plt.legend(frameon=False,bbox_to_anchor=(0.45, 0.25), loc=1, borderaxespad=0.)
 plt.savefig("Surface_mass_density_log.png")
 plt.show() 
-"""
 
+"""
 import numpy as np
 import pylab as plt
 
@@ -71,3 +71,4 @@ Y = np.array(Y)[idx]
 plt.subplot(2,1,2)
 plt.plot(X,Y,'g')
 plt.show()
+"""
