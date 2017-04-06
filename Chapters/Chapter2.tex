@@ -39,50 +39,26 @@ Summary of isothermal sphere:
 \xi_{E}=4\pi\left(\frac{\sigma}{c}\right)^{2}\frac{D_{ds}}{D_{s}}
 \end{equation}
 
-At small radii, stars dominate the lensing mass, so that lensing provides a direct probe of the stellar mas to light ratio, with only small corrections needed for dark matter.
 
-In the paper of Russell Smith (a giant elliptical galaxy with a lightweight initial mass funciton) they find a stellar mass to light ratio of 3.01 plus minus 0.25
+In reality, the density profile and lensing properties of galaxies is a bit more complicated than the assumption of a singular isothermal sphere, so we need to take into account more comlplex but elaborate profiles as the NFW (Navarro, Frenk, White, 1996).
 
-Modelling the lensing configuration provides the total projection mass within an aperture.
-
-NFW profile for dark matter that is basically the dynamical mass of the cluster
-
-let's take the case of ABELL1068, it's magnitude in U is 21.94, in I is 18.46, in g is 20.09, in r is 19.5, also $M_{200}=4.3\times 10^{14}M_{\odot}$
-
-The bolometric luminosity of Abell1068 is $10^44$erg/s that in solar luminosities is $1.9\times 10^{12} L_sol$, this gives an effective brightness of $2^{2}M_{\odot}/kpc^2$.
-
-the distance to the galaxy is 591.42857 Mpc	
-
-salpeter mass function is $n(M)\propto M^{-2.3}$  
-
-de Vaucouleurs law for the surface brightness distribution in giant elliptical galaxies is:
-
-\begin{equation}
-I(R)=I_{e}e^{-b\left[\left(R/R_{e}\right)^{1/4}-1\right]}
-\end{equation}
-
-where $b=7.67$ and $I_{e}$ is the effective brightness which is basically the brightness at the effective radius $R_{e}$
-
-From the paper of Lokas and Mamon, for constant mass-light-ratio we have $\Sigma_{M}(R)=\Gamma I(R)$ where I is the surface brightness.
-
-the NFW density profile is 
+The NFW density profile is 
 
 \begin{equation}
 \rho(r)=\frac{\delta_{c}\rho_{c}}{(r/r_{s})(1+r/r_{s})^{2}}
 \end{equation}
 
-where the characteristic overdensity is:
+where the characteristic overdensity is given by:
 
 \begin{equation}
 \delta_{c}=\frac{200}{3}\frac{c^{3}}{\ln{(1+c)}-c/(1+c)}
 \end{equation}
 
+The concentration parameter $c$ is strongly correlated with Hubble type, c=2.6 separating early from late-type galaxies. Those galaxies with concentration incides c>2.6 are early-type galaxies reflecting the fact that the light is more concentrated towards their centres, its formal definition in terms of the virial and characteristic radius is:
 
 $c=r_{200}/r_{s}$
 
-The concentration parameter c is strongly correlated with Hubble type, c=2.6 separating early from late-type galaxies. Those galaxies with concentration incides c>2.6 are early-type galaxies reflecting the fact that the light is more concentrated towards their centres
-
-From Dutton and Maccio 2014 we get the following image for the concentration parameter: we see that the concentration parameter depends on the mass and the redshift as we see in the following plot:
+Dutton and Maccio 2014 (in continuation of previous studies such as Munoz Cuartas et. al.), made simulations of halo masses from dwarf galaxies to galaxy clusters and find constraints on the concentration parameter for different redshifts, the relation between the concentration parameter with redshift and virial mass is shown in the following figure:
 
 \begin{figure}[H]
 \centering
@@ -90,8 +66,15 @@ From Dutton and Maccio 2014 we get the following image for the concentration par
 \caption[M]{G}
 \end{figure}
 
+let's take the case of ABELL1068, it's magnitude in U is 21.94, in I is 18.46, in g is 20.09, in r is 19.5, also $M_{200}=4.3\times 10^{14}M_{\odot}$ (van der Burg et. al 2015)
 
-The surface mass density is given by:
+The bolometric luminosity of Abell1068 is $10^44$erg/s that in solar luminosities is $1.9\times 10^{12} L_sol$, this gives an effective brightness of $0.962\times 10^{7}M_{\odot}/kpc^2$.
+
+the distance to the galaxy is 591.42857 Mpc
+
+In the case of the ABELL1068 cluster, our estimation yields a concentration parameter of 4.46.
+
+The surface mass density in the NFW profile is given by:
 
 \begin{equation}
 \Sigma_{\text{NFW}}(x) = \left\lbrace
@@ -121,9 +104,19 @@ delta c is 25315 (dimensionless)
 
 The characteristic radius is given by $r_{1/2}=1.34R_{e}$
 
-The mass to light ratio is $\gamma=4$
+For the stellar content of the cluster we can use de Vaucouleurs law for the surface brightness distribution in giant elliptical galaxies which is:
 
-Here the surface mass density for both the stellar content and the NFW profile:
+\begin{equation}
+I(R)=I_{e}e^{-b\left[\left(R/R_{e}\right)^{1/4}-1\right]}
+\end{equation}
+
+where $b=7.67$ and $I_{e}$ is the effective brightness which is basically the brightness at the effective radius $R_{e}$
+
+From the paper of Lokas and Mamon, for constant mass-light-ratio we have $\Sigma_{M}(R)=\Gamma I(R)$ where $I(R)\approx 10^{7}$ was found by fitting the surface brightness with galfit.
+
+The mass to light ratio is $\gamma\approx 4$
+
+Hence we have the surface mass density for both the stellar content and the NFW profile:
 
 \begin{figure}[H]
 \centering
@@ -137,21 +130,25 @@ But we are more interested in the enclosed mass which can be done by integrating
 M(R)=\int_{0}^{R}2\pi R\Sigma(R)dR
 \end{equation}
 
-And we can recover our luminosity by integrating the surface brightness profile like this:
+And we can recover our luminosity by integrating the surface brightness profile accordingly:
 
 \begin{equation}
 L=\int_{0}^{R}2\pi RI(R)dR
 \end{equation}
 
-That should give us a value comparable to the one found using Faber-Jackson relation: $L=C\times\sigma^{4}$
+The integration gives a value that is comparable to the one found using Faber-Jackson relation: $L=C\times\sigma^{4}\approx 1.2\times 10^{12}M_{\odot}$
 
-And the plot for the enclosed mass is:
+The plot for the enclosed mass is:
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/DM_fraction.png}
 \caption[M]{G}
 \end{figure}
+
+The value found for the mass in light is $M_{\star}=2.582\times 10^{11}M_{\odot}$ and the mass given by the NFW profile is $M_{NFW}=6.557\times 10^{11}M_{\odot}$.
+
+Now, we are interested in having an accurate estimate of the Einstein radius to constraint the model, so we make different analysis on the radial dependence on the lensing properties such as shear, reduced shear and magnification.
 
 The radial dependence on the shear is:
 
