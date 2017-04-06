@@ -13,7 +13,7 @@ Galaxy clusters contain a population of stars gravitationally unbound to individ
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/GC.jpg}
-\caption[M]{G}
+\caption[Galaxy Cluster MACS 1206]{Galaxy Cluster MACS 1206, credits to NASA Hubble Space Telescope}
 \end{figure}
 
 Quoted (need to change this):The image of galaxy cluster MACS J1206.2-0847 (or MACS 1206) is part of a broad survey with NASA Hubble Space Telescope.The distorted shapes in the cluster are distant galaxies from which the light is bent by the gravitational pull of an invisible material called dark matter within the cluster of galaxies. This cluster is an early target in a survey that will allow astronomers to construct the most detailed dark matter maps of more galaxy clusters than ever before.These maps are being used to test previous, but surprising, results that suggest that dark matter is more densely packed inside clusters than some models predict. This might mean that galaxy cluster assembly began earlier than commonly thought.
@@ -23,7 +23,7 @@ Scientists are planning to observe a total of 25 galaxy clusters under a project
 
 \section{Gravitational Lensing}
 
-Galaxies and clusters of galaxies that act as gravitational lenses can be approximated by single isothermal spheres. It is easy to relate an angular scaling parameter $\xi_{E}$, refered to as the Einstein radius, to the mass inside the corressponding light cone. The Einstein radius corresponds to the ring image of a point source aligned exactly on the axis of the lens.
+Galaxies and clusters of galaxies that act as gravitational lenses can be approximated by single isothermal spheres. It is easy to relate an angular scaling parameter $\xi_{E}$, referred to as the Einstein radius, to the mass inside the corresponding light cone. The Einstein radius corresponds to the ring image of a point source aligned exactly on the axis of the lens.
 
 Summary of isothermal sphere:
 
@@ -40,7 +40,7 @@ Summary of isothermal sphere:
 \end{equation}
 
 
-In reality, the density profile and lensing properties of galaxies is a bit more complicated than the assumption of a singular isothermal sphere, so we need to take into account more comlplex but elaborate profiles as the NFW (Navarro, Frenk, White, 1996).
+In reality, the density profile and lensing properties of galaxies is a bit more complicated than the assumption of a singular isothermal sphere, so we need to take into account more complex but elaborate profiles as the NFW (Navarro, Frenk, White, 1996).
 
 The NFW density profile is 
 
@@ -48,13 +48,13 @@ The NFW density profile is
 \rho(r)=\frac{\delta_{c}\rho_{c}}{(r/r_{s})(1+r/r_{s})^{2}}
 \end{equation}
 
-where the characteristic overdensity is given by:
+where the characteristic overdensity (dimensionless quantity) is given by:
 
 \begin{equation}
 \delta_{c}=\frac{200}{3}\frac{c^{3}}{\ln{(1+c)}-c/(1+c)}
 \end{equation}
 
-The concentration parameter $c$ is strongly correlated with Hubble type, c=2.6 separating early from late-type galaxies. Those galaxies with concentration incides c>2.6 are early-type galaxies reflecting the fact that the light is more concentrated towards their centres, its formal definition in terms of the virial and characteristic radius is:
+The concentration parameter $c$ is strongly correlated with Hubble type, c=2.6 separating early from late-type galaxies. Those galaxies with concentration indices $c>2.6$ are early-type galaxies reflecting the fact that the light is more concentrated towards their centres, its formal definition in terms of the virial and characteristic radius is:
 
 $c=r_{200}/r_{s}$
 
@@ -63,12 +63,12 @@ Dutton and Maccio 2014 (in continuation of previous studies such as Munoz Cuarta
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/dutton.png}
-\caption[M]{G}
+\caption[Evolution of the concentration mass relation]{Evolution of the concentration mass relation, by Dutton \& Maccio, 2014}
 \end{figure}
 
 let's take the case of ABELL1068, it's magnitude in U is 21.94, in I is 18.46, in g is 20.09, in r is 19.5, also $M_{200}=4.3\times 10^{14}M_{\odot}$ (van der Burg et. al 2015)
 
-The bolometric luminosity of Abell1068 is $10^44$erg/s that in solar luminosities is $1.9\times 10^{12} L_sol$, this gives an effective brightness of $0.962\times 10^{7}M_{\odot}/kpc^2$.
+The bolometric luminosity of Abell1068 is $10^{44}$erg/s that in solar luminosities is $1.9\times 10^{12} L_{\odot}$, this gives an effective brightness of $0.962\times 10^{7}M_{\odot}/kpc^2$.
 
 the distance to the galaxy is 591.42857 Mpc
 
@@ -94,13 +94,11 @@ so from the critical density:
 \rho_{c}=\frac{3H^2(z)}{8\pi G}
 \end{equation}
 
-the critical density would be: $2\times 10^{-26}$ in SI units so in Msol/pc3 it is $2.9\times 10^{-7}$
+The critical density would be: $2\times 10^{-26}$ in SI units so in $M_{\odot}/pc^{3}$ it is $2.9\times 10^{-7}$
 
 $H(z)=H_{0}(1+\Omega z)^{3/2}$
 
 the Hubble parameter at z=0.138 is H(z)=85.6
-
-delta c is 25315 (dimensionless)
 
 The characteristic radius is given by $r_{1/2}=1.34R_{e}$
 
@@ -112,16 +110,16 @@ I(R)=I_{e}e^{-b\left[\left(R/R_{e}\right)^{1/4}-1\right]}
 
 where $b=7.67$ and $I_{e}$ is the effective brightness which is basically the brightness at the effective radius $R_{e}$
 
-From the paper of Lokas and Mamon, for constant mass-light-ratio we have $\Sigma_{M}(R)=\Gamma I(R)$ where $I(R)\approx 10^{7}$ was found by fitting the surface brightness with galfit.
+From the paper of Lokas and Mamon, for constant mass-light-ratio we have $\Sigma_{M}(R)= \Upsilon I(R)$ where $I(R)\approx 10^{7}$ was found by fitting the surface brightness with \textit{GALFIT}.
 
-The mass to light ratio is $\gamma\approx 4$
+The mass to light ratio is $\Upsilon\approx 4$
 
 Hence we have the surface mass density for both the stellar content and the NFW profile:
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/Surface_mass_density_log.png}
-\caption[M]{G}
+\caption[Surface mass density profiles]{Surface mass density profiles in logarithmic and $R^{1/4}$ scale for the NFW profile and the stellar component.}
 \end{figure}
 
 But we are more interested in the enclosed mass which can be done by integrating the surface mass density:
@@ -136,17 +134,17 @@ And we can recover our luminosity by integrating the surface brightness profile 
 L=\int_{0}^{R}2\pi RI(R)dR
 \end{equation}
 
-The integration gives a value that is comparable to the one found using Faber-Jackson relation: $L=C\times\sigma^{4}\approx 1.2\times 10^{12}M_{\odot}$
+The integration gives a value that is comparable to the one found using Faber-Jackson relation: $L=\Upsilon\times\sigma^{4}\approx 1.2\times 10^{12}M_{\odot}$
 
 The plot for the enclosed mass is:
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/DM_fraction.png}
-\caption[M]{G}
+\caption[Enclosed mass and DM to stellar mass ratio]{Enclosed mass and DM to stellar mass ratio}
 \end{figure}
 
-The value found for the mass in light is $M_{\star}=2.582\times 10^{11}M_{\odot}$ and the mass given by the NFW profile is $M_{NFW}=6.557\times 10^{11}M_{\odot}$.
+The value found for the mass in light is $M_{\star}=2.582\times 10^{11}M_{\odot}$ and the mass given by the NFW profile is $M_{\text{NFW}}=6.557\times 10^{11}M_{\odot}$.
 
 Now, we are interested in having an accurate estimate of the Einstein radius to constraint the model, so we make different analysis on the radial dependence on the lensing properties such as shear, reduced shear and magnification.
 
@@ -184,8 +182,8 @@ the plot of the shear dependence on the radius is:
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{images/Shear vs rad.png}
-\caption[M]{G}
+\includegraphics[width=12cm]{images/Shear_vs_rad.png}
+\caption[Shear dependence on radius]{Shear dependence on radius for different redshift of the background galaxies}
 \end{figure}
 
 The magnification tensor is:
@@ -204,14 +202,14 @@ The total magnification $\mu$ is given by the determinant of the magnification t
 \end{equation}
 
 
-Where $\kappa$ is the convergence that determines the magnification and $\gamma_{1}$ and $\gamma_{2}$ are the shear components that determine the distorsion of the background objects.
+Where $\kappa$ is the convergence that determines the magnification and $\gamma_{1}$ and $\gamma_{2}$ are the shear components that determine the distortion of the background objects.
 
 The magnification is then:
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/Magnification.png}
-\caption[M]{G}
+\caption[Magnification radial profile]{Magnification radial profile for various redshifts}
 \end{figure}
 
 The reduced shear is given by:
@@ -224,10 +222,9 @@ The reduced shear for background objects at different redshifts is:
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{images/Reduced Shear.png}
-\caption[M]{G}
+\includegraphics[width=12cm]{images/Reduced_Shear.png}
+\caption[Reduced shear radial]{Reduced shear radial profile for different redshifts.}
 \end{figure}
-
 
 so we get the Einstein ring where $\mu$ is infinite or when g is 1 (k=1/2)
 
