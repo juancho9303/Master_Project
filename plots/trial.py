@@ -28,24 +28,24 @@ for i in range(len(sigmas)):
 	               (((r/r_s)**2-1)*(1-(r/r_s)**2)**0.5))))
 	sigma_1 = (( 2.0*r_s*delta_c*rhos[i] )/( (r/r_s)**2 - 1.0 )*( 1.0 -\
 	                2.0/( np.sqrt( 1.0 - (r/r_s)**2 ) )*np.arctanh( np.sqrt( (1.0-(r/r_s))/(1.0+(r/r_s)) ) ) ))
-	plt.plot(np.log10(r),1./((1.-(sigma_1/sigmas[i]))**2.-(gamma_1)**2.), c=colors[i], lw=1.5)
+	plt.plot(np.log10(r),((1.-(sigma_1/sigmas[i]))**2.-(gamma_1)**2.), c=colors[i], lw=1.5)
 	                
 	r = r_s
 	gamma_2 =  ((r_s*delta_c*rhos[i])/sigmas[i]*(10./3.+4.*np.log(0.5)))
 	sigma_2 = (2.0*r_s*delta_c*rhos[i]/3.0)
-	plt.plot(np.log10(r),1./((1.-(sigma_2/sigmas[i]))**2.-(gamma_2)**2.))
+	plt.plot(np.log10(r),((1.-(sigma_2/sigmas[i]))**2.-(gamma_2)**2.))
 
 	r = np.arange(101,10000,0.01)
 	gamma_3 = (((r_s*delta_c*rhos[i]))/sigmas[i]*( ((8.*np.arctan(np.sqrt(((r/r_s)-1)/(1+(r/r_s)))))/((r/r_s)**2*np.sqrt((r/r_s)**2-1))) +\
 		  ((4*(np.log((r/r_s)/2.)))/((r/r_s)**2.)) - (2./((r/r_s)**2-1.)) + ((4*np.arctan(np.sqrt(((r/r_s)-1)/(1+(r/r_s)))))/(((r/r_s)**2-1)**1.5))))
 	sigma_3 = (( 2.0*r_s*delta_c*rhos[i] )/( (r/r_s)**2. - 1.0 ) *( 1.0 - 2.0/( np.sqrt( (r/r_s)**2 - 1.0 ) )*\
 				   np.arctan( np.sqrt( ( (r/r_s)-1.0 )/( 1+(r/r_s) ) ) ) ))
-	plt.plot(np.log10(r), 1./((1.-(sigma_3/sigmas[i]))**2.-(gamma_3)**2.) , label= redshifts[i], c=colors[i], lw=1.5)
+	plt.plot(np.log10(r), ((1.-(sigma_3/sigmas[i]))**2.-(gamma_3)**2.) , label= redshifts[i], c=colors[i], lw=1.5)
 
 #plt.axhline(y=.5, xmin=0., xmax=10.,linewidth=1, color = 'k', linestyle='--')
 plt.xlabel(r'$\mathrm{\log R(kpc)}$', fontsize=18) 
-plt.ylabel('$\mathrm{\mu_{NFW}}$', fontsize=18)
+plt.ylabel('$\mathrm{(1-\kappa)^{2}=\gamma^{2}}$', fontsize=18)
 #plt.title(r'$\mathrm{Reduced\:Shear}$', fontsize=20)
 plt.legend(frameon=False) #plt.legend(frameon=False,bbox_to_anchor=(0.95, 0.2), loc=1, borderaxespad=0.)
-plt.savefig("Magnification.png")
+plt.savefig("trial.png")
 plt.show()
