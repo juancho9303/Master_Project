@@ -47,7 +47,7 @@ int main (void)
     }
   
   printf(" Bin 1: %d\n Bin 2: %d\n Bin 3: %d\n Bin 4: %d\n Bin 5: %d\n Bin 6: %d\n", b1, b2, b3, b4, b5, b6);
-  fprintf(bins, "%f\t %d\n %f\t %d\n %f\t %d\n %f\t %d\n %f\t %d\n", (z1+z2)/2, b1, (z2+z3)/2, b2, (z3+z4)/2, b3, (z4+z5)/2, b4, (z5+z6)/2, b5);
+  fprintf(bins, " %f\t %d\n %f\t %d\n %f\t %d\n %f\t %d\n %f\t %d\n %f\t %d\n", (z1+z2)/2, b1, (z2+z3)/2, b2, (z3+z4)/2, b3, (z4+z5)/2, b4, (z5+z6)/2, b5, (z6+z7)/2, b6);
   fclose(data);
   fclose(bins); 
   
