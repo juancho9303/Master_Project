@@ -48,7 +48,7 @@ def N(val):
 for i in range(len(R)):
    f_array.append(np.log10(F(R[i])))
    n_array.append(np.log10(N(R[i])))
-   fractionDM.append( n_array[i]/f_array[i] )  
+   fractionDM.append( (10**(n_array[i])/10**(f_array[i])) )  
 
 fig = plt.figure()
 gs = gridspec.GridSpec(2, 1, height_ratios=[2, 1]) 
@@ -64,7 +64,7 @@ plt.legend(frameon=False,bbox_to_anchor=(0.95, 0.3), loc=1, borderaxespad=0.)
 #the second subplot
 # shared axis X
 ax1 = plt.subplot(gs[1], sharex = ax0)
-line1, = ax1.plot(np.log10(R), fractionDM, '-', c = 'g', label = r'$\mathrm{M_{DM}/M_{star}}$', lw = 2)
+line1, = ax1.plot(np.log10(R), (fractionDM), '-', c = 'g', label = r'$\mathrm{M_{DM}/M_{star}}$', lw = 2)
 plt.xlabel(r'$\log R(kpc)$',fontsize=18)
 plt.ylabel(r'$\mathrm{Ratio}$',fontsize=18)
 plt.legend(frameon=False,bbox_to_anchor=(0.95, 0.35), loc=1, borderaxespad=0.)

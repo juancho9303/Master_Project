@@ -24,12 +24,12 @@ int main (void)
   for(i=0; i<N; i++)
     {  
       fscanf(data, "%lf\t %lf\t %lf\t %lf\t %lf\n", &alpha[i], &delta[i], &n[i], &mu[i], &z[i]);    
-      dis[i] = (sqrt(pow((alpha[i]-AR_c),2) + pow((delta[i]-DEC_c),2))); 
+      //dis[i] = (sqrt(pow((alpha[i]-AR_c),2) + pow((delta[i]-DEC_c),2))); 
       //printf("%lf\n",dis[i]);
-      if (24.0 > mu[i])
+      if (23.0 > mu[i])
 	{
-	  if (dis[i] < radius)
-	    { 
+	  //if (dis[i] < radius)
+	    //{ 
 	      if ( z1 < z[i] && z[i] < z2 ) 
 		b1++;
 	      if ( z2 < z[i] && z[i] < z3 )
@@ -42,7 +42,7 @@ int main (void)
 		b5++;
 		  if ( z6 < z[i] && z[i] < z7 )
 		b6++;
-	    }
+	    //}
 	}
     }
   
