@@ -18,6 +18,11 @@ id_n = mat0[:,0]
 filters = (mat0[:,5]>8.0)&(mat0[:,6]<0.029)&(mat1[:,5]>8.0)&(mat1[:,6]<0.029)&\
           (mat2[:,5]>8.0)&(mat2[:,6]<0.029)&(mat3[:,5]>8.0)&(mat3[:,6]<0.029)
 
+filter1 = (mat1[:,1]<23.3)&(mat1[:,6]<2.25)
+filter2 = (mat1[:,1]<18)&(mat1[:,6]<3.25)
+filter3 = (mat1[:,1]<24)&(mat1[:,6]<2)
+filter4 = (mat1[:,1]<16.0)
+
 coordx_g  = list(xg[filters]); coordy_g  = list(yg[filters]); F_g = list(flu_g[filters]); F_err_g = list(flu_err_g[filters])
 coordx_r  = list(xr[filters]); coordy_r  = list(yr[filters]); F_r = list(flu_r[filters]); F_err_r = list(flu_err_r[filters])
 coordx_u  = list(xu[filters]); coordy_u  = list(yu[filters]); F_u = list(flu_u[filters]); F_err_u = list(flu_err_u[filters])

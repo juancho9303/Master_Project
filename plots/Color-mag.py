@@ -13,10 +13,10 @@ y = mat1[:,1]
 
 filter = (mat0[:,4]<38.0)&(mat0[:,5]>0.001)
 #filter = (mat0[:,4]<8.0)&(mat0[:,5]>0.029)   THIS IS THE REAL FILTER
-plt.plot(x[filter]-y[filter],y[filter], '*', label = r"$\mathrm{Stars}$")
+plt.plot(x[filter]-y[filter],y[filter], '.', label = r"$\mathrm{Stars}$")
 
-filter = (mat0[:,4]>8.0)&(mat0[:,5]<0.029)
-plt.plot(x[filter]-y[filter],y[filter], 'o', c = 'darkorange', label = r"$\mathrm{Galaxies}$")
+filter = (mat0[:,4]>6.0)&(mat0[:,5]<0.029)
+plt.plot(x[filter]-y[filter],y[filter], '.', c = 'darkorange', label = r"$\mathrm{Galaxies}$")
 
 plt.ylim(15,27)
 plt.xlim(0,2)
@@ -32,10 +32,10 @@ plt.show();
 z = mat1[:,6]
 
 filter = (mat0[:,4]<38.0)&(mat0[:,5]>0.0001)
-plt.plot(np.log10(z[filter]), y[filter], '*', label = r"$\mathrm{Stars}$");
+plt.plot(np.log10(z[filter]), y[filter], '.', label = r"$\mathrm{Stars}$");
 
-filter = (mat0[:,4]>8.0)&(mat0[:,5]<0.029)
-plt.plot(np.log10(z[filter]), y[filter], 'o', c = 'darkorange', label = r"$\mathrm{Galaxies}$");
+filter = (mat0[:,4]>6.0)&(mat0[:,5]<0.03)
+plt.plot(np.log10(z[filter]), y[filter], '.', c = 'darkorange', label = r"$\mathrm{Galaxies}$");
 
 plt.ylim(27,14)
 plt.xlim(0.15,1.35)
