@@ -28,5 +28,5 @@ plt.xlim(0.15,1.35)
 plt.xlabel(r'$\mathrm{\log Flux\:Radius}$',fontsize=18)
 plt.ylabel(r'$\mathrm{m_{r}}$',fontsize=18)
 plt.legend()
-#plt.savefig("mag_vs_flux_rad.png")
+plt.savefig("mag_vs_flux_rad.png")
 plt.show();
