@@ -32,7 +32,6 @@ for i in range(len(sigmas)):
 				   ((4*(np.log((r/r_s)/2.)))/((r/r_s)**2)) - (2./((r/r_s)**2-1.)) + ((4*np.arctan(np.sqrt(((r/r_s)-1)/(1+(r/r_s)))))/(((r/r_s)**2-1)**1.5))))\
 				   ,label= redshifts[i], c=colors[i], lw=1.5)
 
-
 #plt.axhline(y=.5, xmin=0., xmax=10.,linewidth=1, color = 'k', linestyle='--')
 #plt.ylim(0,0.05)
 plt.xlabel(r'$\mathrm{\log R(kpc)}$', fontsize=18) 

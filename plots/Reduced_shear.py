@@ -38,7 +38,7 @@ for i in range(len(sigmas)):
 
 
 #plt.axhline(y=.5, xmin=0., xmax=10.,linewidth=1, color = 'k', linestyle='--')
-plt.xlim(0,1.5)
+#plt.xlim(0,1.5)
 plt.xlabel(r'$\mathrm{\log R(kpc)}$', fontsize=18) 
 plt.ylabel('$\mathrm{g_{NFW}}$', fontsize=18)
 #plt.title(r'$\mathrm{Reduced\:Shear}$', fontsize=20)

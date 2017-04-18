@@ -55,30 +55,3 @@ plt.xlabel(r'$\mathrm{R^{1/4}(kpc)}$',fontsize=18)
 plt.savefig("Surface_mass_density_log.png")
 plt.show() 
 
-"""
-# Create some test data
-secret_data_X1 = np.linspace(0,1,100)
-secret_data_Y1 = secret_data_X1**2
-secret_data_X2 = np.linspace(1,2,100)
-secret_data_Y2 = secret_data_X2**2
-
-# Show the secret data
-plt.subplot(121)
-plt.plot(secret_data_X1,secret_data_Y1,'r')
-plt.plot(secret_data_X2,secret_data_Y2,'b')
-
-# Loop through the plots created and find the x,y values
-X,Y = [], []   
-for lines in plt.gca().get_lines():
-    for x,y in lines.get_xydata():
-        X.append(x)
-        Y.append(y)
-
-idx = np.argsort(X)
-X = np.array(X)[idx]
-Y = np.array(Y)[idx]
-
-plt.subplot(122)
-plt.plot(X,Y,'g')
-plt.show()
-"""

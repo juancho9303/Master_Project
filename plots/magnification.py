@@ -42,6 +42,7 @@ for i in range(len(sigmas)):
 				   np.arctan( np.sqrt( ( (r/r_s)-1.0 )/( 1+(r/r_s) ) ) ) ))
 	plt.plot(np.log10(r), 1./((1.-(sigma_3/sigmas[i]))**2.-(gamma_3)**2.) , label= redshifts[i], c=colors[i], lw=1.5)
 
+plt.ylim(-1000,1000)
 #plt.axhline(y=.5, xmin=0., xmax=10.,linewidth=1, color = 'k', linestyle='--')
 plt.xlabel(r'$\mathrm{\log R(kpc)}$', fontsize=18) 
 plt.ylabel('$\mathrm{\mu_{NFW}}$', fontsize=18)
