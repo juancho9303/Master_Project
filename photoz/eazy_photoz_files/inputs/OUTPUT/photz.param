@@ -71,13 +71,13 @@ OMEGA_L              0.700              # Omega_lambda
 #
 ####################################
 #
-#  Filter #1, RES#80: COSMOS/SUBARU_filter_g.txt - lambda_c=4776.947230
+#  Filter #1, RES#89: megaprime/cfht_mega_g_cfh9401.dat - lambda_c=4888.295143
 #       [flux col: 1, error col.: 2]
-#  Filter #2, RES#81: COSMOS/SUBARU_filter_r.txt - lambda_c=6288.552034
+#  Filter #2, RES#90: megaprime/cfht_mega_r_cfh9601.dat - lambda_c=6255.538319
 #       [flux col: 3, error col.: 4]
-#  Filter #3, RES#72: COSMOS/CFHT_filter_u.txt - lambda_c=3849.129467
+#  Filter #3, RES#156: SDSS/u.dat - lambda_c=3561.788745
 #       [flux col: 5, error col.: 6]
-#  Filter #4, RES#71: COSMOS/CFHT_filter_i.txt - lambda_c=7696.118007
+#  Filter #4, RES#159: SDSS/i.dat - lambda_c=7499.656622
 #       [flux col: 7, error col.: 8]
 #  Template 1: templates/EAZY_v1.1_lines/eazy_v1.1_sed1.dat
 #     1.000000   0.000000   1.000000
@@ -96,4 +96,4 @@ OMEGA_L              0.700              # Omega_lambda
 #  Template 8: templates/Dusty/c09_del_8.6_z_0.019_chab_age09.40_av2.0.dat
 #     1.000000   0.000000   1.000000
 # EAZY 2015-05-08
-# Took 5 seconds.
+# Took 12 seconds.
