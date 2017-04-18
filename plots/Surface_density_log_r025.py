@@ -33,7 +33,7 @@ plt.plot(np.log10(r),np.log10(( 2.0*r_s*delta_c*rho_c )/( (r/r_s)**2 - 1.0 ) *( 
 R = np.arange(0.001,10000,0.001)
 plt.plot(np.log10(R),np.log10(4.*I_e*np.exp( -b*( ( R/R_e )**0.25 - 1. ) )),label=r'$\mathrm{Stellar\:Contribution}$', lw = 2)  #4*I(R) where I(R) is de Vaucouleurs
 plt.ylabel(r'$\log \Sigma_{\mathrm{NFW}}(\mathrm{M}_{\odot }/ \mathrm{kpc}^{2})$',fontsize=16)
-plt.xlabel(r'$\log \mathrm{R}(kpc)$',fontsize=18)
+plt.xlabel(r'$\log \mathrm{R(kpc)}$',fontsize=18)
 plt.legend(frameon=False,bbox_to_anchor=(0.9, 0.25), loc=1, borderaxespad=0.)
 
 plt.subplot(122)
