@@ -16,7 +16,7 @@ R_e        = 73.7                                      # Half of the total light
 n_array    = [] 
 f_array    = []
 fractionDM = []
-R          = np.arange(0.0001, 1000, 1.)
+R          = np.arange(0.0001, 100, 1.)
 
 # MASS ENCLOSED BY LIGHT (DE VAUCOULEURS PROFILE)
 def surf_bright(r):
@@ -63,7 +63,7 @@ plt.legend(frameon=False,bbox_to_anchor=(0.95, 0.3), loc=1, borderaxespad=0.)
 #The Second Subplot
 # shared axis X
 ax1 = plt.subplot(gs[1], sharex = ax0)
-line1, = ax1.plot(np.log10(R), np.log10(fractionDM), '-', c = 'g', label = r'$\mathrm{M_{DM}/M_{star}}$', lw = 2)
+line1, = ax1.plot(np.log10(R), (fractionDM), '-', c = 'g', label = r'$\mathrm{M_{DM}/M_{star}}$', lw = 2)
 plt.xlabel(r'$\log \mathrm{R(kpc)}$',fontsize=18)
 plt.ylabel(r'$\log \mathrm{Ratio}$',fontsize=18)
 plt.legend(frameon=False,bbox_to_anchor=(0.95, 0.35), loc=1, borderaxespad=0.)

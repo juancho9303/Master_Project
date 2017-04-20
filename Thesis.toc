@@ -7,16 +7,16 @@
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.8}
 \contentsline {chapter}{\numberline {2}Theoretical Framework}{4}{chapter.9}
-\contentsline {section}{\numberline {2.1}Stellar populations}{4}{section.10}
+\contentsline {section}{\numberline {2.1}Stellar populations}{5}{section.10}
 \contentsline {section}{\numberline {2.2}Gravitational Lensing}{6}{section.12}
-\contentsline {section}{\numberline {2.3}IMF in BCGs}{13}{section.37}
-\contentsline {chapter}{\numberline {3}Methodology}{14}{chapter.38}
-\contentsline {section}{\numberline {3.1}Data Sample}{14}{section.39}
-\contentsline {section}{\numberline {3.2}Stellar Populations}{15}{section.41}
-\contentsline {section}{\numberline {3.3}Sextractor}{16}{section.42}
-\contentsline {section}{\numberline {3.4}Galfit}{18}{section.45}
-\contentsline {section}{\numberline {3.5}Color images}{19}{section.48}
-\contentsline {section}{\numberline {3.6}Photometric Redshift}{22}{section.52}
-\contentsline {chapter}{\numberline {4}Study of images}{24}{chapter.53}
-\contentsline {chapter}{\numberline {5}Conclusions}{25}{chapter.54}
-\contentsline {chapter}{Bibliography}{26}{chapter*.55}
+\contentsline {section}{\numberline {2.3}IMF in BCGs}{14}{section.37}
+\contentsline {chapter}{\numberline {3}Methodology}{15}{chapter.38}
+\contentsline {section}{\numberline {3.1}Data Sample}{15}{section.39}
+\contentsline {section}{\numberline {3.2}Stellar Populations}{16}{section.41}
+\contentsline {section}{\numberline {3.3}Sextractor}{17}{section.42}
+\contentsline {section}{\numberline {3.4}Galfit}{19}{section.45}
+\contentsline {section}{\numberline {3.5}Color images}{20}{section.48}
+\contentsline {section}{\numberline {3.6}Photometric Redshift}{23}{section.52}
+\contentsline {chapter}{\numberline {4}Study of images}{25}{chapter.53}
+\contentsline {chapter}{\numberline {5}Conclusions}{26}{chapter.54}
+\contentsline {chapter}{Bibliography}{27}{chapter*.55}
