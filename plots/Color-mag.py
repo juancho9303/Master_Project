@@ -19,11 +19,11 @@ filter4 = (mat1[:,1]<18)&(mat1[:,6]<3.25)
 filter5 = (mat1[:,1]<24)&(mat1[:,6]<2)
 filter2 = (mat1[:,1]<16.0)
 
-plt.plot(mg-mr, mr, '.', c = 'darkorange', label = r"$\mathrm{Galaxies}$");
-plt.plot((col[filter1]), mr[filter1], '.', c = 'black');
-plt.plot((col[filter5]), mr[filter5], '.', c = 'black');
-plt.plot((col[filter4]), mr[filter4], '.', c = 'black');
-plt.plot((col[filter2]), mr[filter2], '.', c = 'black', label = r"$\mathrm{Stars}$");
+plt.plot(mg-mr, mr, '.', c = 'darkorange', label = r"$\mathrm{Galaxies}$", alpha=0.5);
+plt.plot((col[filter1]), mr[filter1], '.', c = 'black', alpha=0.8);
+plt.plot((col[filter5]), mr[filter5], '.', c = 'black', alpha=0.8);
+plt.plot((col[filter4]), mr[filter4], '.', c = 'black', alpha=0.8);
+plt.plot((col[filter2]), mr[filter2], '.', c = 'black', label = r"$\mathrm{Stars}$", alpha=0.8);
 
 plt.ylim(15,27)
 plt.xlim(-0.1,2.3)
