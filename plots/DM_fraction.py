@@ -16,7 +16,7 @@ R_e        = 73.7                                      # Half of the total light
 n_array    = [] 
 f_array    = []
 fractionDM = []
-R          = np.arange(0.0001, 100, 1.)
+R          = np.arange(0.0001, 20, 0.1)
 
 # MASS ENCLOSED BY LIGHT (DE VAUCOULEURS PROFILE)
 def surf_bright(r):
@@ -45,25 +45,27 @@ def N(val):
   return integrate.quad(g, 0.01, val)[0]
       
 for i in range(len(R)):
-   f_array.append(np.log10(F(R[i])))
-   n_array.append(np.log10(N(R[i])))
-   fractionDM.append( (10**(n_array[i])/10**(f_array[i])) )  
-
+#   f_array.append(np.log10(F(R[i])))
+#   n_array.append(np.log10(N(R[i])))
+   f_array.append((F(R[i])))
+   n_array.append((N(R[i])))
+#   fractionDM.append( (10**(n_array[i])/10**(f_array[i])) )
+   fractionDM.append( ((n_array[i])/(f_array[i])) )  
+  
 fig = plt.figure()
 gs = gridspec.GridSpec(2, 1, height_ratios=[2, 1]) 
 
 # The Fisrt Subplot
 ax0 = plt.subplot(gs[0])
-#line0, = ax0.plot(np.log10(R), f_array, color='r')
-line0, = ax0.plot(np.log10(R), f_array, '-', c = 'r', label = r'$\mathrm{Stellar\:Mass}$', lw = 2)
-line0, = ax0.plot(np.log10(R), n_array, '-', c = 'b', label = r'$\mathrm{NFW\:Profile\:Mass}$', lw = 2)
+line0, = ax0.plot((R), np.log10(f_array), '-', c = 'r', label = r'$\mathrm{Stellar\:Mass}$', lw = 2)
+line0, = ax0.plot((R), np.log10(n_array), '-', c = 'b', label = r'$\mathrm{NFW\:Profile\:Mass}$', lw = 2)
 plt.ylabel(r'$\mathrm{\log M_{\odot}}$',fontsize=18)
 plt.legend(frameon=False,bbox_to_anchor=(0.95, 0.3), loc=1, borderaxespad=0.)
 
 #The Second Subplot
 # shared axis X
 ax1 = plt.subplot(gs[1], sharex = ax0)
-line1, = ax1.plot(np.log10(R), (fractionDM), '-', c = 'g', label = r'$\mathrm{M_{DM}/M_{star}}$', lw = 2)
+line1, = ax1.plot((R), (fractionDM), '-', c = 'g', label = r'$\mathrm{M_{DM}/M_{star}}$', lw = 2)
 plt.xlabel(r'$\log \mathrm{R(kpc)}$',fontsize=18)
 plt.ylabel(r'$\log \mathrm{Ratio}$',fontsize=18)
 plt.legend(frameon=False,bbox_to_anchor=(0.95, 0.35), loc=1, borderaxespad=0.)
