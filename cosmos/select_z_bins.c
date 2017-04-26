@@ -18,7 +18,7 @@ int main (void)
   FILE *data, *bins;
   data = fopen("data_R_matched.dat", "r");
 //  data = fopen("data_R_whole.dat", "r"); 
-  bins = fopen("zbins_matched.dat" , "w");
+  bins = fopen("zbins_matched_22.dat" , "w");
 //  bins = fopen("zbins_whole.dat" , "w");
   
   for(i=0; i<N; i++)
@@ -26,7 +26,7 @@ int main (void)
       fscanf(data, "%lf\t %lf\t %lf\t %lf\t %lf\n", &alpha[i], &delta[i], &n[i], &mu[i], &z[i]);    
       //dis[i] = (sqrt(pow((alpha[i]-AR_c),2) + pow((delta[i]-DEC_c),2))); 
       //printf("%lf\n",dis[i]);
-      if (25.0 > mu[i])
+      if (22.0 > mu[i])
 	{
 	  //if (dis[i] < radius)
 	    //{ 
