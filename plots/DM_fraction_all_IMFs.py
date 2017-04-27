@@ -25,13 +25,13 @@ print 'Luminosity: %e' %(I1)
 
 # MASS ENCLOSED BY LIGHT (KROUPA)
 def surf_bright2(r):
-	return 12*np.pi*r*I_e*np.exp( -b*( ( r/R_e )**0.25 - 1.0 ) )
+	return 5.2*np.pi*r*I_e*np.exp( -b*( ( r/R_e )**0.25 - 1.0 ) )
 I3, I3err = quad(surf_bright2, 0.001, 1000)
 print 'Luminosity: %e' %(I3)
 
 # MASS ENCLOSED BY LIGHT (CHABRIER)
 def surf_bright3(r):
-	return 12.9*np.pi*r*I_e*np.exp( -b*( ( r/R_e )**0.25 - 1.0 ) )
+	return 5.04*np.pi*r*I_e*np.exp( -b*( ( r/R_e )**0.25 - 1.0 ) )
 I4, I4err = quad(surf_bright3, 0.001, 1000)
 print 'Luminosity: %e' %(I4)
 
