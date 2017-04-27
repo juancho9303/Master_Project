@@ -56,19 +56,22 @@ fig = plt.figure()
 gs = gridspec.GridSpec(2, 1, height_ratios=[2, 1]) 
 
 # The Fisrt Subplot
+#plt.xscale('log')
 ax0 = plt.subplot(gs[0])
-line0, = ax0.plot(np.log10(R), (f_array), '-', c = 'r', label = r'$\mathrm{Stellar\:Mass}$', lw = 2)
-line0, = ax0.plot(np.log10(R), (n_array), '-', c = 'b', label = r'$\mathrm{NFW\:Profile\:Mass}$', lw = 2)
+line0, = ax0.plot((R), (f_array), '-', c = 'r', label = r'$\mathrm{Stellar\:Mass}$', lw = 2)
+line0, = ax0.plot((R), (n_array), '-', c = 'b', label = r'$\mathrm{NFW\:Profile\:Mass}$', lw = 2)
 plt.ylabel(r'$\mathrm{\log M_{\odot}}$',fontsize=18)
 plt.legend(frameon=False,bbox_to_anchor=(0.95, 0.3), loc=1, borderaxespad=0.)
 
-plt.axvline(0.5, c = 'black', linestyle='--')
+plt.axvline(3.0, c = 'black', linestyle='--')
 
 #The Second Subplot
 # shared axis X
 ax1 = plt.subplot(gs[1], sharex = ax0)
-line1, = ax1.plot(np.log10(R), (fractionDM), '-', c = 'g', label = r'$\mathrm{M_{DM}/M_{star}}$', lw = 2)
-plt.xlabel(r'$\log \mathrm{R(kpc)}$',fontsize=18)
+plt.xscale('log')
+line1, = ax1.plot((R), (fractionDM), '-', c = 'g', label = r'$\mathrm{M_{DM}/M_{star}}$', lw = 2)
+#ax1.set_xlim(1e-1, 1e2)
+plt.xlabel(r'$\mathrm{R(kpc)}$',fontsize=18)
 plt.ylabel(r'$\mathrm{Ratio}$',fontsize=18)
 plt.legend(frameon=False,bbox_to_anchor=(0.95, 0.35), loc=1, borderaxespad=0.)
 
@@ -77,7 +80,7 @@ plt.setp(ax0.get_xticklabels(), visible=False)
 yticks = ax1.yaxis.get_major_ticks()
 yticks[-2].label1.set_visible(False)
 
-plt.axvline(0.5, c = 'black', linestyle='--')
+plt.axvline(3.0, c = 'black', linestyle='--')
 
 # remove vertical gap between subplots
 plt.subplots_adjust(hspace=.0)
