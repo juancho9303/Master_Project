@@ -22,7 +22,7 @@ plt.axvline(1.2, c = 'black', linestyle='--')
 
 #plt.xlim(0.,1.5)
 plt.xlabel(r'$\mathrm{Redshift}$',fontsize=18)
-plt.ylabel(r'$\mathrm{Galaxies\:per\:arcmin}$',fontsize=18)
+plt.ylabel(r'$\mathrm{Galaxies\:/arcmin^{2}/0.2z}$',fontsize=18)
 #plt.xlabel(r'$\mathrm{z}$',fontsize=18)
 #plt.ylabel(r'$\mathrm{n}$',fontsize=18)
 #plt.title(r'$\mathrm{Galaxies\:per\:arcmin\:in\:radial\:bins}$',fontsize=18)

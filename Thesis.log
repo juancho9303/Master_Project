@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  27 APR 2017 23:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  1 MAY 2017 12:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -669,14 +669,14 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 ] <images/GC.jpg, id=208, 1284.8pt x 1166.3575pt>
 File: images/GC.jpg Graphic file (type jpg)
  <use images/GC.jpg>
-Package pdftex.def Info: images/GC.jpg used on input line 28.
+Package pdftex.def Info: images/GC.jpg used on input line 29.
 (pdftex.def)             Requested size: 341.43306pt x 309.95532pt.
 
 [5 <./images/galaxies_per_arcmin.png>] [6 <./images/GC.jpg>] [7]
 <images/dutton.png, id=233, 624.3325pt x 611.28375pt>
 File: images/dutton.png Graphic file (type png)
  <use images/dutton.png>
-Package pdftex.def Info: images/dutton.png used on input line 85.
+Package pdftex.def Info: images/dutton.png used on input line 86.
 (pdftex.def)             Requested size: 341.43306pt x 334.3043pt.
 
 [8 <./images/dutton.png>] [9]
@@ -685,14 +685,14 @@ File: images/Surface_mass_density_log.png Graphic file (type png)
 
 <use images/Surface_mass_density_log.png>
 Package pdftex.def Info: images/Surface_mass_density_log.png used on input line
- 141.
+ 142.
 (pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
 
 <images/DM_fraction_all_IMFs.png, id=251, 578.16pt x 433.62pt>
 File: images/DM_fraction_all_IMFs.png Graphic file (type png)
 
 <use images/DM_fraction_all_IMFs.png>
-Package pdftex.def Info: images/DM_fraction_all_IMFs.png used on input line 163
+Package pdftex.def Info: images/DM_fraction_all_IMFs.png used on input line 164
 .
 (pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
  [10 <./images/Surface_mass_density_log.png>] [11 <./images/DM_fraction_all_IMF
@@ -701,21 +701,21 @@ s.png>]
 File: images/Shear_vs_rad.png Graphic file (type png)
 
 <use images/Shear_vs_rad.png>
-Package pdftex.def Info: images/Shear_vs_rad.png used on input line 205.
+Package pdftex.def Info: images/Shear_vs_rad.png used on input line 206.
 (pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
 
 <images/Magnification.png, id=270, 578.16pt x 433.62pt>
 File: images/Magnification.png Graphic file (type png)
 
 <use images/Magnification.png>
-Package pdftex.def Info: images/Magnification.png used on input line 231.
+Package pdftex.def Info: images/Magnification.png used on input line 232.
 (pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
  [12 <./images/Shear_vs_rad.png>]
 <images/Reduced_Shear.png, id=279, 578.16pt x 433.62pt>
 File: images/Reduced_Shear.png Graphic file (type png)
 
 <use images/Reduced_Shear.png>
-Package pdftex.def Info: images/Reduced_Shear.png used on input line 245.
+Package pdftex.def Info: images/Reduced_Shear.png used on input line 246.
 (pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
  [13 <./images/Magnification.png> <./images/Reduced_Shear.png>]
 Missing character: There is no Â in font cmr10!
@@ -724,14 +724,14 @@ Missing character: There is no ´ in font cmr10!
 File: images/IMFs.png Graphic file (type png)
 
 <use images/IMFs.png>
-Package pdftex.def Info: images/IMFs.png used on input line 263.
+Package pdftex.def Info: images/IMFs.png used on input line 264.
 (pdftex.def)             Requested size: 341.43306pt x 377.56328pt.
  [14]
 <images/IMFs_paper.png, id=292, 1005.7575pt x 639.38875pt>
 File: images/IMFs_paper.png Graphic file (type png)
 
 <use images/IMFs_paper.png>
-Package pdftex.def Info: images/IMFs_paper.png used on input line 273.
+Package pdftex.def Info: images/IMFs_paper.png used on input line 274.
 (pdftex.def)             Requested size: 341.43306pt x 217.05757pt.
  [15 <./images/IMFs.png>]) (./Chapters/Chapter3.tex
 [16 <./images/IMFs_paper.png>]
@@ -869,7 +869,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti12.pfb>
-Output written on Thesis.pdf (37 pages, 2810513 bytes).
+Output written on Thesis.pdf (37 pages, 2809894 bytes).
 PDF statistics:
  469 PDF objects out of 1000 (max. 8388607)
  375 compressed objects within 4 object streams

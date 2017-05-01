@@ -5,6 +5,7 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 from matplotlib import gridspec
 mpl.rcParams['text.usetex'] = True
+from operator import truediv
 
 c          = 4.46                                      # Concentration parameter (Paper Dutton and Maccio) 
 delta_c    = ((200./3)*c**3)/(np.log(1.0+c)-c/(1.0+c)) # Characteristic overdensity of the halo
@@ -70,9 +71,11 @@ for i in range(len(R)):
    n_array.append(np.log10(N(R[i])))
    n_array_plus.append(np.log10(1.3*N(R[i]))) 
    n_array_minus.append(np.log10(0.7*N(R[i])))
-   fractionDM1.append( ((n_array[i])/(f_array1[i])) ) 
-   fractionDM2.append( ((n_array[i])/(f_array2[i])) ) 
-   fractionDM3.append( ((n_array[i])/(f_array3[i])) )  
+   fractionDM1.append( 10**((n_array[i])-(f_array1[i])) ) 
+   fractionDM2.append( 10**((n_array[i])-(f_array2[i])) ) 
+   fractionDM3.append( 10**((n_array[i])-(f_array3[i])) ) 
+
+#pepito = map(truediv,n_array,f_array1)
   
 fig = plt.figure()
 gs = gridspec.GridSpec(2, 1, height_ratios=[2, 1]) 
@@ -88,6 +91,7 @@ plt.legend(frameon=False,bbox_to_anchor=(0.95, 0.45), loc=1, borderaxespad=0.,pr
 
 ax1 = plt.subplot(gs[1], sharex = ax0)
 plt.xscale('log')
+plt.yscale('log')
 line1, = ax1.plot((R), (fractionDM1), '-.', c='darkorange', label = r'$\mathrm{M_{DM}/M_{\star}\:Salpeter}$', lw = 2)
 line1, = ax1.plot((R), (fractionDM2), '--', c='darkred', label = r'$\mathrm{M_{DM}/M_{\star}\:Kroupa}$', lw = 2)
 line1, = ax1.plot((R), (fractionDM3), ':', c='darkgreen', label = r'$\mathrm{M_{DM}/M_{\star}\:Chabrier}$', lw = 2)
