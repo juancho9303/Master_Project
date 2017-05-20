@@ -6,17 +6,15 @@
 \contentsline {chapter}{List of Tables}{vi}{dummy.6}
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.8}
-\contentsline {chapter}{\numberline {2}Theoretical Framework}{4}{chapter.9}
-\contentsline {section}{\numberline {2.1}Stellar populations}{5}{section.11}
-\contentsline {section}{\numberline {2.2}Gravitational Lensing}{7}{section.13}
-\contentsline {section}{\numberline {2.3}IMF in BCGs}{14}{section.38}
-\contentsline {chapter}{\numberline {3}Methodology}{17}{chapter.41}
-\contentsline {section}{\numberline {3.1}Data Sample}{17}{section.42}
-\contentsline {section}{\numberline {3.2}Stellar Populations}{18}{section.44}
-\contentsline {section}{\numberline {3.3}Sextractor}{19}{section.45}
-\contentsline {section}{\numberline {3.4}Galfit}{21}{section.48}
-\contentsline {section}{\numberline {3.5}Color images}{22}{section.51}
-\contentsline {section}{\numberline {3.6}Photometric Redshift}{25}{section.55}
-\contentsline {chapter}{\numberline {4}Study of images}{27}{chapter.56}
-\contentsline {chapter}{\numberline {5}Conclusions}{28}{chapter.57}
-\contentsline {chapter}{Bibliography}{29}{chapter*.58}
+\contentsline {chapter}{\numberline {2}Introduction to Gravitational Lensing}{4}{chapter.9}
+\contentsline {chapter}{\numberline {3}Scales to probe}{7}{chapter.19}
+\contentsline {section}{\numberline {3.1}IMF in BCGs}{13}{section.36}
+\contentsline {chapter}{\numberline {4}Data and analysis}{17}{chapter.39}
+\contentsline {section}{\numberline {4.1}Stellar populations}{17}{section.41}
+\contentsline {section}{\numberline {4.2}Stellar Populations}{20}{section.43}
+\contentsline {section}{\numberline {4.3}Sextractor}{20}{section.44}
+\contentsline {section}{\numberline {4.4}Galfit}{22}{section.47}
+\contentsline {section}{\numberline {4.5}Color images}{23}{section.50}
+\contentsline {section}{\numberline {4.6}Photometric Redshifts}{26}{section.54}
+\contentsline {chapter}{\numberline {5}Conclusions}{28}{chapter.55}
+\contentsline {chapter}{Bibliography}{29}{chapter*.56}
