@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -45,6 +45,18 @@ J.~C.~Mu\ noz Cuartas~et. al.
   concentration, spin and shape.
 \newblock \emph{MNRAS}, 000:\penalty0 1--11, 2010.
 
+\bibitem[et. al.(2016)]{Reference21}
+Laigle et. al.
+\newblock The cosmos2015 catalog: Exploring the 1<z<6 universe with half a
+  million galaxies.
+\newblock \emph{The Astrophysical Journal}, 224\penalty0 (2), 2016.
+
+\bibitem[Mamon(2001)]{Reference14}
+Ewa L. Lokas \& Gary~A. Mamon.
+\newblock Properties of spherical galaxies and clusters with an nfw density
+  profile.
+\newblock \emph{MNRAS}, 321:\penalty0 155--166, 2001.
+
 \bibitem[et. al.(2012{\natexlab{c}})]{Reference15}
 A.~Sonnenfeld et. al.
 \newblock Evidence of dark matter contraction and a salpeter initial mass
@@ -52,28 +64,16 @@ A.~Sonnenfeld et. al.
 \newblock \emph{The Astrophysical Journal}, 752:\penalty0 163--180,
   2012{\natexlab{c}}.
 
-\bibitem[der Burg~et. al.(2015)]{Reference2}
-R.~F. J.~Van der Burg~et. al.
-\newblock Evidence for the inside-out growth of the stellar mass distribution
-  in galaxy clusters since $z\approx 1$.
-\newblock \emph{preprint arXiv:1412.2137v2}, 2015.
-
-\bibitem[et. al.(2012{\natexlab{d}})]{Reference19}
-Cappellari et. al.
-\newblock Systematic variation of the stellar initial mass function in
-  early-type galaxies.
-\newblock \emph{Nature}, 484:\penalty0 485--488, 2012{\natexlab{d}}.
-
 \bibitem[et. al.(2011)]{Reference11}
 D.~J.~Sand et. al.
 \newblock Intracluster supernovae in the multi-epoch nearby cluster survey.
 \newblock \emph{The Astrophysical Journal}, 729:\penalty0 142--155, 2011.
 
-\bibitem[et. al.(2012{\natexlab{e}})]{Reference6}
+\bibitem[et. al.(2012{\natexlab{d}})]{Reference6}
 C.~Bildfell et. al.
 \newblock Evolution of the red sequence giant to dwarf ratio in galaxy clusters
   out to $z\approx 0.5$.
-\newblock \emph{MNRAS}, 425:\penalty0 204--221, 2012{\natexlab{e}}.
+\newblock \emph{MNRAS}, 425:\penalty0 204--221, 2012{\natexlab{d}}.
 
 \bibitem[Smith(2014)]{Reference5}
 Russell. Smith.
@@ -81,16 +81,22 @@ Russell. Smith.
   critical comparison between dynamical and spectroscopic results.
 \newblock \emph{MNRAS}, 443:\penalty0 L69--L73, 2014.
 
+\bibitem[der Burg~et. al.(2015)]{Reference2}
+R.~F. J.~Van der Burg~et. al.
+\newblock Evidence for the inside-out growth of the stellar mass distribution
+  in galaxy clusters since $z\approx 1$.
+\newblock \emph{preprint arXiv:1412.2137v2}, 2015.
+
 \bibitem[et. al.(2002)]{Reference20}
 Peng et. al.
 \newblock Detailed structural decomposition of galaxy images.
 \newblock \emph{The Astronomical Journal}, 124:\penalty0 266--293, 2002.
 
-\bibitem[et. al.(2016)]{Reference21}
-Laigle et. al.
-\newblock The cosmos2015 catalog: Exploring the 1<z<6 universe with half a
-  million galaxies.
-\newblock \emph{The Astrophysical Journal}, 224\penalty0 (2), 2016.
+\bibitem[et. al.(2015)]{Reference9}
+C.~Sifon et. al.
+\newblock Constraints on the alignment of galaxies in galaxy clusters from
+  \~14000 spectroscopic members.
+\newblock \emph{A\& A}, 575:\penalty0 A48, 2015.
 
 \bibitem[Brammer and Coppi(2008)]{Reference22}
 van~Dokkum Brammer and Coppi.

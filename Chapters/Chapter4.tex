@@ -53,7 +53,7 @@ A990    & 0.144 & ~800           & 617.1 & 15.7778
 
 The original images have dimensions of [11000:11000] pixels but since our relevant region is the center of the cluster where the BCG is located, we cut the images with dimension of [1000,1000] for the color analysis and [4000:4000] to characterize the colors and discriminate between cluster and non-cluster members.
 
-The INT images were multiple exposures so it was necessary to make a mosaic of them using SWARP.
+The INT images were obtained using multiple exposures so it was necessary to make a mosaic of them using SWARP.
 
 \section{Stellar populations}
  
@@ -68,6 +68,42 @@ The Salpeter IMF implies more low-mass stars and a higher mass-to-light ratio. I
 A Koupra IMF finds a value of around 4 for the mass to light ratio $\Upsilon$. (R. J. Smith \citeyear{Reference5}). Massive galaxies - Salpeter is a good IMF. Salpeter is heavier than Kroupa. Salpeter mass function is $n(\textrm{M})\propto \textrm{M}^{-2.3}$ 
 
 Large M/L ratios could arise either from an excess of faint dwarf stars in a ``bottom heavy" IMF, or from an excess of dark remnants in a ``top heavy" IMF" (Russell J. Smith and John R. Lucey \citeyear{Reference7}).
+
+\section{IMF in BCGs}
+
+Several recent studies have investigated whether the IMF systematically varies with galaxy mass, in particular among elliptical galaxies. These analyses are mostly based on two independent approaches. The first is an indirect method, where galaxy stellar masses are determined from stellar population synthesis models that actually do not resolve the IMF: the IMF is adjusted until the population-synthesis mass-to-light ratio matches independent constraints from dynamics and/or lensing. The second, direct method uses features in galaxy spectra that are particularly sensitive to the presence of, e.g., dwarf stars to determine the IMF directly from spectroscopic observations. Both approaches come to the same result: although there is significant galaxy to galaxy scatter, lower mass early-type galaxies (with dispersions $\sigma \approx 200$km/s) seem to be roughly consistent with a Milky-Way type IMF (e.g. a Kroupa or Chabrier IMF). In high-dispersion elliptical galaxies, however, stellar mass-to-light ratios are about a factor of 2 times higher than expected from a Kroupa IMF. Direct studies specifically indicate that the IMF in massive galaxies seems to be more dwarf dominated than in the Milky-Way (and can be described, e.g., by a Salpeter IMF).
+
+\textbf{Van der Vurg Thesis:} \textit{The adopted $\text{M}_{\star}/L$ is a major systematic uncertainty in any study and depends on the assumed IMF due to differences in the contribution of low mass stars to the total mass. We transform the results from other studies to the Chabrier IMF by subtracting 0.24 dex in mass for a Salpeter IMF, or adding 0.04 dex to the mass for a Kroupa IMF. The $\text{M}_{\star}/L$ depends on galaxy type, but due to the lack of multi-wavelength photometry, it is often assumed that all cluster galaxies are composed of the same stellar population. If one assumes an old stellar population (and therefore a high $\text{M}_{\star}/L$), the mass of the late-type galaxies (and thus the cluster as a whole) is over-estimated.} \citeyear{Reference2}
+
+%this image is commented because it's not too relevant for our purposes
+\begin{comment}
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{images/IMFs.png}
+\caption[R]{R}
+\end{figure}
+\end{comment}
+
+number of stars per unit mass
+
+Kroupa, Chabrier, Salpeter, 
+
+%this image is commented because it's not too relevant for our purposes
+\begin{comment}
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{images/IMFs_paper.png}
+\caption[The systematic variation of the IMF in early-type galaxies.]{The systematic variation of the IMF in early-type galaxies, Cappellari et. al. \citeyear{Reference19}.}
+\end{figure}
+\end{comment}
+
+Heavyweight
+
+It's difficult to see how much of the faint stars contribute to the mass of the system. We only see the new bright ones
+
+For stars, measurements of the luminosity function can be used to derive the Initial Mass Function (IMF). For galaxies, this is more difficult because Mass to light ratio (M/L) of the stellar population depends upon the star formation history of the galaxy. Bulges have heavier IMFs than disks
+
+Several recent studies have presented evidence for ``heavyweight" IMFs in giant ellipticals, with a mass-to-light-ratio twice that of a Milky Way like IMF. 
 
 
 \section{Sextractor}
@@ -150,7 +186,7 @@ The original image, the fitted models and the output are presented here:
 
 \section{Color images} 
 
-We use IRAF to make the color images using our g,r,u,i bands 
+We use IRAF to make the color images using our g,r,u,i bands. Let's use ABELL754 which is a low redshift galaxy cluster with a calculated mass of $\text{M}_{200}=9.8\times 10^{15} \text{M}_{\odot}$ (Sifon et. al. \citeyear{Reference9})
 
 Here we take an isothermal sphere to model the Einstein ring in a distance of background objects of z=1
 
@@ -182,7 +218,7 @@ Because we have 4 bands we were able to make different color images to see the c
 
 We use the \textit{COSMOS2015} (Laigle et. al \citeyear{Reference21}.) catalogue that contains photometric redshift of over half million galaxies in multiple bands to put another constraint in our study.
 
-We use the matched catalogue for CFHT by ----- and use the r-band. Our limiting magnitude is 23 in that band so we estimate the number of galaxies per redshift bin that we would expect to see in our sample with that limiting magnitude.
+We use the matched catalogue for CFHT by Remco Van der Burg and use the r-band. Our limiting magnitude is 23 in that band so we estimate the number of galaxies per redshift bin that we would expect to see in our sample with that limiting magnitude.
 
 This sets an interesting constraint on what to expect in the inner region of the BCG and give us more information about where to search for good candidates.
 

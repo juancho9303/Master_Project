@@ -1,40 +1,42 @@
-\chapter{Scales to probe}
+\chapter{Determination of the relevant scales}
 
-Galaxy clusters are known to be the most massive bound structures in the Universe and dominated by their dark matter component.
+We base our study on the center of galaxy clusters at low redshift so it is neccesary to study the scales that we will be relevant for our studies. In order to calculate the range of scales that we will probe in the observational procedures on chapter 4 we will do two separate experiments. The first one is the study of the ammount of objects that we would expect to be lensed near the cluster centers by using a very extense catalogue of galaxies. The second one consists on doing the mass modelling of the cluster for it's stellar and dark matter content to see on which scale stars are the main component of the enclosed mass that lenses background objects.
+
+For our first experiment, we make use of the COSMOS2015 catalogue (Laigle et. al. \citeyear{Reference21}) which contains half a million objects in a range of $1<z<6$. Ricardo Herbonnet matched the CFHT data to this catalogue so we use his matched data which contains a total of 133348 galaxies in the 2 degree COSMOS field. We count the ammount of galaxies for different magnitudes in redshift bins of $0.2z$ for the R filter. These numbers represents the expected number of galaxies in the background of the lens objects of our sample as seen in figure []. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{images/galaxies_per_arcmin.png}
+\caption[Galaxies per arcmin]{Galaxies per arcmin$^2$ in redshift bins of $0.2z$. }
+\end{figure}
+
+Around z=0.3 we find the peak of the number of galaxies so it is the redshift that is most likely to contain galaxies that could be seen in our data. at which can measure the Einstein ring for objects located at that distance and look carefully into our data to find them.
+
+This results suggest that there must be some lensed objects near the BCGs.
+
+CFHT can see objects as deep as m=23 but Hubble Space Telescope could see objects as deep as m=25 so it should be able to see many objects that have been lensed.
+
+ we first use the NFW dark matter halo profile (since galaxy clusters are known to be dominated by their dark matter content) and the de Vaucouleurs profile to compare the contribution of stars in comparisson to dark matter, this will allow us to see in which scales the DM mass becomes dominant thus making it more difficult to constrain the stellar content of the bright galaxy.
 
 The plot of the enclosed mass shows what radial scale we need to prove. One way could be through dynamics, another could be through gravitational lensing (talk about lensing). If we take different IMFs, how sensitive is the matter content to the choice of IMF?. Smaller the dark matter contribution, the smaller the overall error you make since light is easier to constraint and thus the IMF. Strong lensing measures exactly the enclosed mass so we need to know how much of its contribution we need to substract, the less we have to substract, the better for the determination of the IMF. If the effect of the IMF is very subtle in the mass vs radius plot, then we would need to know the dark matter distribution very well, but if the effect of the IMF is not very subtle, the less you need to know about the dark matter distribution. A recent study of a BCG mentions the relevance of this spatial scale, at very small radii stars dominate the lensing mass, so that lensing provides a direct probe of the stellar mass-to-light ratio, with only small corrections needed for dark matter (Russell Smith and John R. Lucey \citeyear{Reference7}) 
 
 That's why the IMF is relevant, because it allows to see how much it moves up and down. If you look at a galaxy, why is it not possible to get the mass to light ratio? This is because the dark matter is more diluted than stellar light so the mass follows light behavior is not valid and a well understood theory of the dark matter halos has to be taken into account, NFW (Navarro, Frenk \& White, \citeyear{Reference17}) provided a very consistent model for dark matter halos using N-body simulations so we can relate the lensing of the halos given this NFW density profile and putting special attention in the spacial scales on which the dark matter is relevant and where it starts to be the dominant contribution of the system and thus the lensing.
 
-The following plot shows the expected number of galaxies in the background of the lens objects in redshift bins. This results suggest that there msut be some lensed objects near the BCG.
-
-CFHT can see objects as deep as m=23 but Hubble Space Telescope could see objects as deep as m=25 so it should be able to see many objects that have been lensed.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=12cm]{images/galaxies_per_arcmin.png}
-\caption[Galaxies per arcmin]{Galaxies per acrmin in redshift bins}
-\end{figure}
-
-Around z=0.3 is the peak of the number of galaxies so we can measure the Einstin ring for objects located at that distance and look carefully into our data to find them.
-
-From the paper of Lokas and Mamon, for constant mass-to-light-ratio we have $\Sigma_{M}(R)= \Upsilon I(R)$ where $I(R)\approx 10^{7}$ was found by fitting the surface brightness with \texttt{GALFIT}.
+From Lokas\& Mamon \citeyear{Reference14}, for constant mass-to-light-ratio we have $\Sigma_{\text{M}}(R)= \Upsilon I(R)$ where $I(R)\approx 10^{7}$ was found by fitting the surface brightness with \texttt{GALFIT}.
 
 The mass to light ratio is $\Upsilon\approx 4$
 
-For A754 we take a $M_{200}=9.8\times 10^{15} M\odot$ (Sifon et. al. 2015)
+let's take the case of ABELL1068, it's magnitude in U is 21.94, in I is 18.46, in g is 20.09, in r is 19.5, also $\text{M}_{200}=4.3\times 10^{14}\text{M}_{\odot}$ (van der Burg et. al 2015)
 
-let's take the case of ABELL1068, it's magnitude in U is 21.94, in I is 18.46, in g is 20.09, in r is 19.5, also $M_{200}=4.3\times 10^{14}M_{\odot}$ (van der Burg et. al 2015)
-
-The bolometric luminosity of Abell1068 is $10^{44}$erg/s that in solar luminosities is $1.9\times 10^{12} L_{\odot}$, this gives an effective brightness of $0.962\times 10^{7}M_{\odot}/kpc^2$.
+The bolometric luminosity of Abell1068 is $10^{44}$erg/s that in solar luminosities is $1.9\times 10^{12} L_{\odot}$, this gives an effective brightness of $0.962\times 10^{7}\text{M}_{\odot}/\text{kpc}^2$.
 
 the distance to the galaxy is 591.42857 Mpc
 
 In the case of the ABELL1068 cluster, our estimation yields a concentration parameter of 4.46.
 
-then the concentration parameter for ABELL1068 is about 7.9 supposing a mass of the galaxy of $10^{12.5}M_{\odot}$
+then the concentration parameter for ABELL1068 is about $c=7.9$ supposing a mass of the galaxy of $10^{12.5}\text{M}_{\odot}$
 
-The critical density would be: $2\times 10^{-26}$ in SI units so in $M_{\odot}/pc^{3}$ it is $2.9\times 10^{-7}$
+The critical density would be: $2\times 10^{-26}$ in SI units so in $\text{M}_{\odot}/\text{pc}^{3}$ it is $2.9\times 10^{-7}$
 
 the Hubble parameter at z=0.138 is H(z)=85.6
 
@@ -62,7 +64,7 @@ And we can recover our luminosity by integrating the surface brightness profile 
 L=\int_{0}^{R}2\pi RI(R)dR
 \end{equation}
 
-The integration gives a value that is comparable to the one found using Faber-Jackson relation: $L=\Upsilon\times\sigma^{4}\approx 1.2\times 10^{12}M_{\odot}$
+The integration gives a value that is comparable to the one found using Faber-Jackson relation: $L=\Upsilon\times\sigma^{4}\approx 1.2\times 10^{12}\text{M}_{\odot}$
 
 The enclosed mass profile for stellar and dark matter content is shown in figure [].
 
@@ -72,9 +74,9 @@ The enclosed mass profile for stellar and dark matter content is shown in figure
 \caption[Enclosed mass and DM to stellar mass ratio]{Enclosed mass and DM to stellar mass ratio}
 \end{figure}
 
-The value found for the mass in light is $M_{\star}=2.582\times 10^{11}M_{\odot}$ and the mass given by the NFW profile is $M_{\text{NFW}}=6.557\times 10^{11}M_{\odot}$.
+The value found for the mass in light is $\text{M}_{\star}=2.582\times 10^{11}\text{M}_{\odot}$ and the mass given by the NFW profile is $\text{M}_{\text{NFW}}=6.557\times 10^{11}\text{M}_{\odot}$.
 
-It is then usefull to study cases in which the lens system is an elliptical galaxy following its own dark matter halo and not inside the potential well of a cluster in the case of the BCG. As calculated by Sonnenfeld et. al. 2012, the encounter of the enclosed mass profiles for DM and stars for the system fdfdfds is $~3kp$ which is a larger radius than the one calculated for a BCG inmerse in the halo of a low redshift cluster.  
+It is then usefull to study cases in which the lens system is an elliptical galaxy following its own dark matter halo and not inside the potential well of a cluster in the case of the BCG. As calculated by Sonnenfeld et. al. \citeyear{Reference15}, the encounter of the enclosed mass profiles for DM and stars for the system fdfdfds is $~3\text{kp}$ which is a larger radius than the one calculated for a BCG inmerse in the halo of a low redshift cluster.  
 
 \begin{figure}[H]
 \centering
@@ -114,34 +116,4 @@ The reduced shear for background objects at different redshifts is shown in figu
 \caption[Reduced shear radial]{Reduced shear radial profile for different redshifts.}
 \end{figure}
 
-so we get the Einstein ring where $\mu$ is infinite or when g is 1 (k=1/2)
-
-\section{IMF in BCGs}
-
-Several recent studies have investigated whether the IMF systematically varies with galaxy mass, in particular among elliptical galaxies. These analyses are mostly based on two independent approaches. The first is an indirect method, where galaxy stellar masses are determined from stellar population synthesis models that actually do not resolve the IMF: the IMF is adjusted until the population-synthesis mass-to-light ratio matches independent constraints from dynamics and/or lensing. The second, direct method uses features in galaxy spectra that are particularly sensitive to the presence of, e.g., dwarf stars to determine the IMF directly from spectroscopic observations. Both approaches come to the same result: although there is significant galaxy to galaxy scatter, lower mass early-type galaxies (with dispersions $\sigma \approx 200$km/s) seem to be roughly consistent with a Milky-Way type IMF (e.g. a Kroupa or Chabrier IMF). In high-dispersion elliptical galaxies, however, stellar mass-to-light ratios are about a factor of 2 times higher than expected from a Kroupa IMF. Direct studies specifically indicate that the IMF in massive galaxies seems to be more dwarf dominated than in the Milky-Way (and can be described, e.g., by a Salpeter IMF).
-
-\textbf{Van der Vurg Thesis:} \textit{The adopted $M_{\star}/L$ is a major systematic uncertainty in any study and depends on the assumed IMF due to differences in the contribution of low mass stars to the total mass. We transform the results from other studies to the Chabrier IMF by subtracting 0.24 dex in mass for a Salpeter IMF, or adding 0.04 dex to the mass for a Kroupa IMF. The $M_{\star}/L$ depends on galaxy type, but due to the lack of multi-wavelength photometry, it is often assumed that all cluster galaxies are composed of the same stellar population. If one assumes an old stellar population (and therefore a high $M_{\star}/L$), the mass of the late-type galaxies (and thus the cluster as a whole) is over-estimated.} \citeyear{Reference2}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=12cm]{images/IMFs.png}
-\caption[R]{R}
-\end{figure}
-
-number of stars per unit mass
-
-Kroupa, Chabrier, Salpeter, 
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=12cm]{images/IMFs_paper.png}
-\caption[The systematic variation of the IMF in early-type galaxies.]{The systematic variation of the IMF in early-type galaxies, Cappellari et. al. \citeyear{Reference19}.}
-\end{figure}
-
-Heavyweight
-
-It's difficult to see how much of the faint stars contribute to the mass of the system. We only see the new bright ones
-
-For stars, measurements of the luminosity function can be used to derive the Initial Mass Function (IMF). For galaxies, this is more difficult because Mass to light ratio (M/L) of the stellar population depends upon the star formation history of the galaxy. Bulges have heavier IMFs than disks
-
-Several recent studies have presented evidence for ``heavyweight" IMFs in giant ellipticals, with a mass-to-light-ratio twice that of a Milky Way like IMF. 
+so we get the Einstein ring where $\mu$ is infinite or when g is 1 ($\kappa=1/2$)
