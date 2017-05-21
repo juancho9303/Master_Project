@@ -2,9 +2,9 @@
 
 Galaxy clusters are known to be the most massive bound structures in the Universe and dominated by their dark matter component.
 
-The plot of the enclosed mass shows what radial scale we need to prove. One way could be through dynamics, another could be through gravitational lensing (talk about lensing). If we take different IMFs, how sensitive is the matter content to the choice of IMF?. Smaller the dark matter contribution, the smaller the overall error you make since light is easier to constraint and thus the IMF. Strong lensing measures exactly the enclosed mass so we need to know how much of its contribution we need to substract, the less we have to substract, the better for the determination of the IMF. If the effect of the IMF is very subtle in the mass vs radius plot, then we would need to know the dark matter distribution very well, but if the effect of the IMF is not very subtle, the less you need to know about the dark matter distribution. A recent study of a BCG mentions the relevance of this spatial scale, at very small radii stars dominate the lensing mass, so that lensing provides a direct probe of the stellar mass-to-light ratio, with only small corrections needed for dark matter (Russell Smith and John R. Lucey 2013) 
+The plot of the enclosed mass shows what radial scale we need to prove. One way could be through dynamics, another could be through gravitational lensing (talk about lensing). If we take different IMFs, how sensitive is the matter content to the choice of IMF?. Smaller the dark matter contribution, the smaller the overall error you make since light is easier to constraint and thus the IMF. Strong lensing measures exactly the enclosed mass so we need to know how much of its contribution we need to substract, the less we have to substract, the better for the determination of the IMF. If the effect of the IMF is very subtle in the mass vs radius plot, then we would need to know the dark matter distribution very well, but if the effect of the IMF is not very subtle, the less you need to know about the dark matter distribution. A recent study of a BCG mentions the relevance of this spatial scale, at very small radii stars dominate the lensing mass, so that lensing provides a direct probe of the stellar mass-to-light ratio, with only small corrections needed for dark matter (Russell Smith and John R. Lucey \citeyear{Reference7}) 
 
-That's why the IMF is relevant, because it allows to see how much it moves up and down. If you look at a galaxy, why is it not possible to get the mass to light ratio? This is because the dark matter is more diluted than stellar light so the mass follows light behavior is not valid and a well understood theory of the dark matter halos has to be taken into account, NFW (Navarro, Frenk \& White, 1996) provided a very consistent model for dark matter halos using N-body simulations so we can relate the lensing of the halos given this NFW density profile and putting special attention in the spacial scales on which the dark matter is relevant and where it starts to be the dominant contribution of the system and thus the lensing.
+That's why the IMF is relevant, because it allows to see how much it moves up and down. If you look at a galaxy, why is it not possible to get the mass to light ratio? This is because the dark matter is more diluted than stellar light so the mass follows light behavior is not valid and a well understood theory of the dark matter halos has to be taken into account, NFW (Navarro, Frenk \& White, \citeyear{Reference17}) provided a very consistent model for dark matter halos using N-body simulations so we can relate the lensing of the halos given this NFW density profile and putting special attention in the spacial scales on which the dark matter is relevant and where it starts to be the dominant contribution of the system and thus the lensing.
 
 The following plot shows the expected number of galaxies in the background of the lens objects in redshift bins. This results suggest that there msut be some lensed objects near the BCG.
 
@@ -36,7 +36,6 @@ then the concentration parameter for ABELL1068 is about 7.9 supposing a mass of 
 
 The critical density would be: $2\times 10^{-26}$ in SI units so in $M_{\odot}/pc^{3}$ it is $2.9\times 10^{-7}$
 
-
 the Hubble parameter at z=0.138 is H(z)=85.6
 
 The characteristic radius is given by $r_{1/2}=1.34R_{e}$
@@ -49,19 +48,13 @@ I(R)=I_{e}e^{-b\left[\left(R/R_{e}\right)^{1/4}-1\right]}
 
 where $b=7.67$ and $I_{e}$ is the effective brightness which is basically the brightness at the effective radius $R_{e}$
 
-Hence we have the surface mass density for both the stellar content and the NFW profile:
+Hence we have the surface mass density for both the stellar content and the NFW profile, as shown in figure [].
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/Surface_mass_density_log.png}
 \caption[Surface mass density profiles]{Surface mass density profiles in logarithmic and $R^{1/4}$ scale for the NFW profile and the stellar component.}
 \end{figure}
-
-But we are more interested in the enclosed mass which can be done by integrating the surface mass density:
-
-\begin{equation}
-M(R)=\int_{0}^{R}2\pi R\Sigma(R)dR
-\end{equation}
 
 And we can recover our luminosity by integrating the surface brightness profile accordingly:
 
@@ -71,7 +64,7 @@ L=\int_{0}^{R}2\pi RI(R)dR
 
 The integration gives a value that is comparable to the one found using Faber-Jackson relation: $L=\Upsilon\times\sigma^{4}\approx 1.2\times 10^{12}M_{\odot}$
 
-The plot for the enclosed mass is:
+The enclosed mass profile for stellar and dark matter content is shown in figure [].
 
 \begin{figure}[H]
 \centering
@@ -81,39 +74,17 @@ The plot for the enclosed mass is:
 
 The value found for the mass in light is $M_{\star}=2.582\times 10^{11}M_{\odot}$ and the mass given by the NFW profile is $M_{\text{NFW}}=6.557\times 10^{11}M_{\odot}$.
 
+It is then usefull to study cases in which the lens system is an elliptical galaxy following its own dark matter halo and not inside the potential well of a cluster in the case of the BCG. As calculated by Sonnenfeld et. al. 2012, the encounter of the enclosed mass profiles for DM and stars for the system fdfdfds is $~3kp$ which is a larger radius than the one calculated for a BCG inmerse in the halo of a low redshift cluster.  
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{images/sonnenfeld_galaxy.png}
+\caption[DM and Stellar mass profiles for a massive early type galaxy.]{Mass profile for dark matter and stellar content for the lens system SDSSJ0946+1006. Sonnenfeld et. al. \citeyear{Reference15}}
+\end{figure}
+
 Now, we are interested in having an accurate estimate of the Einstein radius to constraint the model, so we make different analysis on the radial dependence on the lensing properties such as shear, reduced shear and magnification.
 
-The radial dependence on the shear is:
-
-\begin{equation}
-\gamma_{\text{NFW}}(x) = \left\lbrace
-\begin{array}{lll}
-\frac{r_{s}\delta_{c}\rho_{c}}{\Sigma_c}g_{<}(x) & (x<1)\\\\
-\frac{r_{s}\delta_{c}\rho_{c}}{\Sigma_c}\left[\frac{10}{3}+4 \ln \left(\frac{1}{2}\right)\right] & (x=1)\\\\
-\frac{r_{s}\delta_{c}\rho_{c}}{\Sigma_c}g_{>}(x) & (x>1)
-\end{array}
-\right.
-\end{equation} 
-
-where: 
-
-\begin{equation}
-g_{<}(x)=\frac{8 \arctanh \sqrt{\frac{1-x}{1+x}}}{x^{2}\sqrt{1-x^{2}}}+\frac{4}{x^{2}} \ln \left(\frac{x}{2}\right)-\frac{2}{\left(x^{2}-1\right)}+\frac{4 \arctanh \sqrt{\frac{1-x}{1+x}}}{\left(x^{2}-1\right)\left(1-x^{2}\right)^{1/2}}
-\end{equation}
-
-\begin{equation}
-g_{<}(x)=\frac{8 \arctan \sqrt{\frac{x-1}{1+x}}}{x^{2}\sqrt{x^{2}-1}}+\frac{4}{x^{2}}\ln \left(\frac{x}{2}\right)-\frac{2}{\left(x^{2}-1\right)}+\frac{4 \arctan \sqrt{\frac{x-1}{1+x}}}{\left(x^{2}-1\right){}^{3/2}}
-\end{equation} 
-
-and with the critical surface mass density:
-
-\begin{equation}
-\Sigma_{c}\equiv\frac{c^{2}}{4\pi G}\frac{D_{s}}{D_{d}D_{ds}}
-\end{equation}
-
-these equations come from the paper Wright and Brainerd 1999
-
-the plot of the shear dependence on the radius is:
+the plot of the shear dependence on the radius is shown in fogure [].
 
 \begin{figure}[H]
 \centering
@@ -121,25 +92,7 @@ the plot of the shear dependence on the radius is:
 \caption[Shear dependence on radius]{Shear dependence on radius for different redshift of the background galaxies}
 \end{figure}
 
-The magnification tensor is:
-
-\begin{equation}
-\frac{\partial\beta}{\partial\theta}=\delta_{ij}-\frac{\partial^{2}\psi}{\partial\theta_{i}\partial\theta_{j}}=\left(\begin{array}{cc}
-1-\kappa-\gamma_{1} & -\gamma_{2}\\
--\gamma_{2} & 1-\kappa+\gamma_{1}
-\end{array}\right)
-\end{equation}
-
-The total magnification $\mu$ is given by the determinant of the magnification tensor:
-
-\begin{equation}
-\mu = \frac{1}{(1-\kappa)^{2}-\gamma^{2}_{1}-\gamma^{2}_{2}}
-\end{equation}
-
-
-Where $\kappa$ is the convergence that determines the magnification and $\gamma_{1}$ and $\gamma_{2}$ are the shear components that determine the distortion of the background objects.
-
-The magnification is then:
+Figure [] shows the magnification.
 
 \begin{figure}[H]
 \centering
@@ -153,7 +106,7 @@ The reduced shear is given by:
 g=\frac{\gamma}{1-\kappa}
 \end{equation}
 
-The reduced shear for background objects at different redshifts is: 
+The reduced shear for background objects at different redshifts is shown in figure []. 
 
 \begin{figure}[H]
 \centering
@@ -165,13 +118,9 @@ so we get the Einstein ring where $\mu$ is infinite or when g is 1 (k=1/2)
 
 \section{IMF in BCGs}
 
-Several recent studies have investigated whether the IMF systematically varies with galaxy mass, in particular among elliptical galaxies. These analyses are mostly based on two independent approaches. The first is an indirect method, where galaxy stellar masses are determined from stellar population synthesis models that actually do not resolve the
-IMF: the IMF is adjusted until the population-synthesis mass-to-light ratio matches independent constraints from dynamics and/or lensing. The second, direct method uses
-features in galaxy spectra that are particularly sensitive to the presence of, e.g., dwarf stars to determine the IMF directly from spectroscopic observations. Both approaches come to the same result: although there is significant galaxy to galaxy scatter, lower mass early-type galaxies (with dispersions $\sigma \approx 200$km/s) seem to be roughly consistent with a Milky-Way type IMF (e.g. a Kroupa or Chabrier IMF). In high-dispersion elliptical galaxies, however, stellar mass-to-light ratios are about a factor of 2 times higher than expected from a Kroupa IMF. Direct studies specifically indicate that the IMF in massive galaxies seems to be more dwarf dominated than in the Milky-Way (and can be described, e.g., by a Salpeter IMF).
+Several recent studies have investigated whether the IMF systematically varies with galaxy mass, in particular among elliptical galaxies. These analyses are mostly based on two independent approaches. The first is an indirect method, where galaxy stellar masses are determined from stellar population synthesis models that actually do not resolve the IMF: the IMF is adjusted until the population-synthesis mass-to-light ratio matches independent constraints from dynamics and/or lensing. The second, direct method uses features in galaxy spectra that are particularly sensitive to the presence of, e.g., dwarf stars to determine the IMF directly from spectroscopic observations. Both approaches come to the same result: although there is significant galaxy to galaxy scatter, lower mass early-type galaxies (with dispersions $\sigma \approx 200$km/s) seem to be roughly consistent with a Milky-Way type IMF (e.g. a Kroupa or Chabrier IMF). In high-dispersion elliptical galaxies, however, stellar mass-to-light ratios are about a factor of 2 times higher than expected from a Kroupa IMF. Direct studies specifically indicate that the IMF in massive galaxies seems to be more dwarf dominated than in the Milky-Way (and can be described, e.g., by a Salpeter IMF).
 
-\textbf{Van der Vurg Thesis:} \textit{The adopted $M_{\star}/L$ is a major systematic uncertainty in any study and depends on the assumed IMF due to differences in the contribution of low mass stars to the total mass. We transform the results from other studies to the Chabrier IMF by subtracting 0.24 dex in mass for a Salpeter IMF, or adding 0.04 dex to the mass for a Kroupa IMF. The $M_{\star}/L$ depends on galaxy type, but due to the lack of multi-wavelength photometry, it is often assumed that all cluster galaxies are composed of the same stellar population. If one assumes an old stellar population (and therefore a high $M_{\star}/L$), the mass of the late-type galaxies (and thus the cluster as a whole) is over-estimated.}
-
-\textbf{The central dark matter content of early-type galaxies: scaling relations and connections with star formation histories N.R. Napolitano et. al 2010},The subject of IMF variations is highly controversial and unresolved: for a review see Bastian et al. (2010). There are theoretical reasons to expect lower-mass IMFs for stellar populations that formed in the early universe (Larson 2005; Klessen et al. 2007), and observational suggestions for IMFs to be lower-mass at higher z (e.g. van Dokkum 2008; Dav´e 2008; Holden et al. 2010). These ideas would fit in well with the IMF-age trend we suggest above. All these results might further be consistent with suggestions that the IMF becomes more top-heavy at higher SFRs (Weidner \& Kroupa 2006; Calura \& Menci 2009; Haas \& Anders 2010)
+\textbf{Van der Vurg Thesis:} \textit{The adopted $M_{\star}/L$ is a major systematic uncertainty in any study and depends on the assumed IMF due to differences in the contribution of low mass stars to the total mass. We transform the results from other studies to the Chabrier IMF by subtracting 0.24 dex in mass for a Salpeter IMF, or adding 0.04 dex to the mass for a Kroupa IMF. The $M_{\star}/L$ depends on galaxy type, but due to the lack of multi-wavelength photometry, it is often assumed that all cluster galaxies are composed of the same stellar population. If one assumes an old stellar population (and therefore a high $M_{\star}/L$), the mass of the late-type galaxies (and thus the cluster as a whole) is over-estimated.} \citeyear{Reference2}
 
 \begin{figure}[H]
 \centering
@@ -186,18 +135,13 @@ Kroupa, Chabrier, Salpeter,
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/IMFs_paper.png}
-\caption[The systematic variation of the IMF in early-type galaxies.]{The systematic variation of the IMF in early-type galaxies.}
+\caption[The systematic variation of the IMF in early-type galaxies.]{The systematic variation of the IMF in early-type galaxies, Cappellari et. al. \citeyear{Reference19}.}
 \end{figure}
-
-the last figure is from the paper "A systematic variation of the stellar initial mass function in early-type galaxies" from Cappellari et. al. 2012
 
 Heavyweight
 
 It's difficult to see how much of the faint stars contribute to the mass of the system. We only see the new bright ones
 
-BCG -> giant ellipticals
+For stars, measurements of the luminosity function can be used to derive the Initial Mass Function (IMF). For galaxies, this is more difficult because Mass to light ratio (M/L) of the stellar population depends upon the star formation history of the galaxy. Bulges have heavier IMFs than disks
 
-For stars, measurements of the luminosity function can be used to derive the Initial Mass Function (IMF). For galaxies, this is more difficult because Mass to light ratio (M/L) of the stellar population depends upon the star formation history of
-the galaxy. Bulges have heavier IMFs than disks
-
-Several recent studies have presented evidence for "heavyweight" IMFs in giant ellipticals, with a mass-to-light-ratio twice that of a Milky Way like IMF.
+Several recent studies have presented evidence for ``heavyweight" IMFs in giant ellipticals, with a mass-to-light-ratio twice that of a Milky Way like IMF. 

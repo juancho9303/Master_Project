@@ -3,18 +3,16 @@
 \contentsline {chapter}{Acknowledgements}{iii}{dummy.2}
 \vspace {1em}
 \contentsline {chapter}{List of Figures}{v}{dummy.4}
-\contentsline {chapter}{List of Tables}{vi}{dummy.6}
 \vspace {2em}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.8}
-\contentsline {chapter}{\numberline {2}Introduction to Gravitational Lensing}{4}{chapter.9}
-\contentsline {chapter}{\numberline {3}Scales to probe}{7}{chapter.19}
-\contentsline {section}{\numberline {3.1}IMF in BCGs}{13}{section.36}
-\contentsline {chapter}{\numberline {4}Data and analysis}{17}{chapter.39}
-\contentsline {section}{\numberline {4.1}Stellar populations}{17}{section.41}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.6}
+\contentsline {chapter}{\numberline {2}Introduction to Gravitational Lensing}{4}{chapter.7}
+\contentsline {chapter}{\numberline {3}Scales to probe}{10}{chapter.26}
+\contentsline {section}{\numberline {3.1}IMF in BCGs}{16}{section.37}
+\contentsline {chapter}{\numberline {4}Data and analysis}{19}{chapter.40}
+\contentsline {section}{\numberline {4.1}Stellar populations}{19}{section.42}
 \contentsline {section}{\numberline {4.2}Stellar Populations}{20}{section.43}
-\contentsline {section}{\numberline {4.3}Sextractor}{20}{section.44}
-\contentsline {section}{\numberline {4.4}Galfit}{22}{section.47}
-\contentsline {section}{\numberline {4.5}Color images}{23}{section.50}
-\contentsline {section}{\numberline {4.6}Photometric Redshifts}{26}{section.54}
-\contentsline {chapter}{\numberline {5}Conclusions}{28}{chapter.55}
-\contentsline {chapter}{Bibliography}{29}{chapter*.56}
+\contentsline {section}{\numberline {4.3}Sextractor}{21}{section.44}
+\contentsline {section}{\numberline {4.4}Galfit}{23}{section.47}
+\contentsline {section}{\numberline {4.5}Color images}{24}{section.50}
+\contentsline {section}{\numberline {4.6}Photometric Redshifts}{27}{section.54}
+\contentsline {chapter}{\numberline {5}Conclusions}{29}{chapter.55}

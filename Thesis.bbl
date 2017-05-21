@@ -1,0 +1,100 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Smith(2013)]{Reference7}
+John. Smith, Russell \&~Lucey.
+\newblock A giant elliptical galaxy with a lightweight initial mass function.
+\newblock \emph{MNRAS}, 000:\penalty0 1--14, 2013.
+
+\bibitem[et. al.(2012{\natexlab{a}})]{Reference16}
+Brewer et. al.
+\newblock The swells survey. vi. hierarchical inference of the initial mass
+  functions of bulges and discs.
+\newblock \emph{MNRAS}, 000:\penalty0 1--13, 2012{\natexlab{a}}.
+
+\bibitem[White(1996)]{Reference17}
+Navarro. Frenk~\& White.
+\newblock The structure of cold dark matter halos.
+\newblock \emph{The Astrophysical Journal}, 462:\penalty0 563--575, 1996.
+
+\bibitem[Treu(2010)]{Reference1}
+Tommaso Treu.
+\newblock Strong lensing by galaxies.
+\newblock \emph{Annual Review of Astronomy ans Astrophysics}, 48:\penalty0
+  87--125, 2010.
+
+\bibitem[et. al.(2012{\natexlab{b}})]{Reference18}
+Matthew R.~George et. al.
+\newblock Galaxies in x-ray groups. ii. a weak lensing study of halo centering.
+\newblock \emph{The Astrophysical Journal}, 757:\penalty0 2--18,
+  2012{\natexlab{b}}.
+
+\bibitem[et. al.(2017)]{Reference13}
+D.~Harvey et. al.
+\newblock A detection of wobbling brightest cluster galaxies within massive
+  galaxy clusters.
+\newblock \emph{MNRAS}, 000:\penalty0 1--9, 2017.
+
+\bibitem[noz Cuartas~et. al.(2010)]{Reference12}
+J.~C.~Mu\ noz Cuartas~et. al.
+\newblock The redshift evolution of $\lambda cdm$ halo parameters:
+  concentration, spin and shape.
+\newblock \emph{MNRAS}, 000:\penalty0 1--11, 2010.
+
+\bibitem[et. al.(2012{\natexlab{c}})]{Reference15}
+A.~Sonnenfeld et. al.
+\newblock Evidence of dark matter contraction and a salpeter initial mass
+  function in a massive early-type galaxy.
+\newblock \emph{The Astrophysical Journal}, 752:\penalty0 163--180,
+  2012{\natexlab{c}}.
+
+\bibitem[der Burg~et. al.(2015)]{Reference2}
+R.~F. J.~Van der Burg~et. al.
+\newblock Evidence for the inside-out growth of the stellar mass distribution
+  in galaxy clusters since $z\approx 1$.
+\newblock \emph{preprint arXiv:1412.2137v2}, 2015.
+
+\bibitem[et. al.(2012{\natexlab{d}})]{Reference19}
+Cappellari et. al.
+\newblock Systematic variation of the stellar initial mass function in
+  early-type galaxies.
+\newblock \emph{Nature}, 484:\penalty0 485--488, 2012{\natexlab{d}}.
+
+\bibitem[et. al.(2011)]{Reference11}
+D.~J.~Sand et. al.
+\newblock Intracluster supernovae in the multi-epoch nearby cluster survey.
+\newblock \emph{The Astrophysical Journal}, 729:\penalty0 142--155, 2011.
+
+\bibitem[et. al.(2012{\natexlab{e}})]{Reference6}
+C.~Bildfell et. al.
+\newblock Evolution of the red sequence giant to dwarf ratio in galaxy clusters
+  out to $z\approx 0.5$.
+\newblock \emph{MNRAS}, 425:\penalty0 204--221, 2012{\natexlab{e}}.
+
+\bibitem[Smith(2014)]{Reference5}
+Russell. Smith.
+\newblock Variations in the initial mass function in early-type galaxies: a
+  critical comparison between dynamical and spectroscopic results.
+\newblock \emph{MNRAS}, 443:\penalty0 L69--L73, 2014.
+
+\bibitem[et. al.(2002)]{Reference20}
+Peng et. al.
+\newblock Detailed structural decomposition of galaxy images.
+\newblock \emph{The Astronomical Journal}, 124:\penalty0 266--293, 2002.
+
+\bibitem[et. al.(2016)]{Reference21}
+Laigle et. al.
+\newblock The cosmos2015 catalog: Exploring the 1<z<6 universe with half a
+  million galaxies.
+\newblock \emph{The Astrophysical Journal}, 224\penalty0 (2), 2016.
+
+\bibitem[Brammer and Coppi(2008)]{Reference22}
+van~Dokkum Brammer and Coppi.
+\newblock Eazy: A fast, public photometric redshift code.
+\newblock \emph{ApJ}, 686\penalty0 (1503), 2008.
+
+\end{thebibliography}
