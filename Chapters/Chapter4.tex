@@ -4,9 +4,9 @@ The full description of the survey is in: D. J. Sand et. al. \citeyear{Reference
 
 MegaCam wide field imager on the CFHT (Canada-France-Hawii Telescope). The cluster sample consisted of 101 clusters within the range of redshifts from 0.05 < z< 0.55
 
-58 clusters from the MENEACs (Multi-Epoch Nearby Cluster Survey)
+58 clusters from the MENEACS (Multi-Epoch Nearby Cluster Survey)
 
-The meneacs clusters represent all clusters in the BAX X-ray cluster database that are observable for the CFHT (Canada France Hawaii Telescope)
+The MENEACS clusters represent all clusters in the BAX X-ray cluster database that are observable for the CFHT (Canada France Hawaii Telescope)
 
 About 60 clusters, but we used only 30 for the final studies and paid special attention to 10, marked with *
 
@@ -174,7 +174,7 @@ The original image, the fitted models and the output are presented here:
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/galfit.png}
-\caption[Galfit results]{Galfit procedures. Left: Original image in zscale with the clear BCG expanding across a significant region of the central area. Middle: The models fitted by \texttt{GALFIT} for all the selected cluster galaxies. Right: Residual image after the substraction of the model galaxies.}
+\caption[Galfit results]{Galfit procedures. Left: Original image in ``zscale" with the clear BCG expanding across a significant region of the central area. Middle: The models fitted by \texttt{GALFIT} for all the selected cluster galaxies. Right: Residual image after the subtraction of the model galaxies.}
 \end{figure}
 
 \section{Color images} 
@@ -196,7 +196,7 @@ After choosing the galaxies that belong to the cluster by comparing their relati
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/cA754_galfit.jpg}
-\caption[Color image of A754 after fitting the bright objects]{Color image of A754 cluster (filters i,g,u) after the substraction of the bright cluster galaxies.}
+\caption[Color image of A754 after fitting the bright objects]{Color image of A754 cluster (filters i,g,u) after the subtraction of the bright cluster galaxies.}
 \end{figure}
 
 Because we have 4 bands we were able to make different color images to see the contrast and make combinations that would allow us to see better the very red and very blue objects, in the following figure we have the g-r, i-r-g and i-g-u color images for three clusters. 
@@ -217,7 +217,7 @@ This sets an interesting constraint on what to expect in the inner region of the
 
 The limiting magnitude is found using \texttt{SEXTRACTOR} that gives a good confidence on the detection of objects.
 
-The COSMOS catalogue contains one square arcmin so we use this result to see what order  we should spect from background objects.
+The COSMOS catalogue contains one square arcmin so we use this result to see what order  we should expect from background objects.
 
 To measure the photometric redshift of the galaxies (after filtering out the stars) in the inner region of the cluster after the subtraction of the BCG, we use the photometric redshift code EAZY (Brammer et. al 2008) which uses an extensive collection of spectral energy distributions for galaxies in the range $0<z<4$. Fortunately, the code includes library from CFHT in the I and U bands but doesn't have the filters in the G and R bands so I used the SUBARU survey filter information to be able to compute the photometric redshifts using four bands.
 
