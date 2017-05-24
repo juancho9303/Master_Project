@@ -2,7 +2,7 @@
 
 The full description of the survey is in: D. J. Sand et. al. \citeyear{Reference11}
 
-MegaCam wide field imager on the CFHT (Canada-France-Hawii Telescope). The cluster sample consisted of 101 clusters within the range of redshifts from 0.05 < z< 0.55
+MegaCam wide field imager on the CFHT (Canada-France-Hawii Telescope). The cluster sample consisted of 101 clusters within the range of redshifts from $0.05<z<0.55$
 
 58 clusters from the MENEACS (Multi-Epoch Nearby Cluster Survey)
 
@@ -53,7 +53,7 @@ A990    & 0.144 & ~800           & 617.1 & 15.7778
 
 The original images have dimensions of [11000:11000] pixels but since our relevant region is the center of the cluster where the BCG is located, we cut the images with dimension of [1000,1000] for the color analysis and [4000:4000] to characterize the colors and discriminate between cluster and non-cluster members.
 
-The INT images were obtained using multiple exposures so it was necessary to make a mosaic of them using SWARP.
+The INT images were obtained using multiple exposures so it was necessary to make a mosaic of them using \texttt{SWARP}.
 
 \section{Stellar populations}
  
@@ -71,7 +71,7 @@ Large M/L ratios could arise either from an excess of faint dwarf stars in a ``b
 
 Segmentation image that will be used as a mask image (bad pixels) for \texttt{GALFIT}
 
-We need to discriminate between field stars and the galaxies of the cluster so in order to do this, we used some of the parameters found by \texttt{SEXTRACTOR} that allow us to constraint the fitted data. These are class-star, flux\_radius, and FWHM (full wicth half maximum). Class-star uses the neural network star/galaxy of \texttt{SEXTRACTOR} that will give values close to 1 for stars and 0 for galaxies. flux\_radius, and FWHM are closely related to each other and give the radius which contains half of the light of the object so it will be small for stars and bigger for extended objects.
+We need to discriminate between field stars and the galaxies of the cluster so in order to do this, we used some of the parameters found by \texttt{SEXTRACTOR} that allow us to constraint the fitted data. These are \texttt{class-star}, \texttt{flux\_radius}, and \texttt{FWHM} (full wicth half maximum). Class-star uses the neural network star/galaxy of \texttt{SEXTRACTOR} that will give values close to 1 for stars and 0 for galaxies. \texttt{flux\_radius}, and \texttt{FWHM} are closely related to each other and give the radius which contains half of the light of the object so it will be small for stars and bigger for extended objects.
 
 In order to extract the same objects and make the segmentation masks for the desired objects in the different filters, we used \texttt{SEXTRACTOR} on dual mode
 
@@ -109,23 +109,23 @@ the best results were given when we masked the innermost region of the BCG so th
 
 we have to take into account the magnification bias
 
-The parameters C0, B1, B2, F1, F2, etc. listed below are hidden from the user unless he/she explicitly requests them.  These can  be tagged on to the end of any previous components except, of course, the PSF and the sky -- although \texttt{GALFIT} won't bar you from doing so, and will just ignore them.  Note that a Fourier or Bending mode amplitude of exactly 0 will cause \texttt{GALFIT} to crash because the derivative image \texttt{GALFIT} computes internally will be entirely 0.  If a Fourier or Bending amplitude is set to 0 initially \texttt{GALFIT} will reset it to a value of 0.01.  To prevent \texttt{GALFIT} from doing so, one can set it to any 
+The parameters \texttt{C0, B1, B2, F1, F2}, etc. listed below are hidden from the user unless he/she explicitly requests them.  These can  be tagged on to the end of any previous components except, of course, the PSF and the sky -- although \texttt{GALFIT} won't bar you from doing so, and will just ignore them.  Note that a Fourier or Bending mode amplitude of exactly 0 will cause \texttt{GALFIT} to crash because the derivative image \texttt{GALFIT} computes internally will be entirely 0.  If a Fourier or Bending amplitude is set to 0 initially \texttt{GALFIT} will reset it to a value of 0.01.  To prevent \texttt{GALFIT} from doing so, one can set it to any 
 other value.
 
 Bending modes
-B1)  0.07      1        Bending mode 1 (shear)
-B2)  0.01      1        Bending mode 2 (banana shape)
-B3)  0.03      1        Bending mode 3 (S-shape)
+\texttt{B1)}  0.07      1        Bending mode 1 (shear)
+\texttt{B2)}  0.01      1        Bending mode 2 (banana shape)
+\texttt{B3)}  0.03      1        Bending mode 3 (S-shape)
 
 Azimuthal fourier modes
-F1)  0.07  30.1  1  1   Az. Fourier mode 1, amplitude and phase angle
-F2)  0.01  10.5  1  1   Az. Fourier mode 2, amplitude and phase angle
-F6)  0.03  10.5  1  1  Az. Fourier mode 6, amplitude and phase angle
-F10)  0.08  20.5  1  1   Az. Fourier mode 10, amplitude and phase angle
-F20)  0.01  23.5  1  1   Az. Fourier mode 20, amplitude and phase angle
+\texttt{F1)}  0.07  30.1  1  1   Az. Fourier mode 1, amplitude and phase angle
+\texttt{F2)}  0.01  10.5  1  1   Az. Fourier mode 2, amplitude and phase angle
+\texttt{F6)}  0.03  10.5  1  1  Az. Fourier mode 6, amplitude and phase angle
+\texttt{F10)}  0.08  20.5  1  1   Az. Fourier mode 10, amplitude and phase angle
+\texttt{F20)}  0.01  23.5  1  1   Az. Fourier mode 20, amplitude and phase angle
 
 Traditional Diskyness/Boxyness parameter c
-C0) 0.1         0       traditional diskyness(-)/boxyness(+)
+\texttt{C0)} 0.1         0       traditional diskyness(-)/boxyness(+)
 
 The masks:
 
@@ -147,7 +147,7 @@ The original image, the fitted models and the output are presented here:
 
 \section{Color images} 
 
-We use IRAF to make the color images using our g,r,u,i bands. Let's use ABELL754 which is a low redshift galaxy cluster with a calculated mass of $\text{M}_{200}=9.8\times 10^{15} \text{M}_{\odot}$ (Sifon et. al. \citeyear{Reference9})
+We use \texttt{IRAF} to make the color images using our g,r,u,i bands. Let's use ABELL754 which is a low redshift galaxy cluster with a calculated mass of $\text{M}_{200}=9.8\times 10^{15} \text{M}_{\odot}$ (Sifon et. al. \citeyear{Reference9})
 
 Here we take an isothermal sphere to model the Einstein ring in a distance of background objects of z=1
 
@@ -177,7 +177,7 @@ Because we have 4 bands we were able to make different color images to see the c
 
 \section{Photometric Redshifts}
 
-We use the \textit{COSMOS2015} (Laigle et. al \citeyear{Reference21}.) catalogue that contains photometric redshift of over half million galaxies in multiple bands to put another constraint in our study.
+We use the COSMOS2015 (Laigle et. al \citeyear{Reference21}.) catalogue that contains photometric redshift of over half million galaxies in multiple bands to put another constraint in our study.
 
 We use the matched catalogue for CFHT by Remco Van der Burg and use the r-band. Our limiting magnitude is 23 in that band so we estimate the number of galaxies per redshift bin that we would expect to see in our sample with that limiting magnitude.
 
@@ -187,6 +187,6 @@ The limiting magnitude is found using \texttt{SEXTRACTOR} that gives a good conf
 
 The COSMOS catalogue contains one square arcmin so we use this result to see what order  we should expect from background objects.
 
-To measure the photometric redshift of the galaxies (after filtering out the stars) in the inner region of the cluster after the subtraction of the BCG, we use the photometric redshift code EAZY (Brammer et. al 2008) which uses an extensive collection of spectral energy distributions for galaxies in the range $0<z<4$. Fortunately, the code includes library from CFHT in the I and U bands but doesn't have the filters in the G and R bands so I used the SUBARU survey filter information to be able to compute the photometric redshifts using four bands.
+To measure the photometric redshift of the galaxies (after filtering out the stars) in the inner region of the cluster after the subtraction of the BCG, we use the photometric redshift code \texttt{EAZY} (Brammer et. al 2008) which uses an extensive collection of spectral energy distributions for galaxies in the range $0<z<4$. Fortunately, the code includes library from CFHT in the I and U bands but doesn't have the filters in the G and R bands so I used the SUBARU survey filter information to be able to compute the photometric redshifts using four bands.
 
-citation of EAZY ``Brammer, van Dokkum and Coppi, \citeyear{Reference22}" 
+citation of \texttt{EAZY} ``Brammer, van Dokkum and Coppi, \citeyear{Reference22}" 
