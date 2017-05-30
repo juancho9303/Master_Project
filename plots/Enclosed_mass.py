@@ -57,7 +57,7 @@ plt.loglog((R), (f_array2), '--', c='darkred', label = r'$\mathrm{Kroupa}$', lw 
 plt.loglog((R), (f_array3), '-.', c='darkgreen', label = r'$\mathrm{Chabrier}$', lw = 2)
 plt.xlabel(r'$\mathrm{r(kpc)}$',fontsize=18)
 plt.ylabel(r'$\mathrm{M(r)}/\mathrm{M}_{\odot }$',fontsize=18)
-plt.title(r'$\mathrm{Enclosed\:Mass\:for\:different\:IMFs}$',fontsize=20)
+#plt.title(r'$\mathrm{Enclosed\:Mass\:for\:different\:IMFs}$',fontsize=20)
 plt.legend(frameon=False,bbox_to_anchor=(0.95, 0.3), loc=1, borderaxespad=0.)
 plt.savefig("Enclosed_Mass_IMFs.png")
 plt.show()

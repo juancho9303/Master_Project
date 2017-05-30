@@ -2,6 +2,8 @@
 
 One of the most amazing results of Einstein's theory of general relativity, regarding the distortion of space time by massive objects is gravitational lensing. The basic principle behind gravitational lensing is that light is distorted when it travels close to the potential well (the distortion of space time) of massive objects (analogous to the effect of optical lenses). Under certain conditions the background objects can be seen in multiple images and ``arcs" surrounding the lensing object, this is known as strong gravitational lensing. 
 
+As displayed in figure [], the difference between the real (unlensed) angular position $\vec{\beta}$  and the observed position $\vec{\theta}$ is this deflection angle, reduced by a ratio of distances, described as the lens equation
+
 \begin{equation}
 \vec{\beta}=\vec{\theta}-\vec{\alpha}\left(\vec{\theta}\right)=\vec{\theta}-\frac{D_{ds}}{D_{s}}\vec{\hat{\alpha}}\left(\vec{D_{d}\theta}\right)
 \end{equation}
@@ -12,11 +14,23 @@ where $D_{ds}$ is the distance from the lense to the sourse $D_s$ is the distanc
 \Sigma_{cr}=\frac{c^{2}D_{s}}{4\pi GD_{ds}D_{d}}
 \end{equation}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{images/lensing.png}
+\caption[Angles in gravitational lensing]{Wikipedia}
+\end{figure}
+
 There are three classes of gravitational lensing:
 
 1. Strong lensing: where there are easily visible distortions such as the formation of Einstein rings, arcs, and multiple images.
 
 2. Weak lensing: where the distortions of background sources are much smaller and can only be detected by analysing large numbers of sources in a statistical way to find coherent distortions of only a few percent
+
+A very useful parameter is the lensing jacobian defined as:
+
+\begin{equation}
+A_{ij}=\frac{\partial\beta_{i}}{\partial\theta_{j}}=\delta_{ij}-\frac{\partial\alpha_{i}}{\partial\theta_{j}}=\delta_{ij}-\frac{\partial^{2}\psi}{\partial\theta_{i}\partial\theta_{j}}
+\end{equation}
 
 Figure [] is a representation of a lensing system in which a background galaxy is lensed by a cluster of galaxies and produces multiple images as observed from Earth. 
 
