@@ -6,11 +6,16 @@
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.6}
 \contentsline {chapter}{\numberline {2}Introduction to Gravitational Lensing}{5}{chapter.8}
-\contentsline {chapter}{\numberline {3}Determination of the relevant scales}{16}{chapter.47}
-\contentsline {chapter}{\numberline {4}Data and analysis}{24}{chapter.58}
-\contentsline {section}{\numberline {4.1}Stellar populations}{24}{section.60}
-\contentsline {section}{\numberline {4.2}Sextractor}{26}{section.61}
-\contentsline {section}{\numberline {4.3}Galfit}{27}{section.64}
-\contentsline {section}{\numberline {4.4}Color images}{29}{section.67}
-\contentsline {section}{\numberline {4.5}Photometric Redshifts}{32}{section.71}
-\contentsline {chapter}{\numberline {5}Conclusions}{34}{chapter.72}
+\contentsline {section}{\numberline {2.1}Gravitational Lensing formalism}{6}{section.10}
+\contentsline {chapter}{\numberline {3}Determination of the relevant scales}{13}{chapter.32}
+\contentsline {section}{\numberline {3.1}COSMOS field}{14}{section.34}
+\contentsline {section}{\numberline {3.2}DM to stellar ratio}{15}{section.36}
+\contentsline {section}{\numberline {3.3}Einstein Radius constraints}{19}{section.42}
+\contentsline {chapter}{\numberline {4}Data and analysis}{22}{chapter.47}
+\contentsline {section}{\numberline {4.1}Stellar populations}{22}{section.49}
+\contentsline {section}{\numberline {4.2}Sextractor}{24}{section.50}
+\contentsline {section}{\numberline {4.3}Galfit}{25}{section.53}
+\contentsline {section}{\numberline {4.4}Color images}{27}{section.56}
+\contentsline {section}{\numberline {4.5}Photometric Redshifts}{30}{section.60}
+\contentsline {chapter}{\numberline {5}Conclusions}{32}{chapter.61}
+\contentsline {section}{\numberline {.1}NFW}{33}{section.65}

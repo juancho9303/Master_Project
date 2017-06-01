@@ -1,6 +1,18 @@
 \chapter{Determination of the relevant scales}
 
+Figure [2.3] is a composite image of a galaxy cluster taken by the HST in which many lensed objects can be seen as distorted shapes and multiple images. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm]{images/GC.jpg}
+\caption[Galaxy Cluster MACS 1206]{Galaxy Cluster MACS 1206, credits to NASA Hubble Space Telescope}
+\end{figure}
+
+The galaxy cluster MACS 1206 lies 4 billion light-years from Earth. In this system, astronomers counted 47 multiple images of 12 newly identified galaxies. The era when the first clusters formed is not precisely known, but is estimated to be at least 9 billion years ago and possibly as far back as 12 billion years ago. If most of the clusters in the CLASH survey are found to have excessively high accumulations of dark matter in their central cores, then it may yield new clues to the early stages in the origin of structure in the universe. This and other results suggest that dark matter is more densely packed inside clusters than some models predict. This might mean that galaxy cluster assembly began earlier than commonly thought.
+
 We base our study on the center of galaxy clusters at low redshift so it is necessary to study the scales that we will be relevant for our studies. In order to calculate the range of scales that we will probe in the observational procedures on chapter 4 we will do two separate experiments. The first one is the study of the amount of objects that we would expect to be lensed near the cluster centres by using a very extensive catalogue of galaxies. The second one consists on doing the mass modelling of the cluster for its stellar and dark matter content to see on which scale stars are the main component of the enclosed mass that lenses background objects.
+
+\section{COSMOS field}
 
 For our first experiment, we make use of the COSMOS2015 catalogue (Laigle et. al. \citeyear{Reference21}) which contains half a million objects in a range of $1<z<6$. Ricardo Herbonnet matched the CFHT data to this catalogue so we use his matched data which contains a total of 133,348 galaxies in the 2 degree COSMOS field. We count the amount of galaxies for different magnitudes in redshift bins of $0.2z$ for the R filter. These numbers represents the expected number of galaxies in the background of the lens objects of our sample as seen in figure []. 
 
@@ -13,6 +25,10 @@ For our first experiment, we make use of the COSMOS2015 catalogue (Laigle et. al
 Around z=0.3 we find the peak of the number of galaxies so it is the redshift that is most likely to contain galaxies that could be seen in our data. For the deepness of our data of around 23 mag (as discussed in the next chapter) we then expect some background galaxies for which we can measure the Einstein ring, although the number is rather small. 
 
 CFHT can see objects as deep as m=23 but Hubble Space Telescope could see objects as deep as m=25 so it should be able to see a lot more objects that have been lensed.
+
+\section{DM to stellar ratio}
+
+In reality, the density profile and lensing properties of galaxies is a bit more complicated than the assumption of a singular isothermal sphere, so we need to take into account more complex but elaborate profiles such as the NFW (Navarro, Frenk, White, \citeyear{Reference17}). See Apendix 1.
 
 For the second experiment, we will check the scale of dominance of dark matter by using the NFW dark matter halo profile (since galaxy clusters are known to be dominated by their dark matter content) and the de Vaucouleurs profile, (1948) to compare the contribution of stars in comparison to dark matter, this will allow us to see in which scales the DM mass becomes dominant thus making it more difficult to constrain the stellar content of the bright galaxy.
 
@@ -84,6 +100,8 @@ z=0.222, c=10**0.9, $delta_c=25644.5=7.9428$, $M_{star}=5.5\times 10**11 M_{\odo
 \caption[DM and Stellar mass profiles for a massive early type galaxy.]{Mass profile for dark matter and stellar content for the lens system SDSSJ0946+1006.}
 \end{figure}
 
+\section{Einstein Radius constraints}
+
 Now, we are interested in having an accurate estimate of the Einstein radius to constraint the model, so we make different analysis on the radial dependence on the lensing properties such as shear, reduced shear and magnification.
 
 The shear dependence on radius is shown in figure [].
@@ -117,3 +135,6 @@ The reduced shear for background objects at different redshifts is shown in figu
 \end{figure}
 
 so we get the Einstein ring where $\mu$ is infinite or when g is 1 ($\kappa=1/2$)
+
+
+
