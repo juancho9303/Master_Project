@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  1 JUN 2017 21:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  1 JUN 2017 22:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -574,7 +574,7 @@ LaTeX Info: Redefining \nameref on input line 36.
 ------------------------------------------------------------------------------
  Title Page
 ------------------------------------------------------------------------------
-<images/Leiden.png, id=68, 887.315pt x 1027.84pt>
+<images/Leiden.png, id=60, 887.315pt x 1027.84pt>
 File: images/Leiden.png Graphic file (type png)
  <use images/Leiden.png>
 Package pdftex.def Info: images/Leiden.png used on input line 54.
@@ -643,7 +643,7 @@ Chapter 1.
 
 
 
-] [2] [3] <images/Enclosed_Mass_IMFs.png, id=207, 578.16pt x 433.62pt>
+] [2] [3] <images/Enclosed_Mass_IMFs.png, id=197, 578.16pt x 433.62pt>
 File: images/Enclosed_Mass_IMFs.png Graphic file (type png)
 
 <use images/Enclosed_Mass_IMFs.png>
@@ -670,21 +670,21 @@ Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 [6
 
-] <images/types_of_lensing.png, id=232, 697.60625pt x 489.83pt>
+] <images/types_of_lensing.png, id=222, 697.60625pt x 489.83pt>
 File: images/types_of_lensing.png Graphic file (type png)
 
 <use images/types_of_lensing.png>
 Package pdftex.def Info: images/types_of_lensing.png used on input line 15.
 (pdftex.def)             Requested size: 341.43306pt x 239.74225pt.
  [7 <./images/types_of_lensing.png>]
-<images/lensing.png, id=243, 505.89pt x 559.08875pt>
+<images/lensing.png, id=233, 505.89pt x 559.08875pt>
 File: images/lensing.png Graphic file (type png)
  <use images/lensing.png>
 Package pdftex.def Info: images/lensing.png used on input line 41.
 (pdftex.def)             Requested size: 312.9803pt x 345.89777pt.
 
 [8] [9 <./images/lensing.png>] [10] [11] [12]
-<images/lensing.jpg, id=290, 415.5525pt x 457.4691pt>
+<images/lensing.jpg, id=280, 415.5525pt x 457.4691pt>
 File: images/lensing.jpg Graphic file (type jpg)
  <use images/lensing.jpg>
 Package pdftex.def Info: images/lensing.jpg used on input line 179.
@@ -694,7 +694,7 @@ Chapter 3.
 ------------------------------------------------------------------------------
  3 Determination of the relevant scales
 ------------------------------------------------------------------------------
-<images/GC.jpg, id=295, 1284.8pt x 1166.3575pt>
+<images/GC.jpg, id=285, 1284.8pt x 1166.3575pt>
 File: images/GC.jpg Graphic file (type jpg)
  <use images/GC.jpg>
 Package pdftex.def Info: images/GC.jpg used on input line 7.
@@ -703,14 +703,14 @@ Package pdftex.def Info: images/GC.jpg used on input line 7.
 
 ]
 [15 <./images/GC.jpg>]
-<images/galaxies_per_arcmin.png, id=305, 578.16pt x 433.62pt>
+<images/galaxies_per_arcmin.png, id=295, 578.16pt x 433.62pt>
 File: images/galaxies_per_arcmin.png Graphic file (type png)
 
 <use images/galaxies_per_arcmin.png>
 Package pdftex.def Info: images/galaxies_per_arcmin.png used on input line 21.
 (pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
  [16 <./images/galaxies_per_arcmin.png>]
-[17] <images/Surface_mass_density_log.png, id=320, 578.16pt x 433.62pt>
+[17] <images/Surface_mass_density_log.png, id=309, 578.16pt x 433.62pt>
 File: images/Surface_mass_density_log.png Graphic file (type png)
 
 <use images/Surface_mass_density_log.png>
@@ -718,7 +718,7 @@ Package pdftex.def Info: images/Surface_mass_density_log.png used on input line
  51.
 (pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
  [18 <./images/Surface_mass_density_log.png>] <images/DM_fraction_all_IMFs.png,
- id=334, 578.16pt x 433.62pt>
+ id=324, 578.16pt x 433.62pt>
 File: images/DM_fraction_all_IMFs.png Graphic file (type png)
 
 <use images/DM_fraction_all_IMFs.png>
@@ -726,7 +726,7 @@ Package pdftex.def Info: images/DM_fraction_all_IMFs.png used on input line 88.
 
 (pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
  [19 <./images/DM_fraction_all_IMFs.png>]
-<images/DM_fraction_all_IMFs_galaxy.png, id=342, 578.16pt x 433.62pt>
+<images/DM_fraction_all_IMFs_galaxy.png, id=332, 578.16pt x 433.62pt>
 File: images/DM_fraction_all_IMFs_galaxy.png Graphic file (type png)
 
 <use images/DM_fraction_all_IMFs_galaxy.png>
@@ -734,28 +734,28 @@ Package pdftex.def Info: images/DM_fraction_all_IMFs_galaxy.png used on input l
 ine 110.
 (pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
 
-<images/sonnenfeld_galaxy.png, id=344, 829.0975pt x 593.21625pt>
+<images/sonnenfeld_galaxy.png, id=334, 829.0975pt x 593.21625pt>
 File: images/sonnenfeld_galaxy.png Graphic file (type png)
 
 <use images/sonnenfeld_galaxy.png>
 Package pdftex.def Info: images/sonnenfeld_galaxy.png used on input line 118.
 (pdftex.def)             Requested size: 341.43306pt x 244.28833pt.
  [20 <./images/DM_fraction_all_IMFs_galaxy.png>] <images/einstein_ring_wiki.jpg
-, id=353, 763.35187pt x 504.38437pt>
+, id=343, 763.35187pt x 504.38437pt>
 File: images/einstein_ring_wiki.jpg Graphic file (type jpg)
 
 <use images/einstein_ring_wiki.jpg>
 Package pdftex.def Info: images/einstein_ring_wiki.jpg used on input line 130.
 (pdftex.def)             Requested size: 341.43306pt x 225.60092pt.
  [21 <./images/sonnenfeld_galaxy.png>]
-<images/Reduced_Shear.png, id=359, 578.16pt x 433.62pt>
+<images/Reduced_Shear.png, id=349, 578.16pt x 433.62pt>
 File: images/Reduced_Shear.png Graphic file (type png)
 
 <use images/Reduced_Shear.png>
 Package pdftex.def Info: images/Reduced_Shear.png used on input line 146.
 (pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
  [22 <./images/einstein_ring_wiki.jpg>]
-<images/Magnification.png, id=365, 578.16pt x 433.62pt>
+<images/Magnification.png, id=355, 578.16pt x 433.62pt>
 File: images/Magnification.png Graphic file (type png)
 
 <use images/Magnification.png>
@@ -769,87 +769,88 @@ Chapter 4.
 ------------------------------------------------------------------------------
 [25
 
-] [26] <images/color_mag.png, id=392, 578.16pt x 433.62pt>
-File: images/color_mag.png Graphic file (type png)
+] [26] <images/masks.png, id=382, 798.73407pt x 355.3275pt>
+File: images/masks.png Graphic file (type png)
 
-<use images/color_mag.png>
-Package pdftex.def Info: images/color_mag.png used on input line 68.
-(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
+<use images/masks.png>
+Package pdftex.def Info: images/masks.png used on input line 56.
+(pdftex.def)             Requested size: 426.79134pt x 189.86247pt.
 
-<images/mag_vs_flux_rad.png, id=393, 578.16pt x 433.62pt>
-File: images/mag_vs_flux_rad.png Graphic file (type png)
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 56--57
+ [][] 
+ []
 
-<use images/mag_vs_flux_rad.png>
-Package pdftex.def Info: images/mag_vs_flux_rad.png used on input line 76.
-(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
- [27 <./images/color_mag.png>] [28 <./images/mag_vs_flux_rad.png>]
-Overfull \hbox (14.47446pt too wide) in paragraph at lines 110--112
+[27 <./images/masks.png>]
+Overfull \hbox (14.47446pt too wide) in paragraph at lines 80--82
 []\OT1/cmr/m/n/10.95 Traditional Disky-ness/Boxy-ness pa-ram-e-ter c \OT1/cmtt/
 m/n/10.95 C0) \OT1/cmr/m/n/10.95 0.1 0 tra-di-tional diskyness(-)/boxyness(+) 
  []
 
-<images/masks.png, id=407, 798.73407pt x 355.3275pt>
-File: images/masks.png Graphic file (type png)
- <use images/masks.png>
-Package pdftex.def Info: images/masks.png used on input line 117.
-(pdftex.def)             Requested size: 426.79134pt x 189.86247pt.
-
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 117--118
- [][] 
- []
-
-<images/galfit.png, id=408, 919.18407pt x 289.08pt>
+<images/galfit.png, id=392, 919.18407pt x 289.08pt>
 File: images/galfit.png Graphic file (type png)
  <use images/galfit.png>
-Package pdftex.def Info: images/galfit.png used on input line 127.
+Package pdftex.def Info: images/galfit.png used on input line 91.
 (pdftex.def)             Requested size: 426.79134pt x 134.22672pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 127--128
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 91--92
  [][] 
  []
 
-[29 <./images/masks.png>]
-<images/cA754.jpg, id=416, 583.17876pt x 583.17876pt>
+[28 <./images/galfit.png>]
+<images/cA754.jpg, id=399, 583.17876pt x 583.17876pt>
 File: images/cA754.jpg Graphic file (type jpg)
  <use images/cA754.jpg>
-Package pdftex.def Info: images/cA754.jpg used on input line 141.
+Package pdftex.def Info: images/cA754.jpg used on input line 105.
 (pdftex.def)             Requested size: 341.43306pt x 341.4385pt.
 
-[30 <./images/galfit.png>]
-<images/cA754_galfit.jpg, id=423, 583.17876pt x 583.17876pt>
+[29 <./images/cA754.jpg>]
+<images/cA754_galfit.jpg, id=404, 583.17876pt x 583.17876pt>
 File: images/cA754_galfit.jpg Graphic file (type jpg)
 
 <use images/cA754_galfit.jpg>
-Package pdftex.def Info: images/cA754_galfit.jpg used on input line 149.
+Package pdftex.def Info: images/cA754_galfit.jpg used on input line 113.
 (pdftex.def)             Requested size: 341.43306pt x 341.4385pt.
- [31 <./images/cA754.jpg>]
-<images/full_small.jpg, id=428, 755.82375pt x 741.52031pt>
+
+<images/full_small.jpg, id=405, 755.82375pt x 741.52031pt>
 File: images/full_small.jpg Graphic file (type jpg)
 
 <use images/full_small.jpg>
-Package pdftex.def Info: images/full_small.jpg used on input line 157.
+Package pdftex.def Info: images/full_small.jpg used on input line 121.
 (pdftex.def)             Requested size: 426.79134pt x 418.71083pt.
 
-Overfull \hbox (9.31827pt too wide) in paragraph at lines 157--158
+Overfull \hbox (9.31827pt too wide) in paragraph at lines 121--122
  [][] 
  []
 
-[32 <./images/cA754_galfit.jpg>] [33 <./images/full_small.jpg>])
-(./Chapters/Chapter5.tex [34]
+[30 <./images/cA754_galfit.jpg>] [31 <./images/full_small.jpg>]
+<images/color_mag.png, id=415, 578.16pt x 433.62pt>
+File: images/color_mag.png Graphic file (type png)
+ <use images/color_mag.png>
+Package pdftex.def Info: images/color_mag.png used on input line 137.
+(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
+
+<images/mag_vs_flux_rad.png, id=416, 578.16pt x 433.62pt>
+File: images/mag_vs_flux_rad.png Graphic file (type png)
+
+<use images/mag_vs_flux_rad.png>
+Package pdftex.def Info: images/mag_vs_flux_rad.png used on input line 145.
+(pdftex.def)             Requested size: 341.43306pt x 256.07178pt.
+ [32 <./images/color_mag.png>])
+(./Chapters/Chapter5.tex [33 <./images/mag_vs_flux_rad.png>] [34]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Conclusions
 ------------------------------------------------------------------------------
 [35
 
-] <images/dutton.png, id=450, 624.3325pt x 611.28375pt>
+] <images/dutton.png, id=440, 624.3325pt x 611.28375pt>
 File: images/dutton.png Graphic file (type png)
 
 <use images/dutton.png>
 Package pdftex.def Info: images/dutton.png used on input line 58.
 (pdftex.def)             Requested size: 284.52756pt x 278.58226pt.
  [36] [37 <./images/dutton.png>]
-<images/IMFs_paper.png, id=475, 1005.7575pt x 639.38875pt>
+<images/IMFs_paper.png, id=465, 1005.7575pt x 639.38875pt>
 File: images/IMFs_paper.png Graphic file (type png)
 
 <use images/IMFs_paper.png>
@@ -866,7 +867,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4F7B31CF713C6FB497C9F559E9149761;2478.
+(rerunfilecheck)             Checksum: FF57C17CFAFA5D55DD1E77305E10EC4C;2242.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -874,10 +875,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
- 13465 strings out of 494910
- 192200 string characters out of 6179836
+ 13461 strings out of 494910
+ 192156 string characters out of 6179836
  261275 words of memory out of 5000000
- 16368 multiletter control sequences out of 15000+600000
+ 16366 multiletter control sequences out of 15000+600000
  17740 words of font info for 66 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  49i,12n,45p,13209b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -903,10 +904,10 @@ s/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1
 nts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
 .pfb>
-Output written on Thesis.pdf (47 pages, 3609461 bytes).
+Output written on Thesis.pdf (47 pages, 3607236 bytes).
 PDF statistics:
- 606 PDF objects out of 1000 (max. 8388607)
- 484 compressed objects within 5 object streams
- 149 named destinations out of 1000 (max. 500000)
- 244 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 596 PDF objects out of 1000 (max. 8388607)
+ 474 compressed objects within 5 object streams
+ 147 named destinations out of 1000 (max. 500000)
+ 228 words of extra memory for PDF output out of 10000 (max. 10000000)
 
