@@ -6,6 +6,7 @@
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.6}
 \contentsline {chapter}{\numberline {2}Introduction to Gravitational Lensing}{5}{chapter.8}
+<<<<<<< HEAD
 \contentsline {section}{\numberline {2.1}Gravitational Lensing formalism}{6}{section.10}
 \contentsline {chapter}{\numberline {3}Determination of the relevant scales}{13}{chapter.32}
 \contentsline {section}{\numberline {3.1}COSMOS field}{14}{section.34}
@@ -19,3 +20,13 @@
 \contentsline {section}{\numberline {4.5}Photometric Redshifts}{30}{section.60}
 \contentsline {chapter}{\numberline {5}Conclusions}{32}{chapter.61}
 \contentsline {section}{\numberline {.1}NFW}{33}{section.65}
+=======
+\contentsline {chapter}{\numberline {3}Determination of the relevant scales}{16}{chapter.46}
+\contentsline {chapter}{\numberline {4}Data and analysis}{24}{chapter.57}
+\contentsline {section}{\numberline {4.1}Stellar populations}{24}{section.59}
+\contentsline {section}{\numberline {4.2}Sextractor}{26}{section.60}
+\contentsline {section}{\numberline {4.3}Galfit}{27}{section.63}
+\contentsline {section}{\numberline {4.4}Color images}{29}{section.66}
+\contentsline {section}{\numberline {4.5}Photometric Redshifts}{32}{section.70}
+\contentsline {chapter}{\numberline {5}Conclusions}{34}{chapter.71}
+>>>>>>> 3eb661f9a51ccb6b97e6457bc1b2872e613438bd
