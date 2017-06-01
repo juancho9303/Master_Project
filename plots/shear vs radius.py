@@ -36,7 +36,7 @@ for i in range(len(sigmas)):
 #plt.ylim(0,0.05)
 plt.xlim(0,1000)
 plt.xlabel(r'$\mathrm{r(kpc)}$', fontsize=18) 
-#plt.axvline(307.1, c = 'black', linestyle='--')
+plt.axvline(307.1, c = 'black', linestyle='--')
 plt.ylabel('$\mathrm{\gamma_{NFW}}$', fontsize=18)
 #plt.title(r'$\mathrm{Reduced\:Shear}$', fontsize=20)
 plt.legend(frameon=False) #plt.legend(frameon=False,bbox_to_anchor=(0.95, 0.2), loc=1, borderaxespad=0.)

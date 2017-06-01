@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -81,6 +81,18 @@ Ewa L. Lokas \& Gary~A. Mamon.
   profile.
 \newblock \emph{MNRAS}, 321:\penalty0 155--166, 2001.
 
+\bibitem[Smith(2014)]{Reference5}
+Russell. Smith.
+\newblock Variations in the initial mass function in early-type galaxies: a
+  critical comparison between dynamical and spectroscopic results.
+\newblock \emph{MNRAS}, 443:\penalty0 L69--L73, 2014.
+
+\bibitem[et. al.(2015)]{Reference9}
+C.~Sifon et. al.
+\newblock Constraints on the alignment of galaxies in galaxy clusters from
+  \~14000 spectroscopic members.
+\newblock \emph{A\& A}, 575:\penalty0 A48, 2015.
+
 \bibitem[et. al.(2012{\natexlab{c}})]{Reference15}
 A.~Sonnenfeld et. al.
 \newblock Evidence of dark matter contraction and a salpeter initial mass
@@ -99,22 +111,15 @@ C.~Bildfell et. al.
   out to $z\approx 0.5$.
 \newblock \emph{MNRAS}, 425:\penalty0 204--221, 2012{\natexlab{d}}.
 
-\bibitem[Smith(2014)]{Reference5}
-Russell. Smith.
-\newblock Variations in the initial mass function in early-type galaxies: a
-  critical comparison between dynamical and spectroscopic results.
-\newblock \emph{MNRAS}, 443:\penalty0 L69--L73, 2014.
+\bibitem[E(1996)]{Reference27}
+Bertin. E.
+\newblock Sextractor: Software for source extraction.
+\newblock \emph{Astronomy and Astrophysics}, 117:\penalty0 393--404, 1996.
 
 \bibitem[et. al.(2002)]{Reference20}
 Peng et. al.
 \newblock Detailed structural decomposition of galaxy images.
 \newblock \emph{The Astronomical Journal}, 124:\penalty0 266--293, 2002.
-
-\bibitem[et. al.(2015)]{Reference9}
-C.~Sifon et. al.
-\newblock Constraints on the alignment of galaxies in galaxy clusters from
-  \~14000 spectroscopic members.
-\newblock \emph{A\& A}, 575:\penalty0 A48, 2015.
 
 \bibitem[Brammer and Coppi(2008)]{Reference22}
 van~Dokkum Brammer and Coppi.
@@ -132,5 +137,11 @@ J.~C.~Mu\ noz Cuartas~et. al.
 \newblock The redshift evolution of $\lambda cdm$ halo parameters:
   concentration, spin and shape.
 \newblock \emph{MNRAS}, 000:\penalty0 1--11, 2010.
+
+\bibitem[et. al.(2012{\natexlab{e}})]{Reference19}
+Cappellari et. al.
+\newblock Systematic variation of the stellar initial mass function in
+  early-type galaxies.
+\newblock \emph{Nature}, 484:\penalty0 485--488, 2012{\natexlab{e}}.
 
 \end{thebibliography}

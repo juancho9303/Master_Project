@@ -28,7 +28,7 @@ For the generalities of gravitational lensing we follow the order given in a rev
 
 Fortunately, in most three dimensional distributions of matter (even in the case of lensing by massive objects like galaxy clusters) the physical size of the lens is generally much smaller than the distances between the observer, the lens and the source. This means that the deflection of light takes place in a very thin and short section of its path to the observer. Given this, we can use the \textit{thin screen approximation}: ``The lens is approximated by a planar distribution of matter, the lens plane". Also the sources can be treated as if they lie on a plane which is called the source plane.
 
-The \textit{thin screen approximation} allows us to state that the lensing matter distribution is fully described by its surface density
+The \textit{thin screen approximation} alows us to state that the lensing matter distribution is fully described by its surface density
 
 \begin{equation}
 \Sigma(\vec{\xi}) = \int \rho (\vec{\xi},z)dz
@@ -38,12 +38,8 @@ where $\vec{\xi}$ is a two-dimensional vector on the lens plane and $\rho$ is th
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{images/lensing.png}
-<<<<<<< HEAD
+\includegraphics[width=11cm]{images/lensing.png}
 \caption[Angles in gravitational lensing]{Sketch of a lensing configuration, where $D_{ds}$ is the distance from the lense to the sourse, $D_s$ is the distance from the observer to the source and $D_d$ is the fistance from the observer to the source. Image by Michael Sachs, Wikipedia}
-=======
-\caption[Angles in gravitational lensing]{where $D_{ds}$ is the distance from the lense to the source $D_s$ is the distance from the observer to the source and $D_d$ is the distance from the observer to the source Wikipedia}
->>>>>>> 3eb661f9a51ccb6b97e6457bc1b2872e613438bd
 \end{figure}
 
 Figure [2.2] is a sketch of a typical gravitational system. The lensing mass is located at a angular diameter distance $D_d$ and it deflects the light rays coming from a source at an angular distance of $D_s$.
@@ -90,40 +86,23 @@ This lensing potential satisfies two important properties:
 \Delta_{x}\Psi(\vec{x})=2\kappa(\vec{x})
 \end{equation}
 
-where the convergence is defined as a dimensionless surface density
+where the convergence is defined as a dimensionaless surface density
 
 \begin{equation}
 \kappa(\vec{x})\equiv \frac{\Sigma(\vec{x})}{\Sigma_{cr}}\qquad \text{with} \qquad \Sigma_{cr}=\frac{c^{2}}{4\pi G}\frac{D_s}{D_d D_{ds}}
 \end{equation}
 
-<<<<<<< HEAD
-$\Sigma_{cr}$ is called the critical surface density and it characteries the lens system and which is a function of the angular diameter distances of lens and source. Now let's talk about magnification and distortion.
+$\Sigma_{cr}$ is called the critical surface density and it characteries the lens system and which is a function of the angular diameter distances of lens and source. Now let's introduce the distortion.
 
 One of the main features of gravitational lensing is that it distorts the shapes of the sources, this is particularly evident when the source has no negligible apparent size. In some cases the background galaxies can appear as very long arcs in galaxy clusters as mentioned at the beginning of this chapter. 
 
 The effect of distortion takes place because light bundles are deflected differentially. In the ideal case, the shape of the background images can be determined by solving the lens equation for all the points within the extended source. In particular, if the source is much smaller than the angular size on which the physical properties of the lens change, the relation betweeen the source and image positions can locally be linearized. Mathematically this means that the distortion of images can be described by the Jacboian matrix
 
-=======
-$\Sigma_{cr}$ is called the critical surface density and it characterises the lens system and which is a function of the angular diameter distances of lens and source. 
-
-Now let's talk about magnification and distortion.
-
-One of the main features of gravitational lensing is that it distorts the shapes of the sources, this is particularly evident when the source has no negligible apparent size. In some cases the background galaxies can appear as very long arcs in galaxy clusters as mentioned at the beginning of this chapter. 
-
-desde aca hay que modificar!!!!!!!!!!
-
-
-The distortion takes place because light bundles are deflected differentially. Ideally the shape of the images can be determined by solving the lens equation for all the points within the extended source. In particular, if the source is much smaller than the angular size on which the physical properties of the lens change, the relation between the source and image positions can locally be linearised. In other words, the distortion of images can be described by the Jacobian matrix
->>>>>>> 3eb661f9a51ccb6b97e6457bc1b2872e613438bd
 \begin{equation}
 A\equiv\frac{\partial\vec{y}}{\partial\vec{x}}=\left(\delta_{ij}-\frac{\partial\alpha_{i}(\vec{x})}{\partial x_{j}}\right)=\left(\delta_{ij}-\frac{\partial^{2}\Psi(\vec{x})}{\partial x_{i}\partial x_{j}}\right)
 \end{equation}
 
-<<<<<<< HEAD
 where $x_i$ indicates the $i$-component of $\vec{x}$ on the lens plane. It shows that the elements of the Jacobian matrix can be wirtten as combinations of the second derivatives of the lensing potential. It is useful to use the shorthand notation
-=======
-where $x_i$ indicates the $i$-component of $\vec{x}$ on the lens plane. it shows that the elements of the Jacobian matrix can be written as combinations of the second derivatives of the lensing potential. For brevity, we will use the shorthand notation
->>>>>>> 3eb661f9a51ccb6b97e6457bc1b2872e613438bd
 
 \begin{equation}
 \frac{\partial^{2}\Psi(\vec{x})}{\partial x_{i}\partial x_{j}}\equiv\Psi_{ij}
@@ -138,11 +117,7 @@ Let's split off an isotropic part from the Jacobian:
 \end{array}\right)
 \end{equation}
 
-<<<<<<< HEAD
 this is the shear matrix, which is an antisymmetric, trace-free matrix that quantifies the projection of the gravitaional tidal field (the gradient of the gravitational force), which describes distorions of background sources.  This allows us to define the pseudo-vector $\vec{\gamma}=(\gamma_1 , \gamma_2)$ on the lens plane, whose components are
-=======
-which is an antisymmetric, trace-free matrix called the shear matrix. It quantifies the projection of the gravitational tidal field (the gradient of the gravitational force), which describes distortions of background sources.  This allows us to define the pseudo-vector $\vec{\gamma}=(\gamma_1 , \gamma_2)$ on the lens plane, whose components are
->>>>>>> 3eb661f9a51ccb6b97e6457bc1b2872e613438bd
 
 \begin{equation}
 \gamma_1(\vec{x})=\frac{1}{2}(\Psi_{11}-\Psi_{22})\qquad \text{and} \qquad \gamma_2(\vec{x})=\Psi_{12} = \Psi_{21}
@@ -181,11 +156,7 @@ A= \left(\begin{array}{cc}
 \end{array}\right)
 \end{equation}
 
-<<<<<<< HEAD
 Where $\kappa$ is the convergence that determines the magnification and $\gamma_{1}$ and $\gamma_{2}$ are the shear components that determine the distortion of the background objects. More precisely, the convergence describes the isotropic focusing of light rays while the shear describes the effect of tidal gravitational forces. Convergence acting alone leads to an isotropic magnification or demagnification while the shear induces distortions in the shapes of lensed images (Wright \& Brainerd, \citeyear{Reference4}). 
-=======
-Where $\kappa$ is the convergence that determines the magnification and $\gamma_{1}$ and $\gamma_{2}$ are the shear components that determine the distortion of the background objects. This is an antisymmetric, trace-free matrix that quantifies the projection of the gravitational tidal field (the gradient of the gravitational force), which describes distortions of background sources.
->>>>>>> 3eb661f9a51ccb6b97e6457bc1b2872e613438bd
 
 Finally, we can introduce another useful quantity in the characterization of gravitational lensing systems. The \textit{magnification} is quantified by the inverse of the determinant of the Jacobian matrix. For this reason, the matrix $M=A^{-1}$ is called the \textit{magnification tensor}, and we define
 
@@ -193,45 +164,20 @@ Finally, we can introduce another useful quantity in the characterization of gra
 \mu \equiv \text{det} M = \frac{1}{\text{det}A}=\frac{1}{(1-\kappa)^2-\gamma^2}
 \end{equation}
 
-The eigenvalues of the magnification tensor measure the amplification in the tangential and in the radial direction and are given by
+The eigenvalues of the magnification tensor measure the amplification in the tangential and in the raial direction and are given by
 
 \begin{equation}
-<<<<<<< HEAD
 \mu_t = \frac{1}{\lambda_t}=\frac{1}{1-\kappa - \gamma} \qquad \text{and} \qquad  \mu_r = \frac{1}{\lambda_r}=\frac{1}{1-\kappa + \gamma}
 \end{equation}
-=======
-\mu_t = \frac{1}{\lambda_t}=\frac{1}{1-\kappa - \gamma} \qquad and \qquad  \mu_r = \frac{1}{\lambda_r}=\frac{1}{1-\kappa + \gamma}
-\end{equation}
-
-The magnification is ideally infinite where $\lambda_t=0$ and where $\lambda_r=0$. These two conditions define two curves in the lens plane, called the tangential and the radial critical line, respectively. An image forming along the tangential critical line is strongly distorted tangentially to this line. On the other hand, an image forming close to the radial critical line is stretched in the direction perpendicular to the line itself. 
->>>>>>> 3eb661f9a51ccb6b97e6457bc1b2872e613438bd
 
 The magnification is ideally infinite where $\lambda_t=0$ and where $\lambda_r=0$. These two conditions define two curves in the lens plane, called the tangential and the radial critical line, respectively. An image forming along the tangential critical line is strongly distorted tangentially to this line. On the other hand, an image forming close to the radial critical line is stretched in the direction perpendicular to the line itself. 
 
-<<<<<<< HEAD
-In the inner region of galaxy clusters we are in the strong lensing regime so we will focus our discussion on strong lensing and the search for multiple images and arcs in the inner regions of the galaxy clusters. Figure [2.3] is a representation of a lensing system in which a background galaxy is lensed by a cluster of galaxies and produces multiple images as observed from Earth. 
-=======
-1. \textbf{Strong lensing:} where there are easily visible distortions such as the formation of Einstein rings, arcs, and multiple images.
-
-2.\textbf{ Weak lensing:} where the distortions of background sources are much smaller and can only be detected by analysing large numbers of sources in a statistical way to find coherent distortions of only a few percent
-
-3. \textbf{Very weak lensing:} 
+In the inner region of galaxy clusters we are in the strong lensing regime so we will focus our discussion on strong lensing and the search for multiple images and arcs in the inner regions of the galaxy clusters. Figure [2.3] is a representation of a lensing system in which a background galaxy is lensed by a cluster of galaxies and produces multiple images and arcs observed by our telescopes. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{images/types_of_lensing.png}
-\caption[Types of lensing]{Types of lensing. Courbin, F. et al \citeyear{Reference24}}
+\includegraphics[width=12cm]{images/lensing.jpg}
+\caption[Strong Lensing representation]{Representation of strong lensing by a galaxy cluster. Credits to Nasa}
 \end{figure}
 
-Figure [] is a representation of a lensing system in which a background galaxy is lensed by a cluster of galaxies and produces multiple images as observed from Earth. 
->>>>>>> 3eb661f9a51ccb6b97e6457bc1b2872e613438bd
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=12cm]{images/strong_lensing.jpg}
-\caption[Strong Lensing representation]{Nasa?}
-\end{figure}
-
-
-
-
+Now, let's understand in what scales we can use gravitational lensing to study these massive systems.

@@ -1,18 +1,14 @@
 \chapter{Data and analysis}
 
-The full description of the survey is in: D. J. Sand et. al. \citeyear{Reference11}
+For this project we make use of good quality deep data of galaxy clusters observed with the MegaCam wide field imager on the CFHT (Canada-France-Hawii Telescope). The cluster sample consisted of 101 clusters within the range of redshifts from $0.05<z<0.55$. The full description of this survey can be found in: D. J. Sand et. al. \citeyear{Reference11}
 
-MegaCam wide field imager on the CFHT (Canada-France-Hawii Telescope). The cluster sample consisted of 101 clusters within the range of redshifts from $0.05<z<0.55$
+58 clusters from the MENEACS (Multi-Epoch Nearby Cluster Survey). The MENEACS clusters represent all clusters in the BAX X-ray cluster database that are observable for the CFHT and this part of the data is in the G and R bands. We also make use of the INT data of the same cluster in the bands I and U. 
 
-58 clusters from the MENEACS (Multi-Epoch Nearby Cluster Survey)
+After filtering out some of the clusters because of a very complex and crowded central region or just not good quality we used 30 clusters for the final studies and paid special attention to 10, marked with * in table 4.1.
 
-The MENEACS clusters represent all clusters in the BAX X-ray cluster database that are observable for the CFHT (Canada France Hawaii Telescope)
+The original images have dimensions of [11000:11000] pixels but since our relevant region is the center of the cluster where the BCG is located, we cut the images with dimension of [1000,1000] for the color analysis and [4000:4000] to characterize the colors and discriminate between cluster and non-cluster members.
 
-About 60 clusters, but we used only 30 for the final studies and paid special attention to 10, marked with *
-
-G, U, I and R images
-
-\begin{table}[]
+\begin{table}[H]
 \centering
 
 \begin{tabular}{ccccc}
@@ -48,26 +44,14 @@ A85*    & 0.055 & ~800           & 235.7 & 17.4182   \\
 A961    & 0.124 & ~800           & 531.4 & 16.1464   \\
 A990    & 0.144 & ~800           & 617.1 & 15.7778   
 \end{tabular}
-\caption[Abell Clusters and their redshift]{Abell clusters and their redshifts as given by C. Bildfell et. al. \citeyear{Reference6}. Marked with * the chosen clusters with the most promising features}
+\caption[Abell Clusters and their redshift]{Abell clusters used in this work. Marked with * the chosen clusters with the most promising features. From left to right: Name of the cluster, redshift, velocity disperions from C. Bildfell et. al. \citeyear{Reference6}, distance in Mpc and Einstein Ring using a single isothermal sphere as first approximation.}
 \end{table}
-
-The original images have dimensions of [11000:11000] pixels but since our relevant region is the center of the cluster where the BCG is located, we cut the images with dimension of [1000,1000] for the color analysis and [4000:4000] to characterize the colors and discriminate between cluster and non-cluster members.
 
 The INT images were obtained using multiple exposures so it was necessary to make a mosaic of them using \texttt{SWARP}.
 
-\section{Stellar populations}
- 
-Galaxy clusters contain a population of stars gravitationally unbound to individual galaxies, yet still bound to the clusters overall gravitational potential, created by the stripping of stars from galaxies during interactions and mergers.
-
-Mass-to-light ratios of early-type galaxies are of particular interest to understand the tilt of the fundamental plane. Virial relations imply that the effective surface brightness $I_{\text{eff}}$, the effective radius $r_{\text{eff}}$ and the central velocity dispersion $\sigma_{0}$ in hot stellar systems are not independent of each other. This is revealed by the fundamental plane of early type galaxies.
-
-The Salpeter IMF implies more low-mass stars and a higher mass-to-light ratio. In the R-band the scaling between the two cases is $\Upsilon_{\text{Salp}}\approx 1.56\Upsilon_{\text{Krou}}$
-
-A Koupra IMF finds a value of around 4 for the mass to light ratio $\Upsilon$. (R. J. Smith \citeyear{Reference5}). Massive galaxies - Salpeter is a good IMF. Salpeter is heavier than Kroupa. Salpeter mass function is $n(\textrm{M})\propto \textrm{M}^{-2.3}$ 
-
-Large M/L ratios could arise either from an excess of faint dwarf stars in a ``bottom heavy" IMF, or from an excess of dark remnants in a ``top heavy" IMF" (Russell J. Smith and John R. Lucey \citeyear{Reference7}).
-
 \section{Sextractor}
+
+\citeyear{Reference27}
 
 Segmentation image that will be used as a mask image (bad pixels) for \texttt{GALFIT}
 
@@ -109,8 +93,7 @@ the best results were given when we masked the innermost region of the BCG so th
 
 we have to take into account the magnification bias
 
-The parameters \texttt{C0, B1, B2, F1, F2}, etc. listed below are hidden from the user unless he/she explicitly requests them.  These can  be tagged on to the end of any previous components except, of course, the PSF and the sky -- although \texttt{GALFIT} won't bar you from doing so, and will just ignore them.  Note that a Fourier or Bending mode amplitude of exactly 0 will cause \texttt{GALFIT} to crash because the derivative image \texttt{GALFIT} computes internally will be entirely 0.  If a Fourier or Bending amplitude is set to 0 initially \texttt{GALFIT} will reset it to a value of 0.01.  To prevent \texttt{GALFIT} from doing so, one can set it to any 
-other value.
+The parameters \texttt{C0, B1, B2, F1, F2}, etc. listed below are hidden from the user unless he/she explicitly requests them.  These can  be tagged on to the end of any previous components except, of course, the PSF and the sky -- although \texttt{GALFIT} won't bar you from doing so, and will just ignore them.  Note that a Fourier or Bending mode amplitude of exactly 0 will cause \texttt{GALFIT} to crash because the derivative image \texttt{GALFIT} computes internally will be entirely 0.  If a Fourier or Bending amplitude is set to 0 initially \texttt{GALFIT} will reset it to a value of 0.01.  To prevent \texttt{GALFIT} from doing so, one can set it to any other value.
 
 Bending modes
 \texttt{B1)}  0.07      1        Bending mode 1 (shear)
@@ -149,14 +132,14 @@ The original image, the fitted models and the output are presented here:
 
 We use \texttt{IRAF} to make the color images using our g,r,u,i bands. Let's use ABELL754 which is a low redshift galaxy cluster with a calculated mass of $\text{M}_{200}=9.8\times 10^{15} \text{M}_{\odot}$ (Sifon et. al. \citeyear{Reference9})
 
-Here we take an isothermal sphere to model the Einstein ring in a distance of background objects of z=1
+Here we take an isothermal sphere to model the Einstein ring in a distance of background objects of $z=1$
 
 We made a color image of the original center of the cluster without subtracting the BCG in order to differentiate between cluster members from background galaxies and field stars. This allows us to fit only the cluster galaxies. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/cA754.jpg}
-\caption[Color image of A754]{Color image of A754 cluster (filters i,g,u) with its Einstein radius calculated for an isothermal sphere of a background object at $z=1$.}
+\caption[Color image of A754]{Color image of A754 cluster (filters I,G,U) with its Einstein radius calculated for an isothermal sphere of a background object at $z=1$.}
 \end{figure}
 
 After choosing the galaxies that belong to the cluster by comparing their relative colors, we subtracted them using \texttt{GALFIT} and made the color image again changing the scaling values with the task \texttt{CONVERT} of \texttt{IRAF} so that we see can see the color contrast to search for good candidates of lensed objects. By looking at this reduced color image, we have another visual constraint to choose the clusters in which it would be worth to do photometric redshifts and search for objects with the same redshift in different locations around the very center of the BCG (object that has suffered strong lensing). 
@@ -164,7 +147,7 @@ After choosing the galaxies that belong to the cluster by comparing their relati
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/cA754_galfit.jpg}
-\caption[Color image of A754 after fitting the bright objects]{Color image of A754 cluster (filters i,g,u) after the subtraction of the bright cluster galaxies.}
+\caption[Color image of A754 after fitting the bright objects]{Color image of A754 cluster (filters I,G,U) after the subtraction of the bright cluster galaxies.}
 \end{figure}
 
 Because we have 4 bands we were able to make different color images to see the contrast and make combinations that would allow us to see better the very red and very blue objects, in the following figure we have the G-R, I-R-G and I-G-U color images for three clusters. 
