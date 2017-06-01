@@ -23,25 +23,24 @@ sigmas    =[sig_0_2,sig_0_3,sig_0_4,sig_0_5,sig_0_6,sig_0_7,sig_0_8,sig_0_9,sig_
 
 for i in range(len(sigmas)):
 	r = np.arange(1.0,307.,0.01)
-	plt.plot((r),((r_s*delta_c*rhos[i])*( ((8.*np.arctanh(np.sqrt((1-r/r_s)/(1+r/r_s))))/((r/r_s)**2*np.sqrt(1-(r/r_s)**2))) +\
+	plt.plot(np.log10(r),1/((r_s*delta_c*rhos[i])*( ((8.*np.arctanh(np.sqrt((1-r/r_s)/(1+r/r_s))))/((r/r_s)**2*np.sqrt(1-(r/r_s)**2))) +\
 	               ((4.*(np.log((r/r_s)/2.)))/((r/r_s)**2)) - (2./((r/r_s)**2-1)) + ((4.*np.arctanh(np.sqrt((1-(r/r_s))/(1+(r/r_s)))))/\
 	               (((r/r_s)**2-1)*(1-(r/r_s)**2)**0.5))))/((sigmas[i])-(( 2.0*r_s*delta_c*rhos[i] )/( (r/r_s)**2 - 1.0 )*( 1.0 -\
 	                2.0/( np.sqrt( 1.0 - (r/r_s)**2 ) )*np.arctanh( np.sqrt( (1.0-(r/r_s))/(1.0+(r/r_s)) ) ) ))), c=colors[i], lw=1.5)
 	r = r_s
-	plt.plot((r),((r_s*delta_c*rhos[i])*(10./3.+4.*np.log(0.5)))/(sigmas[i]-2.0*r_s*delta_c*rhos[i]/3.0)) 
+	plt.plot(np.log10(r),((r_s*delta_c*rhos[i])*(10./3.+4.*np.log(0.5)))/(sigmas[i]*(1-2.0*r_s*delta_c*rhos[i]/3.0)) 
 	r = np.arange(307.2,10000,0.01)
-	plt.plot((r),(((r_s*delta_c*rhos[i]))*( ((8.*np.arctan(np.sqrt(((r/r_s)-1)/(1+(r/r_s)))))/((r/r_s)**2*np.sqrt((r/r_s)**2-1))) +\
+	plt.plot(np.log10(r),1/(((r_s*delta_c*rhos[i]))*( ((8.*np.arctan(np.sqrt(((r/r_s)-1)/(1+(r/r_s)))))/((r/r_s)**2*np.sqrt((r/r_s)**2-1))) +\
 				   ((4*(np.log((r/r_s)/2.)))/((r/r_s)**2)) - (2./((r/r_s)**2-1.)) + ((4*np.arctan(np.sqrt(((r/r_s)-1)/(1+(r/r_s)))))/(((r/r_s)**2-1)**1.5))))/\
 				   (sigmas[i]-( 2.0*r_s*delta_c*rhos[i] )/( (r/r_s)**2 - 1.0 ) *( 1.0 - 2.0/( np.sqrt( (r/r_s)**2 - 1.0 ) )*\
 				   np.arctan( np.sqrt( ( (r/r_s)-1.0 )/( 1+(r/r_s) ) ) ) )),\
 					label= redshifts[i], c=colors[i], lw=1.5)
 
 #plt.axhline(y=.5, xmin=0., xmax=10.,linewidth=1, color = 'k', linestyle='--')
-plt.ylim(-300,300)
-plt.xlim(0,250)
-plt.xlabel(r'$\mathrm{r(kpc)}$', fontsize=18) 
+#plt.ylim(-1,1)
+plt.xlabel(r'$\mathrm{\log R(kpc)}$', fontsize=18) 
 plt.ylabel('$\mathrm{g_{NFW}}$', fontsize=18)
 #plt.title(r'$\mathrm{Reduced\:Shear}$', fontsize=20)
 plt.legend(frameon=False) #plt.legend(frameon=False,bbox_to_anchor=(0.95, 0.2), loc=1, borderaxespad=0.)
-plt.savefig("Reduced Shear.png")
+plt.savefig("Reduced Shear corrected.png")
 plt.show()

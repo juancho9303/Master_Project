@@ -17,8 +17,9 @@ rho_0_7 = 706.9; rho_0_8 = 839.1; rho_0_9 = 986.9; rho_1 = 1200;
 
 rhos  = [rho_0_2,rho_0_3,rho_0_4,rho_0_5,rho_0_6,rho_0_7,rho_0_8,rho_0_9,rho_1]
 redshifts = ['z = 0.2','z = 0.3','z = 0.4','z = 0.5','z = 0.6','z = 0.7','z = 0.8','z = 0.9','z = 1']
-colors = ['blue','red','green','yellow','orange','black','darkorange','darkred','darkblue','darkgreen']
+colors = ['blue','red','green','black','orange','yellow','darkorange','darkred','darkblue','darkgreen']
 sigmas    =[sig_0_2,sig_0_3,sig_0_4,sig_0_5,sig_0_6,sig_0_7,sig_0_8,sig_0_9,sig_1]
+#sigmas    =[sig_0_2,sig_0_4,sig_0_6,sig_0_8,sig_1]
 
 for i in range(len(sigmas)):
 	
@@ -28,23 +29,24 @@ for i in range(len(sigmas)):
 	               (((r/r_s)**2-1)*(1-(r/r_s)**2)**0.5))))
 	sigma_1 = (( 2.0*r_s*delta_c*rhos[i] )/( (r/r_s)**2 - 1.0 )*( 1.0 -\
 	                2.0/( np.sqrt( 1.0 - (r/r_s)**2 ) )*np.arctanh( np.sqrt( (1.0-(r/r_s))/(1.0+(r/r_s)) ) ) ))
-	plt.plot(np.log10(r),1./((1.-(sigma_1/sigmas[i]))**2.-(gamma_1)**2.), c=colors[i], lw=1.5)
+	plt.plot((r),1./((1.-(sigma_1/sigmas[i]))**2.-(gamma_1)**2.), c=colors[i], lw=1.5)
 	                
 	r = r_s
 	gamma_2 =  ((r_s*delta_c*rhos[i])/sigmas[i]*(10./3.+4.*np.log(0.5)))
 	sigma_2 = (2.0*r_s*delta_c*rhos[i]/3.0)
-	plt.plot(np.log10(r),1./((1.-(sigma_2/sigmas[i]))**2.-(gamma_2)**2.))
+	plt.plot((r),1./((1.-(sigma_2/sigmas[i]))**2.-(gamma_2)**2.))
 
 	r = np.arange(307.2,10000,0.01)
 	gamma_3 = (((r_s*delta_c*rhos[i]))/sigmas[i]*( ((8.*np.arctan(np.sqrt(((r/r_s)-1)/(1+(r/r_s)))))/((r/r_s)**2*np.sqrt((r/r_s)**2-1))) +\
 		  ((4*(np.log((r/r_s)/2.)))/((r/r_s)**2.)) - (2./((r/r_s)**2-1.)) + ((4*np.arctan(np.sqrt(((r/r_s)-1)/(1+(r/r_s)))))/(((r/r_s)**2-1)**1.5))))
 	sigma_3 = (( 2.0*r_s*delta_c*rhos[i] )/( (r/r_s)**2. - 1.0 ) *( 1.0 - 2.0/( np.sqrt( (r/r_s)**2 - 1.0 ) )*\
 				   np.arctan( np.sqrt( ( (r/r_s)-1.0 )/( 1+(r/r_s) ) ) ) ))
-	plt.plot(np.log10(r), 1./((1.-(sigma_3/sigmas[i]))**2.-(gamma_3)**2.) , label= redshifts[i], c=colors[i], lw=1.5)
+	plt.plot((r), 1./((1.-(sigma_3/sigmas[i]))**2.-(gamma_3)**2.) , label= redshifts[i], c=colors[i], lw=1.5)
 
 plt.ylim(-1000,1000)
+plt.xlim(0,150)
 #plt.axhline(y=.5, xmin=0., xmax=10.,linewidth=1, color = 'k', linestyle='--')
-plt.xlabel(r'$\mathrm{\log R(kpc)}$', fontsize=18) 
+plt.xlabel(r'$\mathrm{r(kpc)}$', fontsize=18) 
 plt.ylabel('$\mathrm{\mu_{NFW}}$', fontsize=18)
 #plt.title(r'$\mathrm{Reduced\:Shear}$', fontsize=20)
 plt.legend(frameon=False) #plt.legend(frameon=False,bbox_to_anchor=(0.95, 0.2), loc=1, borderaxespad=0.)

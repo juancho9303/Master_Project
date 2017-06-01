@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{22}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -63,6 +63,11 @@ Massimo Meneghetti.
 \newblock \emph{Lecture Scripts, Heildelberg University}, 2003.
 \newblock URL
   \url{http://www.ita.uni-heidelberg.de/~massimo/sub/Lectures/gl_all.pdf}.
+
+\bibitem[C.~O. Wright \& Teresa G.~Brainerd(1999)]{Reference4}
+Teresa. C.~O. Wright \& Teresa G.~Brainerd.
+\newblock Gravitational lensing by nfw halos.
+\newblock \emph{preprint arXiv:astro-ph/9908213v1}, 1999.
 
 \bibitem[et. al.(2016)]{Reference21}
 Laigle et. al.

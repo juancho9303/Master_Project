@@ -22,19 +22,21 @@ sigmas    =[sig_0_2,sig_0_3,sig_0_4,sig_0_5,sig_0_6,sig_0_7,sig_0_8,sig_0_9,sig_
 
 for i in range(len(sigmas)):
 	r = np.arange(1.0,307.,0.001)
-	plt.plot(np.log10(r),((r_s*delta_c*rhos[i])/sigmas[i]*( ((8.*np.arctanh(np.sqrt((1-r/r_s)/(1+r/r_s))))/((r/r_s)**2*np.sqrt(1-(r/r_s)**2))) +\
+	plt.plot((r),((r_s*delta_c*rhos[i])/sigmas[i]*( ((8.*np.arctanh(np.sqrt((1-r/r_s)/(1+r/r_s))))/((r/r_s)**2*np.sqrt(1-(r/r_s)**2))) +\
 	               ((4.*(np.log((r/r_s)/2.)))/((r/r_s)**2)) - (2./((r/r_s)**2-1)) + ((4.*np.arctanh(np.sqrt((1-(r/r_s))/(1+(r/r_s)))))/\
 	               (((r/r_s)**2-1)*(1-(r/r_s)**2)**0.5)))), c=colors[i], lw=1.5)
 	r = r_s
-	plt.plot(np.log10(r),((r_s*delta_c*rhos[i])/sigmas[i]*(10./3.+4.*np.log(0.5)))) 
+	plt.plot((r),((r_s*delta_c*rhos[i])/sigmas[i]*(10./3.+4.*np.log(0.5)))) 
 	r = np.arange(307.2,10000,0.001)
-	plt.plot(np.log10(r),(((r_s*delta_c*rhos[i])/sigmas[i])*( ((8.*np.arctan(np.sqrt(((r/r_s)-1)/(1+(r/r_s)))))/((r/r_s)**2*np.sqrt((r/r_s)**2-1))) +\
+	plt.plot((r),(((r_s*delta_c*rhos[i])/sigmas[i])*( ((8.*np.arctan(np.sqrt(((r/r_s)-1)/(1+(r/r_s)))))/((r/r_s)**2*np.sqrt((r/r_s)**2-1))) +\
 				   ((4*(np.log((r/r_s)/2.)))/((r/r_s)**2)) - (2./((r/r_s)**2-1.)) + ((4*np.arctan(np.sqrt(((r/r_s)-1)/(1+(r/r_s)))))/(((r/r_s)**2-1)**1.5))))\
 				   ,label= redshifts[i], c=colors[i], lw=1.5)
 
 #plt.axhline(y=.5, xmin=0., xmax=10.,linewidth=1, color = 'k', linestyle='--')
 #plt.ylim(0,0.05)
-plt.xlabel(r'$\mathrm{\log R(kpc)}$', fontsize=18) 
+plt.xlim(0,1000)
+plt.xlabel(r'$\mathrm{r(kpc)}$', fontsize=18) 
+#plt.axvline(307.1, c = 'black', linestyle='--')
 plt.ylabel('$\mathrm{\gamma_{NFW}}$', fontsize=18)
 #plt.title(r'$\mathrm{Reduced\:Shear}$', fontsize=20)
 plt.legend(frameon=False) #plt.legend(frameon=False,bbox_to_anchor=(0.95, 0.2), loc=1, borderaxespad=0.)
