@@ -25,7 +25,7 @@ plt.plot(np.log10(z[filter2]), y[filter2], '.', c = 'black', label = r"$\mathrm{
 plt.ylim(27,13)
 plt.xlim(0.15,1.35)
 #plot "sA1068r.cat" using ($5>8.0 && $6<0.032?$7:1/0):2 w p ls 7 notitle
-plt.xlabel(r'$\mathrm{\log Flux\:Radius}$',fontsize=18)
+plt.xlabel(r'$\mathrm{Flux\:Radius}$',fontsize=18)
 plt.ylabel(r'$\mathrm{m_{r}}$',fontsize=18)
 plt.legend()
 plt.savefig("mag_vs_flux_rad.png")

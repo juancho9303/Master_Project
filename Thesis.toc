@@ -8,10 +8,10 @@
 \contentsline {chapter}{\numberline {2}Introduction to Gravitational Lensing}{6}{chapter.8}
 \contentsline {section}{\numberline {2.1}Gravitational Lensing formalism}{7}{section.10}
 \contentsline {chapter}{\numberline {3}Determination of the relevant scales}{14}{chapter.32}
-\contentsline {section}{\numberline {3.1}COSMOS field}{16}{section.34}
+\contentsline {section}{\numberline {3.1}COSMOS field}{15}{section.34}
 \contentsline {section}{\numberline {3.2}DM to stellar ratio}{17}{section.36}
 \contentsline {section}{\numberline {3.3}Einstein Radius}{21}{section.44}
 \contentsline {chapter}{\numberline {4}Data and analysis}{25}{chapter.49}
-\contentsline {section}{\numberline {4.1}Color images}{29}{section.53}
+\contentsline {section}{\numberline {4.1}Color images}{28}{section.53}
 \contentsline {section}{\numberline {4.2}Photometric Redshifts}{31}{section.57}
-\contentsline {chapter}{\numberline {5}Conclusions}{35}{chapter.60}
+\contentsline {chapter}{\numberline {5}Conclusions}{34}{chapter.60}

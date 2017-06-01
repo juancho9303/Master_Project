@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -38,6 +38,11 @@ D.~Harvey et. al.
 \newblock A detection of wobbling brightest cluster galaxies within massive
   galaxy clusters.
 \newblock \emph{MNRAS}, 000:\penalty0 1--9, 2017.
+
+\bibitem[et. al.(2014)]{Reference28}
+Thomas.~J et. al.
+\newblock Massive elliptical galaxies: Bh scouring or bottom-heavy imf.
+\newblock \emph{Proceedings IAU Symposium}, \penalty0 (311), 2014.
 
 \bibitem[der Burg~et. al.(2015)]{Reference2}
 R.~F. J.~Van der Burg~et. al.
@@ -111,8 +116,8 @@ C.~Bildfell et. al.
   out to $z\approx 0.5$.
 \newblock \emph{MNRAS}, 425:\penalty0 204--221, 2012{\natexlab{d}}.
 
-\bibitem[E(1996)]{Reference27}
-Bertin. E.
+\bibitem[S(1996)]{Reference27}
+Bertin. E \&~Arnouts. S.
 \newblock Sextractor: Software for source extraction.
 \newblock \emph{Astronomy and Astrophysics}, 117:\penalty0 393--404, 1996.
 

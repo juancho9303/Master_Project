@@ -49,12 +49,12 @@ A990    & 0.144 & ~800           & 617.1 & 15.7778
 
 The INT images were obtained using multiple exposures so it was necessary to make a mosaic of them using \texttt{SWARP}, so at the end we had the data of the clusters in the bands G,R,U,I with the same spatial scale. The first step in the removal of the light from the BCG was constructing a mask file (segmentation file) to only extract the desired galaxy, this was done using \texttt{SEXTRACTOR} (Bertin, E. \& Arnouts, S \citeyear{Reference27}). 
 
-The procedure is the following: \texttt{SEXTRACTOR} identifies the bright objects and extracts them while doing aperture photometry on them, the user can choose to obtain an examination image to see the extracted objects (that in our case would be the segmentation file). \texttt{SEXTRACTOR} labels each of the extracted regions with growing numbers where 1 is the brightest object (in most cases the BCG) so we can use python scripts to modify the segmentation file to mask only the galaxies but not the BCG which we want to fit properly. Figure [4.1] shows the original segmentation image and the one where the BCG light has been removed so that it won't be masked once we fit the light of the BCG.
+The procedure is the following: \texttt{SEXTRACTOR} identifies the bright objects and extracts them while doing aperture photometry on them, the user can choose to obtain an examination image to see the extracted objects (that in our case would be the segmentation file). \texttt{SEXTRACTOR} labels each of the extracted regions with growing numbers where 1 is the brightest object (in most cases the BCG) so we can use python scripts to modify the segmentation file to mask only the galaxies but not the BCG which we want to fit properly. Figure [4.1] shows the original segmentation image and the one where the BCG light has been removed so that it won't be masked once we fit the light of the BCG. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/masks.png}
-\caption[Segmentation images]{Segmentation images produced by \texttt{SEXTRACTOR} and used as mask files for the galfit extraction. Left panel is the original mask with all the bright objects. Right panel is the mask after the substraction of the regions surrounding the cluster galaxies to be fitted with \texttt{GALFIT}.}
+\caption[Segmentation images]{Segmentation images produced by \texttt{SEXTRACTOR} and used as mask files for the galfit extraction. Left panel is the original mask with all the bright objects. Right panel is the mask after the substraction of the regions surrounding the cluster galaxies to be fitted with \texttt{GALFIT}. The colors are inverted for an easier visualization of the image. The fainter regions are actually the most luminous objects because \texttt{GALFIT} assigns increasing numbers starting from the brightest one, that is the BCG in this case}
 \end{figure}
 
 Now, once the mask file is ready we can do the substraction of the BCG light using \texttt{GALFIT} (Peng et. al \citeyear{Reference20}) which fits two dimensional profiles of galaxies (with different shapes and features). The first substraction for most of our target clusters was done fitting a Sersic's profile with n=4 which is de Vaucouleurs profile. Although in all cases some parameters such as the $n$ index, the effective radius, fourier and bending modes were to be changed and modified accordingly. A first run of \texttt{GALFIT} gives us a rough idea of the true position of the center of the BCG so we can set this values in a second run for each cluster. 
@@ -63,28 +63,11 @@ We use the segmentation masks given by \texttt{SEXTRACTOR} to mask bright object
 
 The power of \texttt{GALFIT} lies in the fact that it allows for different shape fitting through fourier and bending modes. These parameters (\texttt{C0, B1, B2, F1, F2}, etc.) are hidden from the user unless he/she explicitly requests them.  These can be tagged on to the end of any previous components except, of course, the PSF and the sky.  
 
-Some of the useful parameters that we used to properly fit the BCG in every case were:
+Some of the useful parameters that we used to properly fit the BCG in every case were: \texttt{B1)} Bending mode 1 (shear term), \texttt{B2)} Bending mode 2 (banana shape)
+\texttt{B3)} Bending mode 3 (S-shape) and for the azimuthal fourier modes
+\texttt{F$_i$)} Az. Fourier mode $i$ where $i$ can go up to a 20th Fourier mode, \texttt{C0)}   traditional diskyness(-)/boxyness(+).
 
-Bending modes:
-\texttt{B1)}  0.07      1        Bending mode 1 (shear)
-\texttt{B2)}  0.01      1        Bending mode 2 (banana shape)
-\texttt{B3)}  0.03      1        Bending mode 3 (S-shape)
-
-Azimuthal fourier modes
-\texttt{F1)}  0.07  30.1  1  1   Az. Fourier mode 1, amplitude and phase angle
-\texttt{F2)}  0.01  10.5  1  1   Az. Fourier mode 2, amplitude and phase angle
-\texttt{F6)}  0.03  10.5  1  1  Az. Fourier mode 6, amplitude and phase angle
-\texttt{F10)}  0.08  20.5  1  1   Az. Fourier mode 10, amplitude and phase angle
-\texttt{F20)}  0.01  23.5  1  1   Az. Fourier mode 20, amplitude and phase angle
-
-Traditional Diskyness/Boxyness parameter c
-\texttt{C0)} 0.1         0       traditional diskyness(-)/boxyness(+)
-
-The masks:
-
-The colors are inverted for an easier visualization of the image. The fainter regions are actually the most luminous objects because \texttt{GALFIT} assigns increasing numbers starting from the brightest one, that is the BCG in this case
-
-The original image, the fitted models and the output are presented here:
+Figure [4.2] shows the original image, the fitted models and the output given by \texttt{GALFIT} for the cluster ABELL754. Note that many galaxies were fitted and many background objects can be seen near the center of the BCG. 
 
 \begin{figure}[H]
 \centering
@@ -94,11 +77,9 @@ The original image, the fitted models and the output are presented here:
 
 \section{Color images} 
 
-We use \texttt{IRAF} to make the color images using our g,r,u,i bands. Let's use ABELL754 which is a low redshift galaxy cluster with a calculated mass of $\text{M}_{200}=9.8\times 10^{15} \text{M}_{\odot}$ (Sifon et. al. \citeyear{Reference9})
+We use \texttt{IRAF} to make the color images using our G,R,U,I bands. Let's keep using ABELL754 which is a low redshift galaxy ($z=0.054$) cluster with a calculated mass of $\text{M}_{200}=9.8\times 10^{15} \text{M}_{\odot}$ (Sifon et. al. \citeyear{Reference9})
 
-Here we take an isothermal sphere to model the Einstein ring in a distance of background objects of $z=1$
-
-We made a color image of the original center of the cluster without subtracting the BCG in order to differentiate between cluster members from background galaxies and field stars. This allows us to fit only the cluster galaxies. 
+Here we take an isothermal sphere to model the Einstein ring for an assumed distance of background objects of $z=0.5$. We made a color image of the original center of the cluster without subtracting the BCG in order to differentiate between cluster members from background galaxies and field stars. This allows us to fit only the cluster galaxies. 
 
 \begin{figure}[H]
 \centering
@@ -114,7 +95,7 @@ After choosing the galaxies that belong to the cluster by comparing their relati
 \caption[Color image of A754 after fitting the bright objects]{Color image of A754 cluster (filters I,G,U) after the subtraction of the bright cluster galaxies.}
 \end{figure}
 
-Because we have 4 bands we were able to make different color images to see the contrast and make combinations that would allow us to see better the very red and very blue objects, in the following figure we have the G-R, I-R-G and I-G-U color images for three clusters. 
+Because we have 4 bands we were able to make different color images to see the contrast and make combinations that would allow us to see better the very red and very blue objects, hoping to find objects with the same colors that would be good candidates for lensed objects. Figure [4.5] displays the G-R, I-R-G and I-G-U color images for three clusters (ABELL961, ABELL2703 and ABELL1033). 
 
 \begin{figure}[H]
 \centering
@@ -126,36 +107,22 @@ Because we have 4 bands we were able to make different color images to see the c
 
 The first step in determining the photometric redshifts is to discriminate between field stars and the galaxies of the clusters so in order to do this, we used some of the parameters found by \texttt{SEXTRACTOR} that allow us to constraint the fitted data. These are \texttt{class-star}, \texttt{flux\_radius}, and \texttt{FWHM} (full wicth half maximum). Class-star uses the neural network star/galaxy of \texttt{SEXTRACTOR} that will give values close to 1 for stars and 0 for galaxies. \texttt{flux\_radius}, and \texttt{FWHM} are closely related to each other and give the radius which contains half of the light of the object so it will be small for stars and bigger for extended objects.
 
-In order to extract the same objects and make the segmentation masks for the desired objects in the different filters, we used \texttt{SEXTRACTOR} on dual mode
-
-Color magnitude diagram for ABELL1068
-
-we used a zero point magnitude of 30
+In order to extract the same objects and make the segmentation masks for the desired objects in the different filters, we used \texttt{SEXTRACTOR} on dual mode and made aperture photometri on each of the relevant objects. Figure [4.6] shows the color magnitude diagram for ABELL754 where we used a zero point magnitude of 30.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/color_mag.png}
-\caption[Color Magnitude diagram of ABELL1068]{Color Magnitude diagram of ABELL1068 with the differentiation of stars from galaxies}
+\caption[Color Magnitude diagram of ABELL754]{Color Magnitude diagram of ABELL1068 with the differentiation of stars from galaxies}
 \end{figure}
 
-Mag vs flux rad to discriminate
+We can also descriminate the stars from galaxies using the radius that contains most of the flux. Figure [4.7] shows the galaxies and stars in the Mag vs \texttt{Flux\_rad} plane.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/mag_vs_flux_rad.png}
-\caption[Magnitude vs Flux radius of ABELL1068]{Magnitude vs Flux radius of ABELL1068 to identify the galaxies using the criteria of their flux distribution}
+\caption[Magnitude vs Flux radius of ABELL754]{Magnitude vs Flux radius of ABELL1068 to identify the galaxies using the criteria of their flux distribution}
 \end{figure}
 
-We use the COSMOS2015 (Laigle et. al \citeyear{Reference21}.) catalogue that contains photometric redshift of over half million galaxies in multiple bands to put another constraint in our study.
-
-We use the matched catalogue for CFHT by Remco Van der Burg and use the r-band. Our limiting magnitude is 23 in that band so we estimate the number of galaxies per redshift bin that we would expect to see in our sample with that limiting magnitude.
-
-This sets an interesting constraint on what to expect in the inner region of the BCG and give us more information about where to search for good candidates.
-
-The limiting magnitude is found using \texttt{SEXTRACTOR} that gives a good confidence on the detection of objects.
-
-The COSMOS catalogue contains one square arcmin so we use this result to see what order  we should expect from background objects.
-
-To measure the photometric redshift of the galaxies (after filtering out the stars) in the inner region of the cluster after the subtraction of the BCG, we use the photometric redshift code \texttt{EAZY} (Brammer et. al 2008) which uses an extensive collection of spectral energy distributions for galaxies in the range $0<z<4$. Fortunately, the code includes library from CFHT in the I and U bands but doesn't have the filters in the G and R bands so I used the SUBARU survey filter information to be able to compute the photometric redshifts using four bands.
+Once we have selected only the magnitudes of the galaxies in our four filters, we can measure the photometric redshift of the galaxies in the inner region of the cluster after the subtraction of the BCG, we use the photometric redshift code \texttt{EAZY} (Brammer et. al 2008) which uses an extensive collection of spectral energy distributions for galaxies in the range $0<z<4$. Fortunately, the code includes library from CFHT in the I and U bands but doesn't have the filters in the G and R bands so I used the SUBARU survey filter information to be able to compute the photometric redshifts using four bands.
 
 citation of \texttt{EAZY} ``Brammer, van Dokkum and Coppi, \citeyear{Reference22}" 
