@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -16,10 +16,21 @@ Brewer et. al.
   functions of bulges and discs.
 \newblock \emph{MNRAS}, 000:\penalty0 1--13, 2012{\natexlab{a}}.
 
+\bibitem[der Burg~et. al.(2015)]{Reference2}
+R.~F. J.~Van der Burg~et. al.
+\newblock Evidence for the inside-out growth of the stellar mass distribution
+  in galaxy clusters since $z\approx 1$.
+\newblock \emph{preprint arXiv:1412.2137v2}, 2015.
+
 \bibitem[White(1996)]{Reference17}
 Navarro. Frenk~\& White.
 \newblock The structure of cold dark matter halos.
 \newblock \emph{The Astrophysical Journal}, 462:\penalty0 563--575, 1996.
+
+\bibitem[et. al.(2014)]{Reference28}
+Thomas.~J et. al.
+\newblock Massive elliptical galaxies: Bh scouring or bottom-heavy imf.
+\newblock \emph{Proceedings IAU Symposium}, \penalty0 (311), 2014.
 
 \bibitem[Treu(2010)]{Reference1}
 Tommaso Treu.
@@ -38,17 +49,6 @@ D.~Harvey et. al.
 \newblock A detection of wobbling brightest cluster galaxies within massive
   galaxy clusters.
 \newblock \emph{MNRAS}, 000:\penalty0 1--9, 2017.
-
-\bibitem[et. al.(2014)]{Reference28}
-Thomas.~J et. al.
-\newblock Massive elliptical galaxies: Bh scouring or bottom-heavy imf.
-\newblock \emph{Proceedings IAU Symposium}, \penalty0 (311), 2014.
-
-\bibitem[der Burg~et. al.(2015)]{Reference2}
-R.~F. J.~Van der Burg~et. al.
-\newblock Evidence for the inside-out growth of the stellar mass distribution
-  in galaxy clusters since $z\approx 1$.
-\newblock \emph{preprint arXiv:1412.2137v2}, 2015.
 
 \bibitem[Narayan(1995)]{Reference25}
 Ramesh. et.~al. Narayan.
@@ -85,12 +85,6 @@ Ewa L. Lokas \& Gary~A. Mamon.
 \newblock Properties of spherical galaxies and clusters with an nfw density
   profile.
 \newblock \emph{MNRAS}, 321:\penalty0 155--166, 2001.
-
-\bibitem[Smith(2014)]{Reference5}
-Russell. Smith.
-\newblock Variations in the initial mass function in early-type galaxies: a
-  critical comparison between dynamical and spectroscopic results.
-\newblock \emph{MNRAS}, 443:\penalty0 L69--L73, 2014.
 
 \bibitem[et. al.(2015)]{Reference9}
 C.~Sifon et. al.

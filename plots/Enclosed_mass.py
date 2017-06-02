@@ -1,6 +1,7 @@
 import numpy as np
 from scipy import integrate
 from scipy.integrate import quad
+import seaborn
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 mpl.rcParams['text.usetex'] = True

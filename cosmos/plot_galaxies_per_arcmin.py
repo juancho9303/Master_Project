@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import matplotlib as mpl
+import seaborn
 import numpy as np
 mpl.rcParams['text.usetex'] = True
 
@@ -27,5 +28,6 @@ plt.ylabel(r'$\mathrm{Galaxies\:/arcmin^{2}/0.2z}$',fontsize=18)
 #plt.ylabel(r'$\mathrm{n}$',fontsize=18)
 #plt.title(r'$\mathrm{Galaxies\:per\:arcmin\:in\:radial\:bins}$',fontsize=18)
 plt.legend(loc=2,prop={'size':12})
+plt.legend(frameon=True)
 plt.savefig("galaxies_per_arcmin.png")
 plt.show()

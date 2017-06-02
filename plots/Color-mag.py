@@ -1,5 +1,6 @@
 from pylab import genfromtxt;
 import numpy as np  
+import seaborn
 import matplotlib as mpl
 from numpy import arange
 import matplotlib.pyplot as plt

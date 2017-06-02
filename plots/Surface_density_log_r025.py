@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib as mpl
+import seaborn
 import pylab as plt
 import matplotlib.patches as mpatches
 from scipy.integrate import quad

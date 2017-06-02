@@ -1,6 +1,7 @@
 import numpy as np
 from scipy import integrate
 from scipy.integrate import quad
+import seaborn
 import matplotlib as mpl
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
@@ -43,5 +44,5 @@ plt.xlabel(r'$\mathrm{r(kpc)}$', fontsize=18)
 plt.ylabel('$\mathrm{g_{NFW}}$', fontsize=18)
 #plt.title(r'$\mathrm{Reduced\:Shear}$', fontsize=20)
 plt.legend(frameon=False) #plt.legend(frameon=False,bbox_to_anchor=(0.95, 0.2), loc=1, borderaxespad=0.)
-plt.savefig("Reduced Shear.png")
+plt.savefig("Reduced_Shear.png")
 plt.show()

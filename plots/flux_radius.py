@@ -1,6 +1,7 @@
 from pylab import genfromtxt;
 import numpy as np  
 import matplotlib as mpl
+import seaborn
 from numpy import arange
 import matplotlib.pyplot as plt
 mpl.rcParams['text.usetex'] = True
