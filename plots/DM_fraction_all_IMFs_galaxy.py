@@ -1,4 +1,5 @@
 import numpy as np
+import seaborn
 from scipy import integrate
 from scipy.integrate import quad
 import matplotlib as mpl
