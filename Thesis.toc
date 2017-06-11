@@ -12,6 +12,6 @@
 \contentsline {section}{\numberline {3.2}DM to stellar ratio}{15}{section.36}
 \contentsline {section}{\numberline {3.3}Einstein Radius}{20}{section.44}
 \contentsline {chapter}{\numberline {4}Data and analysis}{24}{chapter.49}
-\contentsline {section}{\numberline {4.1}Color images}{27}{section.53}
-\contentsline {section}{\numberline {4.2}Photometric Redshifts}{30}{section.57}
-\contentsline {chapter}{\numberline {5}Conclusions}{33}{chapter.60}
+\contentsline {section}{\numberline {4.1}Color images}{28}{section.54}
+\contentsline {section}{\numberline {4.2}Photometric Redshifts}{31}{section.58}
+\contentsline {chapter}{\numberline {5}Conclusions}{34}{chapter.61}
