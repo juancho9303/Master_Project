@@ -13,5 +13,5 @@
 \contentsline {section}{\numberline {3.3}Einstein Radius}{20}{section.44}
 \contentsline {chapter}{\numberline {4}Data and analysis}{24}{chapter.49}
 \contentsline {section}{\numberline {4.1}Color images}{28}{section.54}
-\contentsline {section}{\numberline {4.2}Photometric Redshifts}{31}{section.58}
-\contentsline {chapter}{\numberline {5}Conclusions}{34}{chapter.61}
+\contentsline {section}{\numberline {4.2}Photometric Redshifts}{32}{section.59}
+\contentsline {chapter}{\numberline {5}Conclusions}{35}{chapter.62}
