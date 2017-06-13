@@ -11,8 +11,13 @@ A3=fits.getdata('A754iready.fits')
 A4=fits.getdata('A754uready.fits') 
 
 positions = [B['col4'], B['col5']]
-apertures = CircularAperture(positions, r=3.1)
-annulus_apertures = CircularAnnulus(positions, r_in=7., r_out=12.)
+apertures = CircularAperture(positions, r=3.2)
+
+positions2 = [(30., 30.)]
+apertures2 = CircularAperture(positions2, r=3.)
+
+#apertures = CircularAperture(positions, r=3.2)
+annulus_apertures = CircularAnnulus(positions, r_in=6., r_out=7.5)
 
 apers = [apertures, annulus_apertures]
 phot_tableg = aperture_photometry(A1, apers) 
@@ -49,7 +54,7 @@ print(phot_tableu)
 
 import matplotlib.pylab as plt
 
-plt.imshow(A1,interpolation='None')
+plt.imshow(A1,interpolation='None',origin='lower',vmin=-1e3)
 apertures.plot()
 annulus_apertures.plot()
 plt.show()
