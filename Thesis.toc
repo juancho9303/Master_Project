@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {2.1}Gravitational Lensing formalism}{6}{section.10}
 \contentsline {chapter}{\numberline {3}Determination of the relevant scales}{13}{chapter.32}
 \contentsline {section}{\numberline {3.1}COSMOS field}{14}{section.34}
-\contentsline {section}{\numberline {3.2}DM to stellar ratio}{15}{section.36}
+\contentsline {section}{\numberline {3.2}DM to stellar ratio}{16}{section.36}
 \contentsline {section}{\numberline {3.3}Einstein Radius}{20}{section.44}
 \contentsline {chapter}{\numberline {4}Data and analysis}{24}{chapter.49}
 \contentsline {section}{\numberline {4.1}Color images}{28}{section.54}

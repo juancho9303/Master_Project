@@ -57,3 +57,7 @@ final_sum = phot_tableu['aperture_sum_0'] - bkg_sumu
 phot_tableu['residual_aperture_sum'] = final_sum
 print(phot_tableu)    
 
+phot_tableg.write('ap_phot_g_average.txt',format='ascii.ipac')
+phot_tabler.write('ap_phot_r_average.txt',format='ascii.ipac')
+phot_tablei.write('ap_phot_i_average.txt',format='ascii.ipac')
+phot_tableu.write('ap_phot_u_average.txt',format='ascii.ipac') 
