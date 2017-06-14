@@ -20,13 +20,23 @@ apertures2 = CircularAperture(background_coords, r=3.2)
 positions = [B['col4'], B['col5']]
 apertures = CircularAperture(positions, r=3.2)
 
-annulus_apertures = CircularAnnulus(positions, r_in=6., r_out=7.5)
+annulus_apertures = CircularAnnulus(positions, r_in=6., r_out=8)
+
+errorg = 0.1 * A1
+errorr = 0.1 * A2
+errori = 0.1 * A3
+erroru = 0.1 * A4
 
 apers = [apertures, annulus_apertures]
-phot_tableg = aperture_photometry(A1, apers) 
-phot_tabler = aperture_photometry(A2, apers)   
-phot_tablei = aperture_photometry(A3, apers)   
-phot_tableu = aperture_photometry(A4, apers)
+phot_tableg = aperture_photometry(A1, apers, error=errorg) 
+phot_tabler = aperture_photometry(A2, apers, error=errorr)   
+phot_tablei = aperture_photometry(A3, apers, error=errori)   
+phot_tableu = aperture_photometry(A4, apers, error=erroru)
+
+bkg_meang = phot_tableg['aperture_sum_1'] / annulus_apertures.area()
+bkg_meanr = phot_tabler['aperture_sum_1'] / annulus_apertures.area()
+bkg_meani = phot_tablei['aperture_sum_1'] / annulus_apertures.area()
+bkg_meanu = phot_tableu['aperture_sum_1'] / annulus_apertures.area()
 
 bkg_meang = phot_tableg['aperture_sum_1'] / annulus_apertures.area()
 bkg_meanr = phot_tabler['aperture_sum_1'] / annulus_apertures.area()

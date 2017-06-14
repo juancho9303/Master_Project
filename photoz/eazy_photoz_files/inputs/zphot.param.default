@@ -28,14 +28,14 @@ USE_TEMPLATE_CACHE   n                  # Load in template cache
 CACHE_FILE           photz.tempfilt     # Template cache file (in OUTPUT_DIRECTORY)
 
 ## Input Files
-CATALOG_FILE         fluxes_without_galfit.dat # Catalog data file
+CATALOG_FILE         for_photoz_chosen_background.dat # Catalog data file
 MAGNITUDES           n                  # Catalog photometry in magnitudes rather than f_nu fluxes
 NOT_OBS_THRESHOLD    -90                # Ignore flux point if <NOT_OBS_THRESH
 N_MIN_COLORS         4                  # Require N_MIN_COLORS to fit
 
 ## Output Files
 OUTPUT_DIRECTORY     OUTPUT             # Directory to put output files in
-MAIN_OUTPUT_FILE     photz_without_galfit              # Main output file, .zout
+MAIN_OUTPUT_FILE     photz_chose_background              # Main output file, .zout
 PRINT_ERRORS         y                  # Print 68, 95 and 99% confidence intervals
 CHI2_SCALE           1.0                # Scale ML Chi-squared values to improve confidence intervals
 VERBOSE_LOG          y                  # Dump information from the run into [MAIN_OUTPUT_FILE].param
@@ -45,9 +45,9 @@ POFZ_FILE            n                  # Write out Pofz/object, .pz
 BINARY_OUTPUT        y                  # Save OBS_SED, TEMP_SED, PZ in binary format to read with e.g IDL
 
 ## Redshift / Mag prior
-APPLY_PRIOR          n                  # Apply apparent magnitude prior
-PRIOR_FILE           templates/prior_K_extend.dat # File containing prior grid
-PRIOR_FILTER         28                 # Filter from FILTER_RES corresponding to the columns in PRIOR_FILE
+APPLY_PRIOR          y                  # Apply apparent magnitude prior
+PRIOR_FILE           templates/prior_R_zmax7.dat # File containing prior grid
+PRIOR_FILTER         90                 # Filter from FILTER_RES corresponding to the columns in PRIOR_FILE
 PRIOR_ABZP           25.0               # AB zeropoint of fluxes in catalog.  Needed for calculating apparent mags!
 
 ## Redshift Grid
