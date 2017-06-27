@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -9,6 +9,17 @@
 John. Smith, Russell \&~Lucey.
 \newblock A giant elliptical galaxy with a lightweight initial mass function.
 \newblock \emph{MNRAS}, 000:\penalty0 1--14, 2013.
+
+\bibitem[Chabrier(2003)]{Reference31}
+Gilles Chabrier.
+\newblock Galactic stellar and substellar initial mass function.
+\newblock \emph{The Astronomical Society of the Pacific}, 115:\penalty0
+  763--795, 2003.
+
+\bibitem[Kroupa(2001)]{Reference30}
+Pavel Kroupa.
+\newblock On the variation of the initial mass function.
+\newblock \emph{MNRAS}, 322:\penalty0 231--246, 2001.
 
 \bibitem[et. al.(2012{\natexlab{a}})]{Reference16}
 Brewer et. al.
@@ -110,15 +121,23 @@ C.~Bildfell et. al.
   out to $z\approx 0.5$.
 \newblock \emph{MNRAS}, 425:\penalty0 204--221, 2012{\natexlab{d}}.
 
+\bibitem[et. al.(2002{\natexlab{a}})]{Reference29}
+Bertin et. al.
+\newblock The terapix pipeline.
+\newblock \emph{Astronomical Data Analysis Software and Systems XI}, 281,
+  2002{\natexlab{a}}.
+\newblock URL \url{http://adsabs.harvard.edu/abs/2002ASPC..281..228B}.
+
 \bibitem[S(1996)]{Reference27}
 Bertin. E \&~Arnouts. S.
 \newblock Sextractor: Software for source extraction.
 \newblock \emph{Astronomy and Astrophysics}, 117:\penalty0 393--404, 1996.
 
-\bibitem[et. al.(2002)]{Reference20}
+\bibitem[et. al.(2002{\natexlab{b}})]{Reference20}
 Peng et. al.
 \newblock Detailed structural decomposition of galaxy images.
-\newblock \emph{The Astronomical Journal}, 124:\penalty0 266--293, 2002.
+\newblock \emph{The Astronomical Journal}, 124:\penalty0 266--293,
+  2002{\natexlab{b}}.
 
 \bibitem[Brammer and Coppi(2008)]{Reference22}
 van~Dokkum Brammer and Coppi.
