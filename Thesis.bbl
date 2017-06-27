@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -90,6 +90,12 @@ Laigle et. al.
 \newblock The cosmos2015 catalog: Exploring the 1<z<6 universe with half a
   million galaxies.
 \newblock \emph{The Astrophysical Journal}, 224\penalty0 (2), 2016.
+
+\bibitem[de~Vaucouleurs(1948)]{Reference32}
+Gerard de~Vaucouleurs.
+\newblock Sur la technique de l'analyse microphotometrique des nebuleuses
+  brillantes.
+\newblock \emph{Recherches sur les nebuleuses extragalactiques}, 1948.
 
 \bibitem[Mamon(2001)]{Reference14}
 Ewa L. Lokas \& Gary~A. Mamon.

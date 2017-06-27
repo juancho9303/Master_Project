@@ -2,7 +2,7 @@
 
 One of the most interesting consequences of Einstein's theory of General Relativity, regarding the distortion of space time by massive objects is gravitational lensing. The basic principle behind gravitational lensing is that light is distorted when it travels close to the potential well (the distortion of space time) of massive objects which is an analogous effect to the one caused by optical lenses. 
 
-Although the discovery of gravitational lensing was made only in the past century, the possibility that there could be such a deflection had been suspected much earlier, by Newton and Laplace among others (\textcolor{blue}{Narayan et. al.} \citeyear{Reference25}). Johann Gerog von Soldner in 1801 calculated the magnitude of the deflection due to the Sun, assuming that light consists of material particles and using Newtonian gravity. Later, Einstein (1911) employed the equivalence principle to calculate the deflection angle and re-derived Soldner’s formula. Later yet, in 1915 Einstein applied the full field equations of General Relativity and discovered that the deflection angle is actually twice his previous result, the factor of two arising because of the curvature of the metric. According to this formula, a light ray which tangentially grazes the surface of the Sun is deflected by 1.7''. Einstein’s final result was confirmed in 1919 when the apparent angular shift of stars close to the limb of the Sun (see Fig. [1]) was measured during a total solar eclipse (\textcolor{blue}{Dyson et. al.} 1920). The quantitative agreement between the measured shift and Einstein’s prediction was immediately perceived as compelling evidence in support of the theory of General Relativity.
+Although the discovery of gravitational lensing was made only in the past century, the possibility that there could be such a deflection had been suspected much earlier, by Newton and Laplace among others (\textcolor{blue}{Narayan et. al.} \citeyear{Reference25}). Johann Gerog von Soldner in 1801 calculated the magnitude of the deflection due to the Sun, assuming that light consists of material particles and using Newtonian gravity. Later, Einstein (1911) employed the equivalence principle to calculate the deflection angle and re-derived Soldner’s formula. Later yet, in 1915 Einstein applied the full field equations of General Relativity and discovered that the deflection angle is actually twice his previous result, the factor of two arising because of the curvature of the metric. According to this formula, a light ray which tangentially grazes the surface of the Sun is deflected by 1.7''. Einstein’s final result was confirmed in 1919 when the apparent angular shift of stars close to the limb of the Sun (see Fig. [1]) was measured during a total solar eclipse in 1920. The quantitative agreement between the measured shift and Einstein’s prediction was immediately perceived as compelling evidence in support of the theory of General Relativity.
 
 Gravitational lensing can be separated into two main categories which are its two most important ways to manifest.
 
@@ -92,9 +92,7 @@ where the convergence is defined as a dimensionless surface density
 \kappa(\vec{x})\equiv \frac{\Sigma(\vec{x})}{\Sigma_{cr}}\qquad \text{with} \qquad \Sigma_{cr}=\frac{c^{2}}{4\pi G}\frac{D_s}{D_d D_{ds}}
 \end{equation}
 
-$\Sigma_{cr}$ is called the critical surface density and it characterizes the lens system and which is a function of the angular diameter distances of lens and source. Now let's introduce the distortion.
-
-One of the main features of gravitational lensing is that it distorts the shapes of the sources, this is particularly evident when the source has no negligible apparent size. In some cases the background galaxies can appear as very long arcs in galaxy clusters as mentioned at the beginning of this chapter. 
+$\Sigma_{cr}$ is called the critical surface density and it characterizes the lens system and which is a function of the angular diameter distances of lens and source. It is also very useful to quantify the distortion of shapes of background objects since it can be studied using statistical approaches on the observations, it is then useful to introduce the mathematical formalism of the distortion. One of the main features of gravitational lensing is that it distorts the shapes of the sources, this is particularly evident when the source has no negligible apparent size. In some cases the background galaxies can appear as very long arcs in galaxy clusters as mentioned at the beginning of this chapter. 
 
 The effect of distortion takes place because light bundles are deflected differentially. In the ideal case, the shape of the background images can be determined by solving the lens equation for all the points within the extended source. In particular, if the source is much smaller than the angular size on which the physical properties of the lens change, the relation between the source and image positions can locally be linearised. Mathematically this means that the distortion of images can be described by the Jacobian matrix
 
@@ -108,7 +106,7 @@ where $x_i$ indicates the $i$-component of $\vec{x}$ on the lens plane. It shows
 \frac{\partial^{2}\Psi(\vec{x})}{\partial x_{i}\partial x_{j}}\equiv\Psi_{ij}
 \end{equation}
 
-Let's split off an isotropic part from the Jacobian:
+Now, by splitting off an isotropic part from the Jacobian
 
 \begin{equation}
 \left(A-\frac{1}{2}\text{tr}A\cdot I\right)_{ij}=\left(\begin{array}{cc}
@@ -117,7 +115,7 @@ Let's split off an isotropic part from the Jacobian:
 \end{array}\right)
 \end{equation}
 
-this is the shear matrix, which is an antisymmetric, trace-free matrix that quantifies the projection of the gravitational tidal field (the gradient of the gravitational force), which describes distortions of background sources.  This allows us to define the pseudo-vector $\vec{\gamma}=(\gamma_1 , \gamma_2)$ on the lens plane, whose components are
+we get the shear matrix, which is an antisymmetric, trace-free matrix that quantifies the projection of the gravitational tidal field (the gradient of the gravitational force), which describes distortions of background sources.  This allows us to define the pseudo-vector $\vec{\gamma}=(\gamma_1 , \gamma_2)$ on the lens plane, whose components are
 
 \begin{equation}
 \gamma_1(\vec{x})=\frac{1}{2}(\Psi_{11}-\Psi_{22})\qquad \text{and} \qquad \gamma_2(\vec{x})=\Psi_{12} = \Psi_{21}
@@ -177,7 +175,7 @@ In the inner region of galaxy clusters we are in the strong lensing regime so we
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/lensing.jpg}
-\caption[Strong Lensing representation]{Representation of strong lensing by a galaxy cluster. Credits to NASA}
+\caption[Strong Lensing representation]{Representation of strong lensing by a galaxy cluster. Credits to NASA.}
 \end{figure}
 
 Now, let's understand in what scales we can use gravitational lensing to study these massive systems.
