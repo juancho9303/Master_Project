@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  27 JUN 2017 15:57
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.1)  16 JUN 2017 16:21
->>>>>>> 594a1745deff6d7bc9148022326c851d95ad515b
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  27 JUN 2017 16:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -931,11 +927,7 @@ s/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1
 nts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
 .pfb>
-<<<<<<< HEAD
-Output written on Thesis.pdf (47 pages, 3959953 bytes).
-=======
-Output written on Thesis.pdf (47 pages, 3936516 bytes).
->>>>>>> 594a1745deff6d7bc9148022326c851d95ad515b
+Output written on Thesis.pdf (47 pages, 3959949 bytes).
 PDF statistics:
  610 PDF objects out of 1000 (max. 8388607)
  485 compressed objects within 5 object streams
