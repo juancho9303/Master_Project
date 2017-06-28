@@ -4,45 +4,45 @@ The top-level auxiliary file: Thesis.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
 Warning--there's a number but no volume in Reference28
-You've used 28 entries,
+You've used 29 entries,
             2481 wiz_defined-function locations,
-            737 strings with 8260 characters,
-and the built_in function-call counts, 8765 in all, are:
-= -- 815
-> -- 204
-< -- 28
-+ -- 119
-- -- 58
-* -- 527
-:= -- 1388
-add.period$ -- 86
-call.type$ -- 28
-change.case$ -- 56
-chr.to.int$ -- 23
-cite$ -- 29
-duplicate$ -- 523
-empty$ -- 934
-format.name$ -- 88
-if$ -- 1870
+            744 strings with 8352 characters,
+and the built_in function-call counts, 9032 in all, are:
+= -- 838
+> -- 211
+< -- 29
++ -- 123
+- -- 60
+* -- 542
+:= -- 1432
+add.period$ -- 89
+call.type$ -- 29
+change.case$ -- 58
+chr.to.int$ -- 24
+cite$ -- 30
+duplicate$ -- 541
+empty$ -- 963
+format.name$ -- 91
+if$ -- 1927
 int.to.chr$ -- 6
-int.to.str$ -- 29
-missing$ -- 28
-newline$ -- 150
-num.names$ -- 84
-pop$ -- 205
+int.to.str$ -- 30
+missing$ -- 29
+newline$ -- 155
+num.names$ -- 87
+pop$ -- 212
 preamble$ -- 1
-purify$ -- 28
+purify$ -- 29
 quote$ -- 0
-skip$ -- 303
+skip$ -- 315
 stack$ -- 0
-substring$ -- 436
-swap$ -- 63
+substring$ -- 438
+swap$ -- 65
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 196
+type$ -- 203
 warning$ -- 1
-while$ -- 89
+while$ -- 91
 width$ -- 0
-write$ -- 370
+write$ -- 383
 (There was 1 warning)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -9,6 +9,12 @@
 John. Smith, Russell \&~Lucey.
 \newblock A giant elliptical galaxy with a lightweight initial mass function.
 \newblock \emph{MNRAS}, 000:\penalty0 1--14, 2013.
+
+\bibitem[et. al.(2012{\natexlab{a}})]{Reference19}
+Cappellari et. al.
+\newblock Systematic variation of the stellar initial mass function in
+  early-type galaxies.
+\newblock \emph{Nature}, 484:\penalty0 485--488, 2012{\natexlab{a}}.
 
 \bibitem[Chabrier(2003)]{Reference31}
 Gilles Chabrier.
@@ -21,11 +27,16 @@ Pavel Kroupa.
 \newblock On the variation of the initial mass function.
 \newblock \emph{MNRAS}, 322:\penalty0 231--246, 2001.
 
-\bibitem[et. al.(2012{\natexlab{a}})]{Reference16}
+\bibitem[et. al.(2012{\natexlab{b}})]{Reference16}
 Brewer et. al.
 \newblock The swells survey. vi. hierarchical inference of the initial mass
   functions of bulges and discs.
-\newblock \emph{MNRAS}, 000:\penalty0 1--13, 2012{\natexlab{a}}.
+\newblock \emph{MNRAS}, 000:\penalty0 1--13, 2012{\natexlab{b}}.
+
+\bibitem[Salpeter(1955)]{Reference33}
+Edwin Salpeter.
+\newblock The luminosity function and stellar evolution.
+\newblock \emph{ApJ}, 121\penalty0 (161), 1955.
 
 \bibitem[der Burg~et. al.(2015)]{Reference2}
 R.~F. J.~Van der Burg~et. al.
@@ -49,11 +60,11 @@ Tommaso Treu.
 \newblock \emph{Annual Review of Astronomy ans Astrophysics}, 48:\penalty0
   87--125, 2010.
 
-\bibitem[et. al.(2012{\natexlab{b}})]{Reference18}
+\bibitem[et. al.(2012{\natexlab{c}})]{Reference18}
 Matthew R.~George et. al.
 \newblock Galaxies in x-ray groups. ii. a weak lensing study of halo centering.
 \newblock \emph{The Astrophysical Journal}, 757:\penalty0 2--18,
-  2012{\natexlab{b}}.
+  2012{\natexlab{c}}.
 
 \bibitem[et. al.(2017)]{Reference13}
 D.~Harvey et. al.
@@ -109,23 +120,23 @@ C.~Sifon et. al.
   \~14000 spectroscopic members.
 \newblock \emph{A\& A}, 575:\penalty0 A48, 2015.
 
-\bibitem[et. al.(2012{\natexlab{c}})]{Reference15}
+\bibitem[et. al.(2012{\natexlab{d}})]{Reference15}
 A.~Sonnenfeld et. al.
 \newblock Evidence of dark matter contraction and a salpeter initial mass
   function in a massive early-type galaxy.
 \newblock \emph{The Astrophysical Journal}, 752:\penalty0 163--180,
-  2012{\natexlab{c}}.
+  2012{\natexlab{d}}.
 
 \bibitem[et. al.(2011)]{Reference11}
 D.~J.~Sand et. al.
 \newblock Intracluster supernovae in the multi-epoch nearby cluster survey.
 \newblock \emph{The Astrophysical Journal}, 729:\penalty0 142--155, 2011.
 
-\bibitem[et. al.(2012{\natexlab{d}})]{Reference6}
+\bibitem[et. al.(2012{\natexlab{e}})]{Reference6}
 C.~Bildfell et. al.
 \newblock Evolution of the red sequence giant to dwarf ratio in galaxy clusters
   out to $z\approx 0.5$.
-\newblock \emph{MNRAS}, 425:\penalty0 204--221, 2012{\natexlab{d}}.
+\newblock \emph{MNRAS}, 425:\penalty0 204--221, 2012{\natexlab{e}}.
 
 \bibitem[et. al.(2002{\natexlab{a}})]{Reference29}
 Bertin et. al.
@@ -161,11 +172,5 @@ J.~C.~Mu\ noz Cuartas~et. al.
 \newblock The redshift evolution of $\lambda cdm$ halo parameters:
   concentration, spin and shape.
 \newblock \emph{MNRAS}, 000:\penalty0 1--11, 2010.
-
-\bibitem[et. al.(2012{\natexlab{e}})]{Reference19}
-Cappellari et. al.
-\newblock Systematic variation of the stellar initial mass function in
-  early-type galaxies.
-\newblock \emph{Nature}, 484:\penalty0 485--488, 2012{\natexlab{e}}.
 
 \end{thebibliography}
