@@ -119,9 +119,7 @@ Because we have 4 bands we were able to make different color images to see the c
 \caption[Color images for various clusters]{Different color images for different combination of the g,r,U,i filters for the clusters A961, A2703, A1033. Left column for the images constructed only with the g and r filter, central column for i,g,r and right column for i,g,U.}
 \end{figure}
 
-\section{Photometric Redshifts}
-
-Using photometry data to get redshifts (Photometric redshifts) is not only a useful method to get redshifts of fainter objects than accesible by spectroscopy, but also the efficiency in terms of the number of objects with redshift estimates per unit telescope time is lagerly increased. Given the characteristics of our data, getting photo-z's of the background objects after the substraction of the BCG's could in principle help us find lensed objects (background galaxies with the same redshift located at different location could be lensed candidates).
+\section{Star-galaxy determination}
 
 The first step in determining the photometric redshifts is to discriminate between field stars and the galaxies of the clusters so in order to do this, we used some of the parameters found by \texttt{SEXTRACTOR} that allow us to constraint the fitted data. These are \texttt{class-star}, \texttt{flux\_radius}, and \texttt{FWHM} (full wicth half maximum). Class-star uses the neural network star/galaxy of \texttt{SEXTRACTOR} that will give values close to 1 for stars and 0 for galaxies. \texttt{flux\_radius}, and \texttt{FWHM} are closely related to each other and give the radius which contains half of the light of the object so it will be small for stars and bigger for extended objects.
 
@@ -141,5 +139,30 @@ We can also discriminate the stars from galaxies using the radius that contains 
 \caption[Magnitude vs Flux radius of Abell 754]{Magnitude vs Flux radius of Abell 754 to identify the galaxies using the criteria of their flux distribution.}
 \end{figure}
 
-Once we have selected only the magnitudes of the galaxies in our four filters, we can measure the photometric redshift of the galaxies in the inner region of the cluster after the subtraction of the BCG, we use the photometric redshift code \texttt{EAZY}  by \textcolor{blue}{Brammer et al.} (\citeyear{Reference22}) which uses an extensive collection of spectral energy distributions for galaxies in the range $0<z<4$. Fortunately, the code includes library from CFHT in the i and U bands but doesn't have the filters in the g and r bands so we used the SUBARU survey filter information to be able to compute the photometric redshifts using four bands.
+\section{Photometric Redshifts}
 
+Using photometric data to get redshifts (Photometric redshifts) is not only a useful method to get redshifts of fainter objects than accessible by spectroscopy, but also because the efficiency in terms of the number of objects with redshift estimates per unit telescope time is largely increased. Given the characteristics of our data, getting photo-z's of the background objects after the subtraction of the BCG's could in principle help us find lensed objects (background objects with the same redshift could be the same galaxy located at different locations so they are good lensing candidates).
+
+In order to calculate the photometric redshifts we must make very accurate photometry on the four bands trying to minimize the error associated to the removal of the light from the BCG that causes the photometry methods to overestimate or underestimate the background thus corrupting the results of the photometry. As seen in figure [], the background neighbourhood of some of the objects are over removed after the subtraction of the light of the BCG, so this effect would cause objects with the same real redshift (lensed background galaxies) to have different redshifts after running the photo-z code.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{images/horizontal_cuts.png}
+\caption[Horizontal cuts, overestimated background]{Overestimated background.}
+\end{figure}
+
+We applied different methods for the photometry of the reduced data with a careful local background determination in every case. The first one was a simply aperture photometry using \texttt{SEXTRACTOR} with the default parameters, the other methods were more precise and were made using \texttt{PHOTUTILS}.  The first method is making aperture photometry with an annulus, the second method is choosing a fixed background (the mean value found with \texttt{IMSTATISTICS} of \texttt{IRAF}) and use it as the value for all the apertures, the third one is the average between the chosen background and the background value found in the annulus surrounding the objects. Figure [] shows the objects on which we applied the photometry for cluster Abell 754.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{images/aperture_photometry.png}
+\caption[Apertures for the aperture photometry procedures]{Apertures for the aperture photometry procedures for the core of galaxy cluster Abell 754.}
+\end{figure}
+
+Once we have obtained the magnitudes of the galaxies in our four filters, we can measure the photometric redshift of the galaxies in the inner region of the cluster, we use the photometric redshift code \texttt{EAZY}  by \textcolor{blue}{Brammer et al.} (\citeyear{Reference22}) which uses an extensive collection of spectral energy distributions for galaxies in the range $0<z<4$. Fortunately, the code includes library from CFHT in the i and U bands but doesn't have the filters in the g and r bands so we used the SUBARU survey filter information to be able to compute the photometric redshifts using the four bands.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{images/photo_z_red_squares.png}
+\caption[Apertures for the aperture photometry procedures]{Apertures for the aperture photometry procedures for the core of galaxy cluster Abell 754.}
+\end{figure}
