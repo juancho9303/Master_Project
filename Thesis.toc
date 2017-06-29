@@ -15,4 +15,4 @@
 \contentsline {section}{\numberline {4.1}Color images}{29}{section.54}
 \contentsline {section}{\numberline {4.2}Star-galaxy determination}{33}{section.59}
 \contentsline {section}{\numberline {4.3}Photometric Redshifts}{35}{section.62}
-\contentsline {chapter}{\numberline {5}Conclusions}{38}{chapter.66}
+\contentsline {chapter}{\numberline {5}Conclusions}{39}{chapter.66}
