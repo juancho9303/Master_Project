@@ -6,7 +6,7 @@ For this project we make use of good quality deep data of galaxy clusters observ
 
 After filtering out some of the clusters because of a very complex and crowded central region or just not good quality we used 30 clusters for the final studies and paid special attention to 10, marked with * in table 4.1.
 
-The original images have dimensions of [11000:11000] pixels but since our relevant region is the center of the cluster where the BCG is located, we cut the images with dimension of [1000,1000] for the color analysis and [4000:4000] to characterize the colors and discriminate between cluster and non-cluster members.
+The original images have dimensions of [20000:20000] pixels but since our relevant region is the center of the cluster where the BCG is located, we cut the images with dimension of [1000,1000] for the color analysis and [4000:4000] to characterize the colors and discriminate between cluster and non-cluster members. The pixel scale for CFHT is 0.185"/pix and 0.33"/pix for the INT data so the proper conversion must be done to match them accordingly.
 
 \begin{table}[H]
 \centering
@@ -166,7 +166,7 @@ We use the photometric redshift code \texttt{EAZY}  by \textcolor{blue}{Brammer 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/photo_z_red_squares.png}
-\caption[Photometric redshift results for Abell 754]{Photometric redshift results for Abell 754. Top left: Results for the photometry method in which the background was determined with an annulus around the objecrs. Bottom right: Using a fixed background (mean of the background). Top left: An average between the two other methods. Bottom left: Van der Burg's results for the photo-z's for a much larger sample (188964 objects) The red squares indicate the regime of the background galaxies where we want to look for lensing candidates.}
+\caption[Photometric redshift results for Abell 754]{Photometric redshift results for Abell 754. Top left: Results for the photometry method in which the background was determined with an annulus around the objecrs. Bottom right: Using a fixed background (mean of the background). Top left: An average between the two other methods. Bottom left: Van der Burg's results for the photo-z's for a much larger sample (188,964 objects). The red squares represent the regions of the "junk" data which we can neglect for the lensing analysis. The green squares indicate the regime of the background galaxies where we want to look for lensing candidates.}
 \end{figure}
 
 Once the photo-z's are calculated we search for objects with similar redshift and make a close inspection on their location near the BCG. 
