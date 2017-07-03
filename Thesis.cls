@@ -167,12 +167,12 @@
 \GROUP       {\texorpdfstring{\href{http://urania.udea.edu.co/sitios/facom/}
                 {FACOM}}
                 {FACOM}}
-\faculty     {\texorpdfstring{\href{http://portal.udea.edu.co/wps/portal/udea/web/inicio/institucional/unidades-academicas/facultades/ciencias-exactas-naturales}
-                {Natural Sciences Faculty}}
-                {Natural Sciences Faculty}}
-\FACULTY     {\texorpdfstring{\href{http://portal.udea.edu.co/wps/portal/udea/web/inicio/institucional/unidades-academicas/facultades/ciencias-exactas-naturales}
-                {NATURAL SCIENCES FACULTY}}
-                {NATURAL SCIENCES FACULTY}}
+\faculty     {\texorpdfstring{\href{https://www.universiteitleiden.nl/en/science}
+                {Faculty of Science}}
+                {Faculty of Science}}
+\FACULTY     {\texorpdfstring{\href{https://www.universiteitleiden.nl/en/science}
+                {FACULTY OF SCIENCE}}
+                {FACULTY OF SCIENCE}}
 \addresses   {}
 \subject     {}
 \keywords    {}
