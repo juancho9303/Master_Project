@@ -30,17 +30,17 @@ For the generalities of gravitational lensing we follow the order given in a rev
 \caption[Angles in gravitational lensing]{Sketch of a lensing configuration, where $D_{ds}$ is the distance from the lense to the source, $D_s$ is the distance from the observer to the source and $D_d$ is the distance from the observer to the source. Image by Michael Sachs, Wikipedia.}
 \end{figure}
 
-Figure [2.2] is a sketch of a typical gravitational system. The lensing mass is located at a angular diameter distance $D_d$ and it deflects the light rays coming from a source at an angular distance of $D_s$.
+Figure [2.2] is a sketch of a typical gravitational system. The lensing mass is located at an angular diameter distance $D_d$ and it deflects the light rays coming from a source at an angular distance of $D_s$.
 
 The optical axis is perpendicular to the lens and source planes and passes through the observer. We measure the angular positions on both planes with respect to this reference direction. The source is at the angular position $\vec{\beta}$ and lies on the source plane at a distance $\vec{\eta}=\vec{\beta}D_s$ from the optical axis. The deflection angle $\hat{\vec{\alpha}}$ of the light ray comes from the source and has impact parameter $\vec{\xi}=\vec{\theta}D_d$ on the lens plane. Due to this deflection, the observer receives the light coming from the source as if it was emitted at the angular position $\vec{\theta}$.
 
 If $\vec{\theta}$, $\vec{\beta}$ and $\hat{\vec{\alpha}}$ are small, the true position of the source and its observed position on the sky are related by a very simple relation, obtained by a geometrical construction. This relation is called the lens equation and is written as
 
 \begin{equation}
-\vec{\theta}D_s = \vec{\beta}D_s+ \hat{\vec{\alpha}}D_{ds}     \\\\\\\\\\\
+\vec{\theta}D_s = \vec{\beta}D_s+ \hat{\vec{\alpha}}D_{ds}
 \end{equation}
 
-where as seen in the figure, $D_{ds}$ is the distance between the lens and the source.
+where as seen in Figure [2.2], $D_{ds}$ is the distance between the lens and the source.
 
 Defining the reduced deflection angle
 
@@ -62,14 +62,13 @@ And from equation 2.1 we get
 
 Fortunately, in most three dimensional distributions of matter (even in the case of lensing by massive objects like galaxy clusters) the physical size of the lens is generally much smaller than the distances between the observer, the lens and the source. This means that the deflection of light takes place in a very thin and short section of its path to the observer. Given this, we can use the \textit{thin screen approximation}: ``The lens is approximated by a planar distribution of matter, the lens plane". Also the sources can be treated as if they lie on a plane which is called the source plane.
 
-The \textit{thin screen approximation} alows us to state that the lensing matter distribution is fully described by its surface density
+Another useful quantity in characterizing a gravitational lensing system is the surface density which fully describes the lensing matter distribution
 
 \begin{equation}
 \Sigma(\vec{\xi}) = \int \rho (\vec{\xi},z)dz
 \end{equation}
 
 where $\vec{\xi}$ is a two-dimensional vector on the lens plane and $\rho$ is the three dimensional density.
-
 
 The most interesting physics of the simple lens equation arises because $\vec{\alpha}$ depends on $\vec{\theta}$. Now, we can characterize an extend the distribution of matter by its effective lensing potential, which is obtained by projecting the three-dimensional Newtonian potential on the lens plane and scaling it accordingly
 
@@ -97,7 +96,9 @@ where the convergence is defined as a dimensionless surface density
 \kappa(\vec{x})\equiv \frac{\Sigma(\vec{x})}{\Sigma_{cr}}\qquad \text{with} \qquad \Sigma_{cr}=\frac{c^{2}}{4\pi G}\frac{D_s}{D_d D_{ds}}
 \end{equation}
 
-$\Sigma_{cr}$ is called the critical surface density and it characterizes the lens system and which is a function of the angular diameter distances of lens and source. It is also very useful to quantify the distortion of shapes of background objects since it can be studied using statistical approaches on the observations, it is then useful to introduce the mathematical formalism of the distortion. One of the main features of gravitational lensing is that it distorts the shapes of the sources, this is particularly evident when the source has no negligible apparent size. In some cases the background galaxies can appear as very long arcs in galaxy clusters as mentioned at the beginning of this chapter. 
+$\Sigma_{cr}$ is called the critical surface density and it characterizes the lens system and which is a function of the angular diameter distances of lens and source. It is also very useful to quantify the distortion of shapes of background objects since it can be studied using statistical approaches on the observations.
+
+It is then useful to introduce the mathematical formalism of the distortion. As mention at the beginning of this chapter, one of the main features of gravitational lensing is that it distorts the shapes of the sources, this is particularly evident when the source has no negligible apparent size. In some cases the background galaxies can appear as very long arcs in galaxy clusters as in the case of strong gravitational lensing. 
 
 The effect of distortion takes place because light bundles are deflected differentially. In the ideal case, the shape of the background images can be determined by solving the lens equation for all the points within the extended source. In particular, if the source is much smaller than the angular size on which the physical properties of the lens change, the relation between the source and image positions can locally be linearised. Mathematically this means that the distortion of images can be described by the Jacobian matrix
 
@@ -167,13 +168,13 @@ Unless we have a measurement of the intrinsic size or magnification of a galaxy 
 g=\frac{\gamma}{1-\kappa}
 \end{equation}
 
-Finally, we can introduce another useful quantity in the characterization of gravitational lensing systems. The \textit{magnification} is quantified by the inverse of the determinant of the Jacobian matrix. For this reason, the matrix $\text{M}=A^{-1}$ is called the \textit{magnification tensor}, and we define
+Calculating the reduced shear for different redshifts will give us a constraint about the location of the Einstein ring on each cluster (where the reduced shear diverges). Finally, we can introduce another useful quantity in the characterization of gravitational lensing systems. The \textit{magnification} is quantified by the inverse of the determinant of the Jacobian matrix. For this reason, the matrix $\text{M}=A^{-1}$ is called the \textit{magnification tensor}, and we define
 
 \begin{equation}
 \mu \equiv \text{det} M = \frac{1}{\text{det}A}=\frac{1}{(1-\kappa)^2-\gamma^2}
 \end{equation}
 
-The eigenvalues of the magnification tensor measure the amplification in the tangential and in the radial direction and are given by
+The magnification will be an important and useful quantity in our work since its calculation will give us a hint about the radius of the Einstein rings (where the magnification is infinite). The eigenvalues of the magnification tensor measure the amplification in the tangential and in the radial direction and are given by
 
 \begin{equation}
 \mu_t = \frac{1}{\lambda_t}=\frac{1}{1-\kappa - \gamma} \qquad \text{and} \qquad  \mu_r = \frac{1}{\lambda_r}=\frac{1}{1-\kappa + \gamma}
@@ -181,12 +182,20 @@ The eigenvalues of the magnification tensor measure the amplification in the tan
 
 The magnification is ideally infinite where $\lambda_t=0$ and where $\lambda_r=0$. These two conditions define two curves in the lens plane, called the tangential and the radial critical line, respectively. An image forming along the tangential critical line is strongly distorted tangentially to this line. On the other hand, an image forming close to the radial critical line is stretched in the direction perpendicular to the line itself. 
 
-In the inner region of galaxy clusters we are in the strong lensing regime so we will focus our discussion on strong lensing and the search for multiple images and arcs in the inner regions of the galaxy clusters. Figure [2.3] is a representation of a lensing system in which a background galaxy is lensed by a cluster of galaxies and produces multiple images and arcs observed by our telescopes. 
+At last, it is neccessary to introduce a simple way to characterize the physical scale in which we expect to find strong lensing. This can be done by calculating the characteristic radius of gravitational lensing which is called the \textbf{Einstein radius} (radius of the Einstein rings). Since we don't have information about the mass of the system, we must use an approximation that relates known quantities such as the velocity dispersion $\sigma$. In the approximation of the single isothermal sphere (see Appendix), the line of sight velocity dispersion is constant as well as the gradient of the projected potential, therefore the deviation angle is constant and the Einstein radius $R_{E}$ can be obtained from the velocity dispersion as
+
+\begin{equation}
+R_E=4\pi\left(\frac{\sigma}{c}\right)^{2}\frac{D_{ds}}{D_{s}}
+\end{equation}
+
+The calculation of the Einstein radius for the galaxy clusters (assuming different source distances constrained by some assumptions explained in Chapter 3) is relevant because it allows us to define the important regions on which to focus the analysis and the search for lensing candidates.
+
+In the inner region of galaxy clusters we are in the strong lensing regime so we will focus our discussion only on strong lensing (weak lensing is not relevant for this work) i.e we search for multiple images and arcs in the inner regions of the galaxy clusters. Figure [2.3] is a representation of a strong lensing system in which a background galaxy is lensed by a cluster of galaxies and produces multiple images and arcs observed by our telescopes. It represents the ideal case for our purpose. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/lensing.jpg}
-\caption[Strong Lensing representation]{Representation of strong lensing by a galaxy cluster. Credits to NASA.}
+\caption[Strong Lensing representation]{Representation of strong lensing by a galaxy cluster. It displays arcs and multiple images of a background object, as expected for strong gravitational lensing in these massive systems. Credits to NASA.}
 \end{figure}
 
-Now, let's understand in what scales we can use gravitational lensing to study these massive systems.
+In the next chapter we focus our attention on understanding on what scales we can use gravitational lensing to study these massive systems, and how many objects we expect to find in our sample.
