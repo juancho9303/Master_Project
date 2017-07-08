@@ -6,7 +6,7 @@
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.6}
 \contentsline {chapter}{\numberline {2}Introduction to Gravitational Lensing}{7}{chapter.9}
-\contentsline {section}{\numberline {2.1}Gravitational Lensing formalism}{8}{section.11}
+\contentsline {section}{\numberline {2.1}Gravitational Lensing formalism}{9}{section.11}
 \contentsline {chapter}{\numberline {3}Determination of the relevant scales}{15}{chapter.34}
 \contentsline {section}{\numberline {3.1}COSMOS field}{16}{section.36}
 \contentsline {section}{\numberline {3.2}DM to stellar ratio}{18}{section.38}

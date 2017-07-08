@@ -1,14 +1,16 @@
 \chapter{Introduction to Gravitational Lensing}
 
-One of the most interesting consequences of Einstein's theory of General Relativity, regarding the distortion of space time by massive objects is gravitational lensing. The basic principle behind gravitational lensing is that light is distorted when it travels close to the potential well (the distortion of space time) of massive objects which is an analogous effect to the one caused by optical lenses. 
+As mentioned in Chapter 1, the problem of detemining the mass component of a BCG in a galaxy cluster is not trivial whatsoever but we can get some constraints by the use of gravitational lensing in these massive objects. The understanding of the gravitational lensing formalism teaches us how to calculate the total mass content of the lense (which in this case is our target of study) and thus provides a powerful tool to properly model the mass of the BCGs by their strong gravitational lensing effects on background galaxies. 
+
+For the aims of this project, what we need is to understand the effects of gravitational lensing on the light of background objects without giving details on a more complicated theory of the nature of these effects i.e solutions of Einstein's field equations around massive objects. The basic principle behind gravitational lensing is that light rays don't always travel in straight lines through spacetime but their trajectories are modified when they travel close to the potential well (the distortion of space time) of massive objects, the effect is the distortion of the shapes of the background objects. In the case when the lensing is caused by very massive objetcs like galaxies and clusters of galaxies, these effects can be so strong that the background objects can appear to be in different positions (multiple images) and in some cases the distortion of these shapes can be such that the background object appears to be a ring around the massive lensing object (lense). These are analogous effects to the ones caused by optical lenses. 
 
 Although the discovery of gravitational lensing was made only in the past century, the possibility that there could be such a deflection had been suspected much earlier, by Newton and Laplace among others (\textcolor{blue}{Narayan et al.} \citeyear{Reference25}). Johann Gerog von Soldner in 1801 calculated the magnitude of the deflection due to the Sun, assuming that light consists of material particles and using Newtonian gravity. Later, Einstein (1911) employed the equivalence principle to calculate the deflection angle and re-derived Soldner’s formula. Later yet, in 1915 Einstein applied the full field equations of General Relativity and discovered that the deflection angle is actually twice his previous result, the factor of two arising because of the curvature of the metric. According to this formula, a light ray which tangentially grazes the surface of the Sun is deflected by 1.7 arcsec. Einstein’s final result was confirmed in 1919 when the apparent angular shift of stars close to the limb of the Sun was measured during a total solar eclipse in 1920. The quantitative agreement between the measured shift and Einstein’s prediction was immediately perceived as compelling evidence in support of the theory of General Relativity.
 
 Gravitational lensing can be separated into two main categories which are its two most important ways to manifest.
 
-\textbf{1. Strong lensing:} Where there are easily visible distortions such as the formation of Einstein rings, arcs, and multiple images.
+\textbf{1. Strong lensing:} Where there are easily visible distortions on the shape of background object such as the formation of Einstein rings (where the alignment between the source, lens and object allows for an optical effect in which the observer sees a full ring surrounding the lens), arcs (the alignment is not good enough for the formation of a ring, but only for  segments of it with the shape of arcs), and multiple images of the same object.
 
-\textbf{2. Weak lensing:} Where the distortions of background sources are much smaller and can only be detected by analysing large numbers of sources in a statistical way to find coherent distortions of only a few percent.
+\textbf{2. Weak lensing:} Where the distortions of background sources are much smaller and can only be detected by making a statistical analysis of a large number of sources that allows to find coherent alignments on their distortions.
 
 \begin{figure}[H]
 \centering
@@ -20,21 +22,7 @@ Figure [2.1] sketches the effects of gravitational lensing in the strong, weak a
 
 \section{Gravitational Lensing formalism}
 
-For the generalities of gravitational lensing we follow the order given in a review by \textcolor{blue}{Meneghetti} (\citeyear{Reference26}) in which we first start by introducing the deflection angle which is the measure of the angular distance that has been deflected and which is linearly dependent on the mass $\text{M}$. This dependence ensures that the angles of deflection of an array of lenses can be superposed linearly. If we had N point masses sparsed on a plane, with positions $\xi_i$ and masses $\text{M}_{i}$, then the deflection angle would be:
-
-\begin{equation}
-\hat{\vec{\alpha}}(\vec{\xi})=\sum_{i}\hat{\vec{\alpha_{i}}}(\vec{\xi}-\vec{\xi_{i}})=\frac{4G}{c^{2}}\sum_{i}\textrm{M}_{i}\frac{\vec{\xi}-\vec{\xi_{i}}}{\left|\vec{\xi}-\vec{\xi_{i}}\right|^{2}}
-\end{equation}
-
-Fortunately, in most three dimensional distributions of matter (even in the case of lensing by massive objects like galaxy clusters) the physical size of the lens is generally much smaller than the distances between the observer, the lens and the source. This means that the deflection of light takes place in a very thin and short section of its path to the observer. Given this, we can use the \textit{thin screen approximation}: ``The lens is approximated by a planar distribution of matter, the lens plane". Also the sources can be treated as if they lie on a plane which is called the source plane.
-
-The \textit{thin screen approximation} alows us to state that the lensing matter distribution is fully described by its surface density
-
-\begin{equation}
-\Sigma(\vec{\xi}) = \int \rho (\vec{\xi},z)dz
-\end{equation}
-
-where $\vec{\xi}$ is a two-dimensional vector on the lens plane and $\rho$ is the three dimensional density.
+For the generalities of gravitational lensing we follow the order given in a review by \textcolor{blue}{Meneghetti} (\citeyear{Reference26}). The first important quantity is the deflection angle which is the measure of the angular distance that has been deflected and which is linearly dependent on the mass $\text{M}$. This dependence ensures that the angles of deflection of an array of lenses can be superposed linearly.
 
 \begin{figure}[H]
 \centering
@@ -60,11 +48,28 @@ Defining the reduced deflection angle
 \vec{\alpha}(\vec{\theta})\equiv \frac{D_{ds}}{D_s}\hat{\vec{\alpha}}(\vec{\theta})
 \end{equation}
 
-And from equation 2.3 we get
+And from equation 2.1 we get
 
 \begin{equation}
 \vec{\beta}=\vec{\theta}-\vec{\alpha}(\vec{\theta})
 \end{equation}
+
+ If we had N point masses sparsed on a plane, with positions $\xi_i$ and masses $\text{M}_{i}$, then the deflection angle (as a function of the impact parameter) would be:
+
+\begin{equation}
+\hat{\vec{\alpha}}(\vec{\xi})=\sum_{i}\hat{\vec{\alpha_{i}}}(\vec{\xi}-\vec{\xi_{i}})=\frac{4G}{c^{2}}\sum_{i}\textrm{M}_{i}\frac{\vec{\xi}-\vec{\xi_{i}}}{\left|\vec{\xi}-\vec{\xi_{i}}\right|^{2}}
+\end{equation}
+
+Fortunately, in most three dimensional distributions of matter (even in the case of lensing by massive objects like galaxy clusters) the physical size of the lens is generally much smaller than the distances between the observer, the lens and the source. This means that the deflection of light takes place in a very thin and short section of its path to the observer. Given this, we can use the \textit{thin screen approximation}: ``The lens is approximated by a planar distribution of matter, the lens plane". Also the sources can be treated as if they lie on a plane which is called the source plane.
+
+The \textit{thin screen approximation} alows us to state that the lensing matter distribution is fully described by its surface density
+
+\begin{equation}
+\Sigma(\vec{\xi}) = \int \rho (\vec{\xi},z)dz
+\end{equation}
+
+where $\vec{\xi}$ is a two-dimensional vector on the lens plane and $\rho$ is the three dimensional density.
+
 
 The most interesting physics of the simple lens equation arises because $\vec{\alpha}$ depends on $\vec{\theta}$. Now, we can characterize an extend the distribution of matter by its effective lensing potential, which is obtained by projecting the three-dimensional Newtonian potential on the lens plane and scaling it accordingly
 
