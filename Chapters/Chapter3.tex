@@ -1,20 +1,18 @@
 \chapter{Determination of the relevant scales}
 
-Figure [3.1] shows a composite image of a galaxy cluster taken by the HST in which many lensed objects can be seen as distorted shapes and multiple images. The galaxy cluster MACS 1206 lies $1.2\times 10^{9}$ pc from Earth. In this system, astronomers counted 47 multiple images of 12 newly identified galaxies. 
+In this project we base our analysis on the center of galaxy clusters at low redshift so it is necessary to understand which scales will be relevant for our studies. In order to calculate the range of scales that we will probe in the observational procedures on Chapter 4 we will do three separate experiments. 
 
-This galaxy cluster is part of the CLASH survey which among other ambitions, is searching for high accumulations of dark matter in their central cores which may yield new clues to the early stages in the origin of structure in the universe. This and other results suggest that dark matter is more densely packed inside clusters than some models predict and might as well mean that galaxy cluster assembly began earlier than commonly thought. Let's search for some insights into these problems.
+The first experiment is the calculation of the number of objects that we would expect to be lensed near the cluster centres by using a very extensive catalogue of galaxies located at different redshifts. Calculating the ammount of galaxies that we should see in the vicinity of the BCG (with their reported redshift) given the characteristics of our data gives us an idea on how many of those objects could in principle be lensed by the BCG and what is the redshift range on which me should focus our attention. 
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=12cm]{images/GC.jpg}
-\caption[Galaxy Cluster MACS 1206]{Galaxy Cluster MACS 1206 ($z=0.439$), credits to NASA Hubble Space Telescope.}
-\end{figure}
+The second experiment consists on doing the mass modelling of the cluster for its stellar and dark matter content to see on which scale stars are the main component of the enclosed mass that lenses background objects (this will suggest where the determination and characterisation of the IMF can be done with a good degree of confidence). 
 
-In this project we base our analysis on the center of galaxy clusters at low redshift so it is necessary to understand which scales will be relevant for our studies. In order to calculate the range of scales that we will probe in the observational procedures on Chapter 4 we will do two separate experiments. The first one is the study of the number of objects that we would expect to be lensed near the cluster centres by using a very extensive catalogue of galaxies (this will suggest how many objects we expect in the vicinity of the BCGs). The second one consists on doing the mass modelling of the cluster for its stellar and dark matter content to see on which scale stars are the main component of the enclosed mass that lenses background objects (this will suggest where the determination and characterisation of the IMF can be done with a good degree of confidence).
+The third one is the calculation of the expected Einstein radius for objects located at differents redshifts which will help us define the most relevant regions to look for lensing candidates.
 
-\section{COSMOS field}
+\section{Experiment one: COSMOS field}
 
-For our first experiment, we make use of the COSMOS2015 catalogue (\textcolor{blue}{Laigle et al.} \citeyear{Reference21}) which contains half a million objects in a range of $1<z<6$. Ricardo Herbonnet matched the CFHT data to this catalogue so we use his matched data which contains a total of 133,348 galaxies in the 2 degree COSMOS field. We count the amount of galaxies for different magnitudes in redshift bins of 0.2 $z$ for the $r$ filter. These numbers represents the expected number of galaxies in the background of the lens objects of our sample as seen in Figure [3.2]. 
+For our first experiment we need a very large catalogue of galaxies that contains their spatial locations and redshifts because this alows us get the average number of galaxies contained inside a square region (similar to the effective area surrounding the BCGs of our sample) with their corresponding redshifts. This will thus give us the number of galaxies that we would expect to see with the sensitivity of our data and will also help us constrain the redshifts to probe. For this purpose we make use the COSMOS2015 catalogue (\textcolor{blue}{Laigle et al.} \citeyear{Reference21}) which contains half a million objects in a range of $1<z<6$. 
+
+Ricardo Herbonnet (private communication) matched the CFHT data to this catalogue so we use his matched data which contains a total of 133,348 galaxies in the 2 degree COSMOS field. We count the amount of galaxies for different magnitudes in redshift bins of 0.2 $z$ for the $r$ filter. These numbers represent the expected number of galaxies in the background of the lens objects of our sample as seen in Figure [3.2]. 
 
 \begin{figure}[H]
 \centering
@@ -26,7 +24,7 @@ Around $z=0.3$ we find the peak for the number of galaxies so it is the redshift
 
 CFHT can see objects as deep as $m=23$ but Hubble Space Telescope could see objects with $m=25$ so it should be able to see a lot more objects that have been lensed. This result is a first suggestion that within the inner region of the galaxy clusters, there must be lensed objects in the form of arcs or multiple images that we could be able to see with our sample making a careful subtraction of the BCG light. Now we must answer the question regarding the scales in which the stellar content (associated to the extracted light from the BCG) is relevant.
 
-\section{DM to stellar ratio}
+\section{Experiment two: DM to stellar ratio}
 
 We first need to take into consideration is the density profile that we will use for our calculation of the fraction of DM and stellar light. The first usual approach for the density profile of the gravitational lens is an isothermal sphere (see Appendix), although in reality, the density profile and lensing properties of galaxies is a bit more complicated than the assumption of a SIS (singular isothermal sphere), so we need to take into account more complex but elaborate profiles such as the NFW (\textcolor{blue}{Navarro, Frenk \& White} \citeyear{Reference17}) which is an approximation to the equilibrium configuration of dark matter produced in N-body simulations of colissionless dark matter particles (see Appendix for the formalism of the NFW and it's lensing equations).
 
@@ -125,9 +123,9 @@ Our result is in good concordance with the alalysis made by \textcolor{blue}{Son
 
 This first results mean that the proper determination of the light of the BCG (and thus tracking their formation history through an accurate determination of their IMFs) is harder to do in the inner region of galaxy clusters than it is in early type galaxies in different spatial locations. Dark matter seems to be the overwhelming dominant contribution in the bright galaxies even in the inner regions.
 
-\section{Einstein Radius}
+\section{Experiment three: Einstein Radius}
 
-Another way to constrain the relevant scales in which we might expect to see lensed objects is by analysing the Einstein radius because it is around this radial distance from the center of the BCGs that we expect to find arcs or multiple images of background objects, as displayed in Figure [3.7]. 
+Our third experiment is another way to constrain the relevant scales in which we might expect to see lensed objects. This is done by using the lensing equations to find the Einstein radius in every case (for theoretical background objects located at different redshifts). Calculating the location of the Einstein rings is important because it is around their radial distance from the center of the BCGs that we expect to find arcs or multiple images of background objects, as displayed in Figure [3.7]. 
 
 \begin{figure}[H]
 \centering
@@ -135,27 +133,27 @@ Another way to constrain the relevant scales in which we might expect to see len
 \caption[Einstein Ring in LRG 3-757]{Einstein Ring in LRG 3-757 obtained by the Hubble Space Telescope. The distortion produced by the foreground galaxy ($z=0.4457$) is such that the light of the background galaxy ($z=2.379$) is stretched along the Einstein radius as well as being magnified. Image from Wikipedia.}
 \end{figure}
 
-Since we are interested in having an accurate estimate of the Einstein radius for different objects located at different redshifts, it is useful to calculate the shear, reduced shear and magnification (introduced in Chapter 2). Again, we make this calculations for the cluster Abell 1068.
+Since we are interested in having an accurate estimate of the Einstein radius for objects whose redshift is unknown to us, we use a range of redshifts  $0.1<z<1$ and use the NFW density profile (see Appendix) to compute some quantities that would lead us to the radial distances of the Eintein rings such as the reduced shear and magnification (introduced in Chapter 2). Again, we display the results for the cluster Abell 1068.
 
-The reduced shear for background objects at different redshifts is shown in Figure [3.8]. The radius in which the reduced shear diverges is where the Einstein radius would be located for each of the background objects at the different given redshifts. 
+The reduced shear for background objects at different redshifts is shown in Figure [3.8] as computed by equation [2.18] and equations [7] and [10] from the Appendix. The radius in which the reduced shear diverges is where the Einstein radius would be located for each of the background objects at the different given redshifts. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/Reduced_Shear.png}
-\caption[Reduced shear radial]{Reduced shear radial profile for different redshifts. The divergence occurs in the location of the Einstein ring.}
+\caption[Reduced shear radial]{Reduced shear radial profile for different redshifts for Abell 1068. The divergence occurs in the location of the Einstein ring.}
 \end{figure}
 
-Another useful way to constrain the Einstein radius is through the magnification given by equation (2.18)
+Another useful way to constrain the Einstein radius is through the magnification given by equation [2.19] and equations [7] and [10] from the Appendix.
  
 Figure [3.9] shows the magnification. The infinite magnification happens in the Einstein radius so this is also a useful plot for the radial scales in which we might expect to find lensed galaxies.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/Magnification.png}
-\caption[Magnification radial profile]{Magnification radial profile for various redshifts. Divergence occurs in the Einstein ring.}
+\caption[Magnification radial profile]{Magnification radial profile for various redshifts for Abell 1068. Divergence occurs in the location of the Einstein ring.}
 \end{figure}
 
-Taking into account the COSMOS catalogue experiment, and the plots for the reduced shear and the magnification, we would expect to find at least 1 or 2 lensed galaxies near a radial distance from the center of about $15$ kpc, although we know that the enclosed mass at this range is already mostly given by the DM halo. 
+Taking into account the COSMOS catalogue experiment, and the plots for the reduced shear and the magnification, we would expect to find at least 1 or 2 lensed galaxies near a radial distance from the center of about $15$ kpc, although we know that the enclosed mass at this range is already mostly dominated by the DM halo. 
 
 \begin{comment}
 Finally, the shear dependence on radius is shown in Figure [3.10] (See Appendix).
