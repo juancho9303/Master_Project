@@ -6,31 +6,38 @@ import numpy as np
 mpl.rcParams['text.usetex'] = True
 
 mat1 = genfromtxt("A85.txt");
-mat2 = genfromtxt("wavelengths.txt");
+mat2 = genfromtxt("A85.zout");
 
-mg = mat1[:,1]
-mr = mat1[:,3]
-mi = mat1[:,5]
-mu = mat1[:,7]
+z_a = mat2[:,2]
+id1 = mat2[:,0]
 
-x1 = mat2[:,0]
-x2 = mat2[:,1]
-x3 = mat2[:,2]
-x4 = mat2[:,3]
+filter1 = (mat2[:,2]<1.5)&(mat2[:,2]>0.0)
 
-#x1 = 4770 
-#x2 = 6237 
-#x3 = 7625
-#x4 = 3543
+filtered_z_a = z_a[filter1]
+filtered_id = id1[filter1]
 
-plt.plot(x1,mg, label=r'$\mathrm{m}<22$', marker='o', linestyle='--')
-plt.plot(x2,mr, label=r'$\mathrm{m}<23$', marker='o', linestyle='--')
-plt.plot(x3,mi, label=r'$\mathrm{m}<24$', marker='o', linestyle='--')
-plt.plot(x4,mu, label=r'$\mathrm{m}<25$', marker='o', linestyle='--')
+print filtered_id
 
-plt.xlabel(r'$\mathrm{Redshift}$',fontsize=18)
-plt.ylabel(r'$\mathrm{Galaxies\:/arcmin^{2}/0.2z}$',fontsize=18)
+mg = mat1[:,1][filter1]
+mr = mat1[:,3][filter1]
+mi = mat1[:,5][filter1]
+mu = mat1[:,7][filter1]
+ 
+x = [3543,4770,6237,7625]
+
+for i in range(0,len(filtered_id)):
+		
+	mg[i] = mat1[i,1]
+	mr[i] = mat1[i,3]
+	mi[i] = mat1[i,5]
+	mu[i] = mat1[i,7]
+	m = [mg[i], mr[i], mi[i], mu[i]]
+	plt.plot(x,m, label=filtered_id[i], marker='o',linestyle='--')
+		
+plt.xlabel(r'$\lambda$',fontsize=18)
+plt.ylabel(r'$\mathrm{Flux}$',fontsize=18)
 plt.legend(loc=2,prop={'size':12})
 plt.legend(frameon=True)
-plt.savefig("magnitude_distribution.png")
+plt.savefig("magnitude_distribution_A85.png")
 plt.show()
+
