@@ -33,7 +33,8 @@ for i in range(0,len(filtered_id)):
 	mu[i] = mat1[i,7]
 	m = [mg[i], mr[i], mi[i], mu[i]]
 	plt.plot(x,m, label=filtered_id[i], marker='o',linestyle='--')
-		
+
+plt.ylim(0,400)		
 plt.xlabel(r'$\lambda$',fontsize=18)
 plt.ylabel(r'$\mathrm{Flux}$',fontsize=18)
 plt.legend(loc=2,prop={'size':12})
