@@ -31,6 +31,7 @@ plt.xlim(-0.1,2.3)
 #plot "sA1068r.cat" using ($5>8.0 && $6<0.032?$7:1/0):2 w p ls 7 notitle
 plt.xlabel(r'$\mathrm{m_{g}-m_{r}}$',fontsize=18)
 plt.ylabel(r'$\mathrm{m_{r}}$',fontsize=18)
-plt.legend(bbox_to_anchor=(0.95, 0.35))
+leg = plt.legend(frameon=True, shadow=True, fancybox=True, bbox_to_anchor=(0.95, 0.35),prop={'size':19})
+leg.get_frame().set_alpha(0.9)
 plt.savefig("color_mag.png")
 plt.show();

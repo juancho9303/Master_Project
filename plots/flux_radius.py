@@ -28,6 +28,15 @@ plt.xlim(0.15,1.35)
 #plot "sA1068r.cat" using ($5>8.0 && $6<0.032?$7:1/0):2 w p ls 7 notitle
 plt.xlabel(r'$\mathrm{Flux\:Radius}$',fontsize=18)
 plt.ylabel(r'$\mathrm{m_{r}}$',fontsize=18)
-plt.legend()
+
+legend = plt.legend()
+frame = legend.get_frame()
+frame.set_facecolor('green')
+#plt.show()
+
+
+#leg = plt.legend(frameon=True, shadow=True, fancybox=True,prop={'size':19})
+#leg.get_frame().set_alpha(0.9)
+#plt.legend()
 plt.savefig("mag_vs_flux_rad.png")
 plt.show();
