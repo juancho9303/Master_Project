@@ -173,10 +173,22 @@ We use the photometric redshift code \texttt{EAZY}  by \textcolor{blue}{Brammer 
 
 Once the photo-$z$'s are calculated we search for objects with similar redshift and make a close inspection on their location near the BCG. 
 
-Figure [4.13]
+Filtering for magnitude distribution
+
+Once we have calculated the photometric redshift for all the clusters, we need to select only the candidates that have low redshifts (since they are more suitable for being lensing candidates in the sample) so we select the galaxies whose photometric redshift is in the range $[0,2]$ as sown in Figure [4.12] and use their respective ID to identify their magnitude. 
+
+so after filtering out stars, and filtering out galaxies with overestimated redshifts, we are left with galaxies close to the BCG that might be repeated images of the same object. In order to find which objects are in fact the same background galaxy, we analyze their magnitued distribution and see what the trend for those few objects is. If we find objects with a very similar magnitude distributions, then we might check their coordinates and see weather this difference is a coincidence or they are in fact the same object.
+
+Figure [4.13] shows the magnitude distribution for the final filtered sample of galaxies surrounding the BCG of ABell 2064. We see that two objects present a very similar magnitude distribution and have a very similar photometric redshift. It is a very good candidate for a more precise analysis. The 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=15cm]{images/magnitude_distribution_A2029.png}
-\caption[Magnitude distribution of galaxies in Abell 2029]{Magnitude distribution for the galaxies whose photometric redshift is below 2 with their respective ID for cluster Abell 2029.}
+\includegraphics[width=15cm]{images/magnitude_distribution_A2064.png}
+\caption[Magnitude distribution of galaxies in Abell 2064]{Magnitude distribution for the galaxies whose photometric redshift is below 2 with their respective ID for cluster Abell 2064.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{images/candidates.jpg}
+\caption[Lensing candidates Abell 2064]{Lensing candidates in Abell 2064.}
 \end{figure}

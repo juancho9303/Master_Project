@@ -11,7 +11,7 @@ mat2 = genfromtxt("A2064.zout");
 z_a = mat2[:,2]
 id1 = mat2[:,0]
 
-filter1 = (mat2[:,2]<1.5)&(mat2[:,2]>0.0)
+filter1 = (mat2[:,2]<0.3)&(mat2[:,2]>0.0)
 
 filtered_z_a = z_a[filter1]
 filtered_id = id1[filter1]
@@ -33,7 +33,8 @@ for i in range(0,len(filtered_id)):
 	mu[i] = mat1[i,7]
 	m = [mg[i], mr[i], mi[i], mu[i]]
 	plt.plot(x,m, label=filtered_id[i], marker='o',linestyle='--')
-		
+
+plt.xlim(3300,8600)		
 plt.xlabel(r'$\lambda$',fontsize=18)
 plt.ylabel(r'$\mathrm{Flux}$',fontsize=18)
 plt.legend(loc=2,prop={'size':12})
