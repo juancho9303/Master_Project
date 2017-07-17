@@ -10,19 +10,29 @@ The third one is the calculation of the expected Einstein radius for objects loc
 
 \section{Experiment one: COSMOS field}
 
-For our first experiment we need a very large catalogue of galaxies that contains their spatial locations and redshifts because this alows us get the average number of galaxies contained inside a square region (similar to the effective area surrounding the BCGs of our sample) with their corresponding redshifts. This will thus give us the number of galaxies that we would expect to see with the sensitivity of our data and will also help us constrain the redshifts to probe. For this purpose we make use the COSMOS2015 catalogue (\textcolor{blue}{Laigle et al.} \citeyear{Reference21}) which contains half a million objects in a range of $1<z<6$. 
+For our first experiment we need a very large catalogue of galaxies (with their spatial locations and redshifts) that allows us to get the average number of galaxies contained in certain redshift range. In order to do this, and put it into the context of our work, we select a square region on the data (similar to the effective area surrounding the BCGs of our sample) and see how many galaxies are contained in that region with their corresponding redshifts and with their corresponding magnitude in the $r$ band. This will thus give us the number of galaxies that we would expect to see with the sensitivity of our data and will also help us constrain the redshifts to probe. 
 
-Ricardo Herbonnet (private communication) matched the CFHT data to this catalogue so we use his matched data which contains a total of 133,348 galaxies in the 2 degree COSMOS field. We count the amount of galaxies for different magnitudes in redshift bins of 0.2 $z$ for the $r$ filter. These numbers represent the expected number of galaxies in the background of the lens objects of our sample as seen in Figure [3.1]. 
+For this purpose we make use the COSMOS2015 catalogue (\textcolor{blue}{Laigle et al.} \citeyear{Reference21}) which contains half a million objects in a range of $1<z<6$. Ricardo Herbonnet (private communication) matched the CFHT data to this catalogue so we use his matched data in the $r$ band which contains a total of 133,348 galaxies in the 2 degree COSMOS field. We count the amount of galaxies for different magnitudes in redshift bins of 0.2$z$ for this filter. These numbers represent the expected number of galaxies in the background of the lens objects of our sample as seen in Figure [3.1]. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/galaxies_per_arcmin.png}
-\caption[Galaxies per arcmin]{Galaxies per arcmin$^2$ in redshift bins of $0.2z$ for different magnitudes. HST could be able to see objetcs with magnitudes below 25 while CFHT can see objects with magnitudes around 23.}
+\caption[Galaxies per arcmin]{Galaxies per arcmin$^2$ in redshift bins of $0.2z$ for different magnitudes. We show the selection for different magnitudes to compare the ammount of objects we expect to see with our data (CFHT and INT) with comparison to deeper data such as data obtained with HST. Around $z=0.3$ we find the peak for the number of galaxies so it is the redshift that is most likely to contain galaxies that could be seen in our data}
 \end{figure}
 
-Around $z=0.3$ we find the peak for the number of galaxies so it is the redshift that is most likely to contain galaxies that could be seen in our data. For the depth of our data of around 23 mag (as discussed in the next chapter) we then expect some background galaxies lensed by the BCGs and for which we can measure the Einstein ring, although the number is rather small. 
+As a reference, we have that in the COSMOS catalogue, the depths (measured flux in a 3 arc-second aperture) of the CFHT and HST data in the AB magnitude are $\sim  24$ and $\sim 26$ as seen in Figure [3.2].
 
-CFHT can see objects as deep as $m=23$ but Hubble Space Telescope could see objects with $m=25$ so it should be able to see a lot more objects that have been lensed. This result is a first suggestion that within the inner region of the galaxy clusters, there must be lensed objects in the form of arcs or multiple images that we could be able to see with our sample making a careful subtraction of the BCG light. Now we must answer the question regarding the scales in which the stellar content (associated to the extracted light from the BCG) is relevant.
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{images/cosmos_depth-updated.jpg}
+\caption[Cosmos depth]{Cosmos depth.}
+\end{figure}
+
+For the depth of our data we then expect some background galaxies lensed by the BCGs and for which we can measure the Einstein ring, although the number is rather small. 
+
+the conversion is quite simple: r	=   r(AB) + 0.226
+
+CFHT can see objects as deep as $m=24$ but Hubble Space Telescope could see objects with $m=26$ so it should be able to see a lot more objects that have been lensed. This result is a first suggestion that within the inner region of the galaxy clusters, there must be lensed objects in the form of arcs or multiple images that we could be able to see with our sample making a careful subtraction of the BCG light. Now we must answer the question regarding the scales in which the stellar content (associated to the extracted light from the BCG) is relevant.
 
 \section{Experiment two: DM to stellar ratio}
 
@@ -42,7 +52,7 @@ where $b=7.67$ and $I_{e}$ is the effective brightness which is basically the br
 
 For constant mass-to-light-ratio we have $\Sigma_{\star}(R)= \Upsilon I(R)$ (\textcolor{blue}{Lokas \& Mamon} \citeyear{Reference14}) where  $I(R)\approx 10^{7}$ $\text{M}_{\odot}/\text{kpc}^{2}$ was found by fitting the surface brightness with \texttt{GALFIT} (as will be discussed in the next chapter). The mass to light ratio for a Salpeter IMF is $\Upsilon\approx 4$ so the stellar mass profile can be easily calculated with  $\Sigma_{\star}(R)= 4I(R)$. The bolometric luminosity of Abell 1068 is $10^{44}$ erg/s that in solar luminosities is $1.9\times 10^{12}$ $L_{\odot}$, this gives an effective brightness of $0.962\times 10^{7}$ $\text{M}_{\odot}/\text{kpc}^2$. 
 
-Hence we have the surface mass density for both the stellar content and the NFW profile, as shown in Figure [3.2].
+Hence we have the surface mass density for both the stellar content and the NFW profile, as shown in Figure [3.3].
 
 \begin{figure}[H]
 \centering
@@ -81,7 +91,7 @@ DM Halo & $4.63\times10^{14}$\tabularnewline
 
 The value found for the enclosed mass for the NFW profile is similar to the one found by \textcolor{blue}{Sifon et al.} (\citeyear{Reference9}) of $4.3\times 10^{14}$ $\text{M}_{\odot}$.
 
-Now let's analyse the radial profiles of these enclosed masses since it is the plot that shows what radial scale we need to probe. We calculate this profiles using equations [5], [7], and [9] from the NFW profile formalism included in the Appendix. The enclosed mass profile for dark matter and stellar matter for the three chosen IMFs (Chabrier, Kroupa, Salpeter) is shown in Figure [3.3].
+Now let's analyse the radial profiles of these enclosed masses since it is the plot that shows what radial scale we need to probe. We calculate this profiles using equations [5], [7], and [9] from the NFW profile formalism included in the Appendix. The enclosed mass profile for dark matter and stellar matter for the three chosen IMFs (Chabrier, Kroupa, Salpeter) is shown in Figure [3.4].
 
 \begin{figure}[H]
 \centering
@@ -105,7 +115,7 @@ DM Halo & $3.3\times10^{12}$\tabularnewline
 \end{tabular}
 \end{center}
 
-And the radial profiles in the case of the galaxy are shown in Figure [3.4], where the overlapping happens in a larger radius.
+And the radial profiles in the case of the galaxy are shown in Figure [3.5], where the overlapping happens in a larger radius.
 
 \begin{figure}[H]
 \centering
@@ -113,7 +123,7 @@ And the radial profiles in the case of the galaxy are shown in Figure [3.4], whe
 \caption[DM and Stellar mass profiles for a massive early type galaxy.]{Top panel: Enclosed mass in DM and stellar content for the chosen IMFs for an early type galaxy. Bottom panel: DM to stellar mass ratio. The two contributions overlap around 3 kpc, further from the center than in the case of the galaxy cluster.}
 \end{figure}
 
-Our result is in good concordance with the alalysis made by \textcolor{blue}{Sonnenfeld et al.} (\citeyear{Reference15}) in the system SDSSJ0946+1006, also known as the ``Jackpot". The overlapping of both contributions is around is $~3$ kpc which is a larger radius than the one calculated for a BCG, (see Figure [3.5] for his results). The values for Sonenenfield's galaxy are $z=0.222$, $c=10^{0.9}=7.9428$, $\delta_c=25644.5$, $\text{M}_{\star}=5.5\times 10^{11}$ $\text{M}_{\odot}$.
+Our result is in good concordance with the alalysis made by \textcolor{blue}{Sonnenfeld et al.} (\citeyear{Reference15}) in the system SDSSJ0946+1006, also known as the ``Jackpot". The overlapping of both contributions is around is $~3$ kpc which is a larger radius than the one calculated for a BCG, (see Figure [3.6] for his results). The values for Sonenenfield's galaxy are $z=0.222$, $c=10^{0.9}=7.9428$, $\delta_c=25644.5$, $\text{M}_{\star}=5.5\times 10^{11}$ $\text{M}_{\odot}$.
 
 \begin{figure}[H]
 \centering
@@ -125,7 +135,7 @@ This first results mean that the proper determination of the light of the BCG (a
 
 \section{Experiment three: Einstein Radius}
 
-Our third experiment is another way to constrain the relevant scales in which we might expect to see lensed objects. This is done by using the lensing equations to find the Einstein radius in every case (for theoretical background objects located at different redshifts). Calculating the location of the Einstein rings is important because it is around their radial distance from the center of the BCGs that we expect to find arcs or multiple images of background objects, as displayed in Figure [3.6]. 
+Our third experiment is another way to constrain the relevant scales in which we might expect to see lensed objects. This is done by using the lensing equations to find the Einstein radius in every case (for theoretical background objects located at different redshifts). Calculating the location of the Einstein rings is important because it is around their radial distance from the center of the BCGs that we expect to find arcs or multiple images of background objects, as displayed in Figure [3.7]. 
 
 \begin{figure}[H]
 \centering
@@ -135,7 +145,7 @@ Our third experiment is another way to constrain the relevant scales in which we
 
 Since we are interested in having an accurate estimate of the Einstein radius for objects whose redshift is unknown to us, we use a range of redshifts  $0.1<z<1$ and use the NFW density profile (see Appendix) to compute some quantities that would lead us to the radial distances of the Eintein rings such as the reduced shear and magnification (introduced in Chapter 2). Again, we display the results for the cluster Abell 1068.
 
-The reduced shear for background objects at different redshifts is shown in Figure [3.7] as computed by equation [2.18] and equations [7] and [10] from the Appendix. The radius in which the reduced shear diverges is where the Einstein radius would be located for each of the background objects at the different given redshifts. 
+The reduced shear for background objects at different redshifts is shown in Figure [3.8] as computed by equation [2.18] and also equations [7] and [10] from the Appendix. The radius in which the reduced shear diverges is where the Einstein radius would be located for each of the background objects at the different given redshifts. 
 
 \begin{figure}[H]
 \centering
@@ -145,7 +155,7 @@ The reduced shear for background objects at different redshifts is shown in Figu
 
 Another useful way to constrain the Einstein radius is through the magnification given by equation [2.19] and equations [7] and [10] from the Appendix.
  
-Figure [3.8] shows the magnification. The infinite magnification happens in the Einstein radius so this is also a useful plot for the radial scales in which we might expect to find lensed galaxies.
+Figure [3.9] shows the magnification. The infinite magnification happens in the Einstein radius so this is also a useful plot for the radial scales in which we might expect to find lensed galaxies.
 
 \begin{figure}[H]
 \centering

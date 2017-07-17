@@ -9,10 +9,10 @@
 \contentsline {section}{\numberline {2.1}Gravitational Lensing formalism}{9}{section.11}
 \contentsline {chapter}{\numberline {3}Determination of the relevant scales}{17}{chapter.36}
 \contentsline {section}{\numberline {3.1}Experiment one: COSMOS field}{18}{section.37}
-\contentsline {section}{\numberline {3.2}Experiment two: DM to stellar ratio}{19}{section.39}
-\contentsline {section}{\numberline {3.3}Experiment three: Einstein Radius}{24}{section.47}
-\contentsline {chapter}{\numberline {4}Data and analysis}{28}{chapter.51}
-\contentsline {section}{\numberline {4.1}Color images}{33}{section.57}
-\contentsline {section}{\numberline {4.2}Star-galaxy determination}{36}{section.62}
-\contentsline {section}{\numberline {4.3}Photometric Redshifts}{38}{section.65}
-\contentsline {chapter}{\numberline {5}Conclusions}{44}{chapter.71}
+\contentsline {section}{\numberline {3.2}Experiment two: DM to stellar ratio}{19}{section.40}
+\contentsline {section}{\numberline {3.3}Experiment three: Einstein Radius}{24}{section.48}
+\contentsline {chapter}{\numberline {4}Data and analysis}{28}{chapter.52}
+\contentsline {section}{\numberline {4.1}Color images}{33}{section.58}
+\contentsline {section}{\numberline {4.2}Star-galaxy determination}{36}{section.63}
+\contentsline {section}{\numberline {4.3}Photometric Redshifts}{38}{section.66}
+\contentsline {chapter}{\numberline {5}Conclusions}{44}{chapter.72}

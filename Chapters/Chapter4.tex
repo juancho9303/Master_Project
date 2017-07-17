@@ -95,7 +95,7 @@ The same procedure is applied on all the clusters. One of the most interesting t
 
 We use \texttt{IRAF} to make the color images using our $g,r,U,i$ bands. Let's keep using Abell 754 which is a low redshift galaxy ($z=0.054$) cluster with a calculated mass of $\text{M}_{200}=9.8\times 10^{15}$ $\text{M}_{\odot}$ (\textcolor{blue}{Sifon et al.} \citeyear{Reference9})
 
-Here we take an isothermal sphere to model the Einstein ring for an assumed distance of background objects of $z=0.5$. We made a color image of the original center of the cluster without subtracting the BCG in order to differentiate between cluster members from background galaxies and field stars. This allows us to fit only the cluster galaxies. 
+We made a color image of the original center of the cluster without subtracting the BCG in order to differentiate between cluster members from background galaxies and field stars. This allows us to fit only the cluster galaxies. Figure [4.5] shows the color image of the center of the cluster where we used an isothermal sphere to model the Einstein ring for an assumed distance of background objects of $z=0.5$. 
 
 \begin{figure}[H]
 \centering
@@ -103,20 +103,20 @@ Here we take an isothermal sphere to model the Einstein ring for an assumed dist
 \caption[Color image of A754]{Color image of A754 cluster (filters $i,g,U$) with its Einstein radius calculated for an isothermal sphere of a background object at $z=1$.}
 \end{figure}
 
-After choosing the galaxies that belong to the cluster by comparing their relative colors, we subtracted them using \texttt{GALFIT} and made the color image again changing the scaling values with the task \texttt{CONVERT} of \texttt{IRAF} so that we see can see the color contrast to search for good candidates of lensed objects. By looking at this reduced color image, we have another visual constraint to choose the clusters in which it would be worth to do photometric redshifts and search for objects with the same redshift in different locations around the very center of the BCG (object that has suffered strong lensing). 
+After choosing the galaxies that belong to the cluster by comparing their relative colors, we subtracted them using \texttt{GALFIT} and made the color image again changing the scaling values with the task \texttt{CONVERT} of \texttt{IRAF} so that we get a better color contrast to search for good candidates of lensed objects. By looking at this reduced color image, we have another visual constraint to choose the clusters in which it would be worth to do photometric redshifts and search for objects with the same redshift in different locations around the very center of the BCG (object that has being strong lensed). Figure [4.6] displays the color image of the BCG-subtracted center of Abell 754.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/cA754_galfit.jpg}
-\caption[Color image of A754 after fitting the bright objects]{Color image of A754 cluster (filters $i,g,U$) after the subtraction of the bright cluster galaxies.}
+\caption[Color image of A754 after fitting the bright objects]{Color image of A754 cluster (filters $i,g,U$) after the subtraction of the bright cluster galaxies. Note that after the subtraction of the BCG, objects with different colors show up in the central region and close to the Einstein radius.}
 \end{figure}
 
-The $i,r,g$ color image of the cluster Abell 1413: (this needs to be fixed)
+The subtraction of the most prominent cluster members near the BCG is very important since their light doesn't allow for searching the lensing candidates, although in some cases this is not neccessary, in those cases the error is smaller since the background subtraction only depends on one component so it's not overestimated. Figure [4.7] shows the $i,r,g$ color image of the previously mentioned cluster Abell 1413. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/A1413_ring.jpg}
-\caption[Einstein ring in color image of A1413]{Einstein ring in color image of Abell 1413.}
+\caption[Einstein ring in color image of A1413]{Einstein ring in the BCG-subtracted color image of Abell 1413. As seen in the symmetric ripples in very center of the BCG, this subtraction required the use of Fourier modes which allow for a better fitting of its brightness profile.}
 \end{figure}
 
 Because we have 4 bands we were able to make different color images to see the contrast and make combinations that would allow us to see better the very red and very blue objects, hoping to find objects with the same colors that would be good candidates for lensed objects. Figure [4.8] displays the $g,r$, $i,r,g$ and $i,g,U$ color images for three clusters (Abell 961, Abell 2703 and Abell 1033). 
