@@ -75,6 +75,8 @@ Figure [4.2] shows the original image, the fitted models and the output given by
 \caption[Galfit results for Abell 754]{Galfit procedures for Abell 754. Left: Original image in ``zscale" with the BCG expanding across a significant region of the central area. Middle: The models fitted by \texttt{GALFIT} for all the selected cluster galaxies. Right: Residual image after the subtraction of the model galaxies. Note that the saturated star is not in the \texttt{GALFIT} models since it is simply masked out with the segmentation image.}
 \end{figure}
 
+\texttt{GALFIT} can make a good estimate on the ellipticity and efffective radius of the galaxies, and it performs an algorithm that integrates the brightness of every object giving a more accurate integrated magnitude than the first guess given by the user in the parameter file. The BCG's integrated magnitudes oscillate between values of $U\sim 22$, $i\sim 18$, $g\sim 20$, $r\sim 19$.
+
 These procedures are done over all the images and their 4 filters, which will allow us to make color images and discriminate between objects of the same color that could be lensing candidates as explained in the next section. For every cluster the images have the same spatial scale and are centered at the same exact location so we can use the same fitting models for every filter as seen in Figure [4.3]
 
 \begin{figure}[H]

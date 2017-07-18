@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -108,6 +108,11 @@ Laigle et. al.
 \newblock The cosmos2015 catalog: Exploring the 1<z<6 universe with half a
   million galaxies.
 \newblock \emph{The Astrophysical Journal}, 224\penalty0 (2), 2016.
+
+\bibitem[Ref(2017)]{Reference35}
+Cosmos catalogue.
+\newblock 2017.
+\newblock URL \url{cosmos.astro.caltech.edu/}.
 
 \bibitem[de~Vaucouleurs(1948)]{Reference32}
 Gerard de~Vaucouleurs.

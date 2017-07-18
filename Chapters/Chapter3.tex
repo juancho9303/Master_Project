@@ -20,25 +20,23 @@ For this purpose we make use the COSMOS2015 catalogue (\textcolor{blue}{Laigle e
 \caption[Galaxies per arcmin]{Galaxies per arcmin$^2$ in redshift bins of $0.2z$ for different magnitudes. We show the selection for different magnitudes to compare the ammount of objects we expect to see with our data (CFHT and INT) with comparison to deeper data such as data obtained with HST. Around $z=0.3$ we find the peak for the number of galaxies so it is the redshift that is most likely to contain galaxies that could be seen in our data}
 \end{figure}
 
-As a reference, we have that in the COSMOS catalogue, the depths (measured flux in a 3 arc-second aperture) of the CFHT and HST data in the AB magnitude are $\sim  24$ and $\sim 26$ as seen in Figure [3.2].
+As a reference, we note that in the COSMOS catalogue (\citeyear{Reference35}), the depths (measured flux in a 3 arc-second aperture) of the CFHT and HST data in the AB magnitude are $\sim  24$ and $\sim 26$ respectively as seen in Figure [3.2]. The conversion from the AB magnitude to the Johnson's system is quite simple: $r =   r(\text{AB}) + 0.226$ so using this reference is valid for our experiment.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/cosmos_depth-updated.jpg}
-\caption[Cosmos depth]{Cosmos depth.}
+\caption[Depth of the different contributions to the COSMOS catalogue]{Depth of the different contributions to the COSMOS catalogue (AB magnitude). Source: \textcolor{blue}{Cosmos} \citeyear{Reference35}.}
 \end{figure}
 
-For the depth of our data we then expect some background galaxies lensed by the BCGs and for which we can measure the Einstein ring, although the number is rather small. 
+For the depth of our data we then expect some background galaxies lensed by the BCGs and for which we can measure the Einstein ring, although the number is small. The depth of the CFHT data is as deep as $m\sim 24$ but Hubble Space Telescope could see objects with $m\sim 26$ so it should be able to see a lot more objects that have been lensed. 
 
-the conversion is quite simple: r	=   r(AB) + 0.226
-
-CFHT can see objects as deep as $m=24$ but Hubble Space Telescope could see objects with $m=26$ so it should be able to see a lot more objects that have been lensed. This result is a first suggestion that within the inner region of the galaxy clusters, there must be lensed objects in the form of arcs or multiple images that we could be able to see with our sample making a careful subtraction of the BCG light. Now we must answer the question regarding the scales in which the stellar content (associated to the extracted light from the BCG) is relevant.
+This result is a first suggestion that within the inner region of the galaxy clusters, there must be lensed objects in the form of arcs or multiple images that we could be able to see with our sample making a careful subtraction of the BCG light, and we should be able to see some of these objects with the depth of our data. Now we must answer the question regarding the scales in which the stellar content (associated to the extracted light from the BCG) is relevant.
 
 \section{Experiment two: DM to stellar ratio}
 
 We first need to take into consideration is the density profile that we will use for our calculation of the fraction of DM and stellar light. The first usual approach for the density profile of the gravitational lens is an isothermal sphere (see Appendix), although in reality, the density profile and lensing properties of galaxies is a bit more complicated than the assumption of a SIS (singular isothermal sphere), so we need to take into account more complex but elaborate profiles such as the NFW (\textcolor{blue}{Navarro, Frenk \& White} \citeyear{Reference17}) which is an approximation to the equilibrium configuration of dark matter produced in N-body simulations of colissionless dark matter particles (see Appendix for the formalism of the NFW and it's lensing equations).
 
-So for our second experiment proposed at the beginning of the chapter, we will use the galaxy cluster Abell 1068, located at a distance of $z=0.138$ with magnitudes in $U=21.94$, $i=18.46$, $g=20.09$, $r=19.5$, also $\text{M}_{200}=4.3\times 10^{14}$ $\text{M}_{\odot}$ (\textcolor{blue}{Van der Burg et al.} \citeyear{Reference2}) and calculate its NFW dark matter halo profile (since galaxy clusters are known to be dominated by their dark matter content) and at the same time we calculate its stellar mass profile using the de Vaucouleurs surface brightness profile by \textcolor{blue}{de Vaucouleurs} (\citeyear{Reference32}) which is a specific case of a Sersic's more general profile. This allows us to compare the contribution of stars in comparison to dark matter and thus see in which scales the DM mass becomes dominant thus making it more difficult to constrain the stellar content of the bright galaxy.
+So for our second experiment proposed at the beginning of the chapter, we will use the galaxy cluster Abell 1068, located at a distance of $z=0.138$ with a reported mass of $\text{M}_{200}=4.3\times 10^{14}$ $\text{M}_{\odot}$ (\textcolor{blue}{Van der Burg et al.} \citeyear{Reference2}) and calculate its NFW dark matter halo profile (since galaxy clusters are known to be dominated by their dark matter content) and at the same time we calculate its stellar mass profile using the de Vaucouleurs surface brightness profile by \textcolor{blue}{de Vaucouleurs} (\citeyear{Reference32}) which is a specific case of a Sersic's more general profile. This allows us to compare the contribution of stars in comparison to dark matter and thus see in which scales the DM mass becomes dominant thus making it more difficult to constrain the stellar content of the bright galaxy.
 
 The concentration parameter for the NFW profile of this cluster is $c=4.46$ (using Figure [1] in the Appendix). The critical density is 212 $\text{M}_{\odot}/\text{kpc}^{3}$. The Hubble parameter at $z=0.138$ is $H(z)=85.6$. For an effective radius of $R_{e}=73.7$ kpc we get a characteristic radius of $r_{1/2}=307.1$ kpc.
 
@@ -54,7 +52,7 @@ For constant mass-to-light-ratio we have $\Sigma_{\star}(R)= \Upsilon I(R)$ (\te
 
 Hence we have the surface mass density for both the stellar content and the NFW profile, as shown in Figure [3.3].
 
-\begin{figure}[H]
+\begin{figure}[]
 \centering
 \includegraphics[width=12cm]{images/Surface_mass_density_log.png}
 \caption[Surface mass density profiles]{Surface mass density profiles in logarithmic and $R^{1/4}$ scale for the NFW profile and the stellar component.}
