@@ -20,7 +20,7 @@ For this purpose we make use the COSMOS2015 catalogue (\textcolor{blue}{Laigle e
 \caption[Galaxies per arcmin]{Galaxies per arcmin$^2$ in redshift bins of $0.2z$ for different magnitudes. We show the selection for different magnitudes to compare the ammount of objects we expect to see with our data (CFHT and INT) with comparison to deeper data such as data obtained with HST. Around $z=0.3$ we find the peak for the number of galaxies so it is the redshift that is most likely to contain galaxies that could be seen in our data}
 \end{figure}
 
-As a reference, we note that in the COSMOS catalogue (\citeyear{Reference35}), the depths (measured flux in a 3 arc-second aperture) of the CFHT and HST data in the AB magnitude are $\sim  24$ and $\sim 26$ respectively as seen in Figure [3.2]. The conversion from the AB magnitude to the Johnson's system is quite simple: $r =   r(\text{AB}) + 0.226$ so using this reference is valid for our experiment.
+As a reference, we note that in the COSMOS catalogue (\citeyear{Reference35}), the depths (measured flux in a 3 arc-second aperture) of the CFHT and HST data in the AB magnitude are $\sim  24$ and $\sim 26$ respectively as seen in Figure [3.2]. The conversion from the AB magnitude to the Johnson's system is quite simple: $m_{r} =   m_{r(\text{AB})} + 0.226$ so using this reference is valid for our experiment.
 
 \begin{figure}[H]
 \centering
@@ -28,7 +28,7 @@ As a reference, we note that in the COSMOS catalogue (\citeyear{Reference35}), t
 \caption[Depth of the different contributions to the COSMOS catalogue]{Depth of the different contributions to the COSMOS catalogue (AB magnitude). Source: \textcolor{blue}{Cosmos} \citeyear{Reference35}.}
 \end{figure}
 
-For the depth of our data we then expect some background galaxies lensed by the BCGs and for which we can measure the Einstein ring, although the number is small. The depth of the CFHT data is as deep as $m\sim 24$ but Hubble Space Telescope could see objects with $m\sim 26$ so it should be able to see a lot more objects that have been lensed. 
+For the depth of our data we then expect some background galaxies lensed by the BCGs and for which we can measure the Einstein ring, although the number is small. The depth of the CFHT data $m\sim 24$ but Hubble Space Telescope could see objects with $m\sim 26$ so it should be able to see a lot more objects that have been lensed. 
 
 This result is a first suggestion that within the inner region of the galaxy clusters, there must be lensed objects in the form of arcs or multiple images that we could be able to see with our sample making a careful subtraction of the BCG light, and we should be able to see some of these objects with the depth of our data. Now we must answer the question regarding the scales in which the stellar content (associated to the extracted light from the BCG) is relevant.
 
@@ -38,7 +38,7 @@ We first need to take into consideration is the density profile that we will use
 
 So for our second experiment proposed at the beginning of the chapter, we will use the galaxy cluster Abell 1068, located at a distance of $z=0.138$ with a reported mass of $\text{M}_{200}=4.3\times 10^{14}$ $\text{M}_{\odot}$ (\textcolor{blue}{Van der Burg et al.} \citeyear{Reference2}) and calculate its NFW dark matter halo profile (since galaxy clusters are known to be dominated by their dark matter content) and at the same time we calculate its stellar mass profile using the de Vaucouleurs surface brightness profile by \textcolor{blue}{de Vaucouleurs} (\citeyear{Reference32}) which is a specific case of a Sersic's more general profile. This allows us to compare the contribution of stars in comparison to dark matter and thus see in which scales the DM mass becomes dominant thus making it more difficult to constrain the stellar content of the bright galaxy.
 
-The concentration parameter for the NFW profile of this cluster is $c=4.46$ (using Figure [1] in the Appendix). The critical density is 212 $\text{M}_{\odot}/\text{kpc}^{3}$. The Hubble parameter at $z=0.138$ is $H(z)=85.6$. For an effective radius of $R_{e}=73.7$ kpc we get a characteristic radius of $r_{1/2}=307.1$ kpc.
+The concentration parameter for the NFW profile of this cluster is $c=4.46$ (using Figure [1] from \textcolor{blue}{Dutton \& Maccio} \citeyear{Reference23} in the Appendix). The critical density is $\rho_{c}=212\text{M}_{\odot}/\text{kpc}^{3}$, the Hubble parameter at $z=0.138$ is $H(z)=85.6$ and for an effective radius of $R_{e}=73.7$ kpc we get a characteristic radius of $r_{1/2}=307.1$ kpc.
 
 For the stellar content of the cluster we can use de Vaucouleurs law for the surface brightness distribution in giant elliptical galaxies which is:
 
@@ -46,11 +46,9 @@ For the stellar content of the cluster we can use de Vaucouleurs law for the sur
 I(R)=I_{e}e^{-b\left[\left(R/R_{e}\right)^{1/4}-1\right]}
 \end{equation}
 
-where $b=7.67$ and $I_{e}$ is the effective brightness which is basically the brightness at the effective radius $R_{e}$
+where $b=7.67$ and $I_{e}$ is the effective brightness which is basically the brightness at the effective radius $R_{e}$.
 
-For constant mass-to-light-ratio we have $\Sigma_{\star}(R)= \Upsilon I(R)$ (\textcolor{blue}{Lokas \& Mamon} \citeyear{Reference14}) where  $I(R)\approx 10^{7}$ $\text{M}_{\odot}/\text{kpc}^{2}$ was found by fitting the surface brightness with \texttt{GALFIT} (as will be discussed in the next chapter). The mass to light ratio for a Salpeter IMF is $\Upsilon\approx 4$ so the stellar mass profile can be easily calculated with  $\Sigma_{\star}(R)= 4I(R)$. The bolometric luminosity of Abell 1068 is $10^{44}$ erg/s that in solar luminosities is $1.9\times 10^{12}$ $L_{\odot}$, this gives an effective brightness of $0.962\times 10^{7}$ $\text{M}_{\odot}/\text{kpc}^2$. 
-
-Hence we have the surface mass density for both the stellar content and the NFW profile, as shown in Figure [3.3].
+For constant mass-to-light-ratio we have $\Sigma_{\star}(R)= \Upsilon I(R)$ (\textcolor{blue}{Lokas \& Mamon} \citeyear{Reference14}) where  $I(R)\approx 10^{7}$ $\text{M}_{\odot}/\text{kpc}^{2}$ was found by fitting the surface brightness with \texttt{GALFIT} (as will be discussed in the next chapter). The mass to light ratio for a Salpeter IMF is $\Upsilon\approx 4$ so the stellar mass profile can be easily calculated with  $\Sigma_{\star}(R)= 4I(R)$. The bolometric luminosity of Abell 1068 is $10^{44}$ erg/s that in solar luminosities is $1.9\times 10^{12}$ $L_{\odot}$, this gives an effective brightness of $0.962\times 10^{7}$ $\text{M}_{\odot}/\text{kpc}^2$. Hence we have the surface mass density for both the stellar content and the NFW profile, as shown in Figure [3.3].
 
 \begin{figure}[]
 \centering
@@ -72,7 +70,7 @@ L=2\pi \int_{0}^{R} RI(R)dR
 
 Let's introduce the dependence on different IMFs, mainly Salpeter, Chabrier and Kroupa. Salpeter initial mass function is of the form $n(\textrm{M})\propto \textrm{M}^{-2.3}$ and implies that more low-mass stars and a higher mass-to-light ratio so for massive galaxies  Salpeter is a good IMF. 
 
-In the R-band the scaling between the three IMFs is $\Upsilon_{\text{Krou}}\approx 0.67$ $\Upsilon_{\text{Salp}}$ for Kroupa and $\Upsilon_{\text{Chabrier}}\approx 0.63$ $\Upsilon_{\text{Salp}}$ for Chabrier. The systematic variation of the IMF in early-type galaxies can be seen in Figure [2] from the Appendix. The integration for these different IMFs give a value that is comparable to the one found using Faber-Jackson relation which is $L=\Upsilon\times\sigma^{4}$. 
+In the $r$-band the scaling between the three IMFs is $\Upsilon_{\text{Krou}}\approx 0.67$ $\Upsilon_{\text{Salp}}$ for Kroupa and $\Upsilon_{\text{Chabrier}}\approx 0.63$ $\Upsilon_{\text{Salp}}$ for Chabrier. The systematic variation of the IMF in early-type galaxies can be seen in Figure [2] from the Appendix. The integration for these different IMFs give a value that is comparable to the one found using Faber-Jackson relation which is $L=\Upsilon\times\sigma^{4}$. 
 
 \begin{center}
 \begin{tabular}{c c}
@@ -89,7 +87,7 @@ DM Halo & $4.63\times10^{14}$\tabularnewline
 
 The value found for the enclosed mass for the NFW profile is similar to the one found by \textcolor{blue}{Sifon et al.} (\citeyear{Reference9}) of $4.3\times 10^{14}$ $\text{M}_{\odot}$.
 
-Now let's analyse the radial profiles of these enclosed masses since it is the plot that shows what radial scale we need to probe. We calculate this profiles using equations [5], [7], and [9] from the NFW profile formalism included in the Appendix. The enclosed mass profile for dark matter and stellar matter for the three chosen IMFs (Chabrier, Kroupa, Salpeter) is shown in Figure [3.4].
+Now let's analyse the radial profiles of these enclosed masses since it is the plot that shows what radial scale we need to probe. We calculate these profiles using equations [5], [7], and [9] from the NFW profile formalism included in the Appendix. The enclosed mass profile for dark matter and stellar matter for the three chosen IMFs (Chabrier, Kroupa, Salpeter) is shown in Figure [3.4].
 
 \begin{figure}[H]
 \centering
@@ -97,9 +95,9 @@ Now let's analyse the radial profiles of these enclosed masses since it is the p
 \caption[Enclosed mass and DM to stellar mass ratio for a galaxy cluster]{Top panel: Enclosed mass in DM and stellar content for the chosen IMFs for the galaxy cluster ABELL1068. Bottom panel: DM to stellar mass ratio. Note that the two contributions overlap around $1.5 $ kpc, that is, the very inner region of the galaxy cluster.}
 \end{figure}
 
-This result suggests that it is very difficult to make a detailed study if the stellar content of the BCG because the gravitational lensing associated to it would be mostly caused by the dark matter component at almost all scales. The stellar content is only dominant in the innermost region, quite far from the Einstein radius which is constrained by the total enclosed mass (dark matter and stars).
+This result suggests that it is very difficult to make a detailed study if the stellar content of the BCG because the gravitational lensing associated to it would be mostly caused by the dark matter component at almost all scales, including the innermost part. The stellar content is only dominant in the very centre, quite far from the Einstein radius which is constrained by the total enclosed mass (dark matter and stars).
 
-It is then useful to study cases in which the lens system is an elliptical galaxy following its own dark matter halo and not inside the potential well of a galaxy cluster in the case of the BCG. If we now do the calculations for a galaxy with a characteristic radius of $r_s=25.2$ kpc and concentration parameter $c=7.94$ we get:
+It is then useful to study cases in which the lens system is an elliptical galaxy dominated by its own dark matter halo and not the potential well of a galaxy cluster in the case of the BCG. If we now do the calculations for a galaxy with a characteristic radius of $r_s=25.2$ kpc and concentration parameter $c=7.94$ we get:
 
 \begin{center}
 \begin{tabular}{c c}
@@ -113,7 +111,7 @@ DM Halo & $3.3\times10^{12}$\tabularnewline
 \end{tabular}
 \end{center}
 
-And the radial profiles in the case of the galaxy are shown in Figure [3.5], where the overlapping happens in a larger radius.
+The radial profiles in the case of the galaxy are shown in Figure [3.5], where the overlapping happens in a larger radius.
 
 \begin{figure}[H]
 \centering

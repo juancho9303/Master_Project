@@ -120,6 +120,12 @@ Gerard de~Vaucouleurs.
   brillantes.
 \newblock \emph{Recherches sur les nebuleuses extragalactiques}, 1948.
 
+\bibitem[Maccio(2014)]{Reference23}
+Dutton~\& Maccio.
+\newblock Cold dark matter haloes in the planck era: evolution of structural
+  parameters for einasto and nfw profiles.
+\newblock \emph{MNRAS}, 441:\penalty0 3359--3374, 2014.
+
 \bibitem[Mamon(2001)]{Reference14}
 Ewa L. Lokas \& Gary~A. Mamon.
 \newblock Properties of spherical galaxies and clusters with an nfw density
@@ -172,12 +178,6 @@ Peng et. al.
 van~Dokkum Brammer and Coppi.
 \newblock Eazy: A fast, public photometric redshift code.
 \newblock \emph{ApJ}, 686\penalty0 (1503), 2008.
-
-\bibitem[Maccio(2014)]{Reference23}
-Dutton~\& Maccio.
-\newblock Cold dark matter haloes in the planck era: evolution of structural
-  parameters for einasto and nfw profiles.
-\newblock \emph{MNRAS}, 441:\penalty0 3359--3374, 2014.
 
 \bibitem[et. al.(2010)]{Reference12}
 J.~C. Munoz~Cuartas et. al.
