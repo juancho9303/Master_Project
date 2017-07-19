@@ -16,3 +16,4 @@
 \contentsline {section}{\numberline {4.2}Star-galaxy determination}{36}{section.63}
 \contentsline {section}{\numberline {4.3}Photometric Redshifts}{38}{section.66}
 \contentsline {chapter}{\numberline {5}Conclusions}{44}{chapter.72}
+\contentsline {section}{\numberline {5.1}Possible improvements}{45}{section.73}
