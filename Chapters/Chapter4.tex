@@ -6,7 +6,7 @@ We use 58 clusters from the MENEACS (Multi-Epoch Nearby Cluster Survey) survey s
 
 After filtering out some of the clusters because of a very complex and crowded central region or just not good quality in the data, we used 30 clusters for the final studies and paid special attention to 10, marked with * in Table [4.1].
 
-The original images have dimensions of [20000:20000] pixels but since our relevant regions are the centre of the clusters where the BCGs are located, we cut the images with dimensions of [1000,1000] for the color analysis and [4000:4000] to characterize the colors and discriminate between cluster and non-cluster members. The pixel scale for CFHT is 0.185 arcsec/pix and 0.33 arcsec/pix for the INT data so the proper conversion had to be done to match them accordingly.
+The original images have dimensions of [20000:20000] pixels but since our relevant regions are the centre of the clusters where the BCGs are located, we cut the images with dimensions of [1000,1000] for the colour analysis and [4000:4000] to characterize the colours and discriminate between cluster and non-cluster members. The pixel scale for CFHT is 0.185 arcsec/pix and 0.33 arcsec/pix for the INT data so the proper conversion had to be done to match them accordingly.
 
 \begin{table}[H]
 \centering
@@ -49,7 +49,7 @@ A990    & 0.144 & ~800           & 617.1 & 15.7778
 
 The INT images were obtained using multiple exposures so it was necessary to make a mosaic of them using \texttt{SWARP} \textcolor{blue}{Bertin et al.} (\citeyear{Reference29}) which co-adds together the different FITS images of the field to create a mosaic for every cluster and allows for a proper determination of the pixel scale needed to match the four photometric bands accordingly. 
 
-Creating the mosaic of the clusters in the $U$ and $i$ band matched with the same pixel scale as the CFHT data allows us to have data of the clusters in the bands $g,r,U,i$ that can be used to make color images and further analysis.
+Creating the mosaic of the clusters in the $U$ and $i$ band matched with the same pixel scale as the CFHT data allows us to have data of the clusters in the bands $g,r,U,i$ that can be used to make colour images and further analysis.
 
  The first step in the removal of the light from the BCG is the construction of a mask file (segmentation file) that allows us to avoid the contribution of cluster members and filed stars in the fitting of the BCG light. The segmentation images are made using \texttt{SEXTRACTOR} (\textcolor{blue}{Bertin \& Arnouts} \citeyear{Reference27}). 
 
@@ -58,7 +58,7 @@ The procedure is the following: \texttt{SEXTRACTOR} identifies the bright object
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/masks.png}
-\caption[Segmentation images]{Segmentation images produced by \texttt{SEXTRACTOR} and used as mask files for the galfit extraction on the cluster Abell 754. Left panel is the original mask with all the bright objects. Right panel is the mask after the subtraction of the regions surrounding the cluster galaxies to be fitted with \texttt{GALFIT}. The colors are inverted for an easier visualization of the image. The fainter regions are actually the most luminous objects because \texttt{GALFIT} assigns increasing numbers starting from the brightest one, that is the BCG in this case.}
+\caption[Segmentation images]{Segmentation images produced by \texttt{SEXTRACTOR} and used as mask files for the galfit extraction on the cluster Abell 754. Left panel is the original mask with all the bright objects. Right panel is the mask after the subtraction of the regions surrounding the cluster galaxies to be fitted with \texttt{GALFIT}. The colours are inverted for an easier visualization of the image. The fainter regions are actually the most luminous objects because \texttt{GALFIT} assigns increasing numbers starting from the brightest one, that is the BCG in this case.}
 \end{figure}
 
 Now, once the mask file is ready we can do the substraction of the BCG light using \texttt{GALFIT} (\textcolor{blue}{Peng et al.} \citeyear{Reference20}) which fits two dimensional profiles of galaxies (with different shapes and features). The first subtraction for most of our target clusters was done fitting a Sersic's profile with $n=4$ which is de Vaucouleurs profile. Although in all cases some parameters such as the $n$ index, the effective radius, Fourier and bending modes had to be changed and modified accordingly. A first run of \texttt{GALFIT} gives us a rough idea of the true position of the center of the BCG so we can set this values in a second run for each cluster. 
@@ -68,7 +68,7 @@ We use the segmentation masks given by \texttt{SEXTRACTOR} to mask bright object
 The power of \texttt{GALFIT} lies in the fact that it allows for different shape fitting through Fourier and bending modes. These parameters (\texttt{C0, B1, B2, F1, F2}, etc.) are hidden from the user unless he/she explicitly requests them.  These can be tagged on to the end of any previous components except, of course, the PSF and the sky.  
 
 Some of the useful parameters that we used to properly fit the BCG in every case were: \texttt{B1)} Bending mode 1 (shear term), \texttt{B2)} Bending mode 2 (banana shape)
-\texttt{B3)} Bending mode 3 (S-shape) and for the azimuthal fourier modes
+\texttt{B3)} Bending mode 3 (S-shape) and for the azimuthal Fourier modes
 \texttt{F$_i$)} Az. Fourier mode $i$ where $i$ can go up to a 20$^{th}$ Fourier mode, \texttt{C0)}   traditional diskyness(-)/boxyness(+).
 
 Figure [4.2] shows the original image, the fitted models and the output given by \texttt{GALFIT} for the cluster Abell 754. Note that many galaxies were fitted and many background objects can be seen near the center of the BCG. 
@@ -76,17 +76,17 @@ Figure [4.2] shows the original image, the fitted models and the output given by
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/galfit.png}
-\caption[Galfit results for Abell 754]{Galfit procedures for Abell 754. Left: Original image in ``zscale" with the BCG expanding across a significant region of the central area. Middle: The models fitted by \texttt{GALFIT} for all the selected cluster galaxies. Right: Residual image after the subtraction of the model galaxies. Note that the saturated star is not in the \texttt{GALFIT} models since it is simply masked out with the segmentation image.}
+\caption[\texttt{GALFIT} results for Abell 754]{\texttt{GALFIT} procedures for Abell 754. Left: Original image in ``zscale" with the BCG expanding across a significant region of the central area. Middle: The models fitted by \texttt{GALFIT} for all the selected cluster galaxies. Right: Residual image after the subtraction of the model galaxies. Note that the saturated star is not in the \texttt{GALFIT} models since it is simply masked out with the segmentation image.}
 \end{figure}
 
-\texttt{GALFIT} can make a good estimate on the ellipticity and efffective radius of the galaxies, and it performs an algorithm that integrates the brightness of every object giving a more accurate integrated magnitude than the first guess given by the user in the parameter file. The BCG's integrated magnitudes oscillate between values of $U\sim 22$, $i\sim 18$, $g\sim 20$, $r\sim 19$.
+\texttt{GALFIT} can make a good estimate on the ellipticity and effective radius of the galaxies, and it performs an algorithm that integrates the brightness of every object giving a more accurate integrated magnitude than the first guess given by the user in the parameter file. The BCG's integrated magnitudes oscillate between values of $U\sim 22$, $i\sim 18$, $g\sim 20$, $r\sim 19$.
 
-These procedures are done over all the images and their 4 filters, which will allow us to make color images and discriminate between objects of the same color that could be lensing candidates as explained in the next section. For every cluster the images have the same spatial scale and are centered at the same exact location so we can use the same fitting models for every filter as seen in Figure [4.3]
+These procedures are done over all the images and their 4 filters, which will allow us to make colour images and discriminate between objects of the same colour that could be lensing candidates as explained in the next section. For every cluster the images have the same spatial scale and are centred at the same exact location so we can use the same fitting models for every filter as seen in Figure [4.3]
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/filters_A754.png}
-\caption[All filters' results for Abell 754]{\texttt{GALFIT} results for the four availabe filters ($g,i,r,U$ respectively) of Abell 754 displayed in zscale. Note that depending on the filters some objects appear to be brighter or fainter and that will pay an important role in the creation of the color images and the photometric redshifts explained in the following sections.}
+\caption[All filters' results for Abell 754]{\texttt{GALFIT} results for the four available filters ($g,i,r,U$ respectively) of Abell 754 displayed in zscale. Note that depending on the filters some objects appear to be brighter or fainter and that will pay an important role in the creation of the colour images and the photometric redshifts explained in the following sections.}
 \end{figure}
 
 The same procedure is applied on all the clusters. One of the most interesting targets of our sample is the cluster Abell 1413 (located at $z=0.143$) which has a prominent arc as seen in Figure [4.4] (although this cluster lacks of the $U$ band image). 
@@ -97,59 +97,59 @@ The same procedure is applied on all the clusters. One of the most interesting t
 \caption[Galfit results for Abell 1413]{Galfit procedures for  Abell 1413. Left: Original image in ``zscale" with the BCG. Middle: The models fitted by \texttt{GALFIT} for all the selected cluster galaxies. Right: Residual image after the subtraction of the model galaxies. This cluster in particular has many non-cluster members so fewer objects need to be subtracted.}
 \end{figure}
 
-\section{Color images} 
+\section{Colour images} 
 
-We use \texttt{IRAF} to make the color images using our $g,r,U,i$ bands. For reference, we still show the results of Abell 754 which is a low redshift galaxy  cluster ($z=0.054$) with a calculated mass of $\text{M}_{200}=9.8\times 10^{15}$ $\text{M}_{\odot}$ (\textcolor{blue}{Sifon et al.} \citeyear{Reference9})
+We use \texttt{IRAF} to make the colour images using our $g,r,U,i$ bands. For reference, we still show the results of Abell 754 which is a low redshift galaxy cluster ($z=0.054$) with a calculated mass of $\text{M}_{200}=9.8\times 10^{15}$ $\text{M}_{\odot}$ (\textcolor{blue}{Sifon et al.} \citeyear{Reference9})
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=9cm]{images/cA754.jpg}
-\caption[Color image of A754]{Color image of A754 cluster (filters $i,g,U$) with its Einstein radius calculated for an isothermal sphere of a background object at $z=1$.}
+\caption[Colour image of A754]{Colour image of A754 cluster (filters $i,g,U$) with its Einstein radius calculated for an isothermal sphere of a background object at $z=1$.}
 \end{figure}
 
-We made a color image of the original center of the cluster without subtracting the BCG in order to differentiate between cluster members from background galaxies and field stars. This allows us to fit only the cluster galaxies. Figure [4.5] shows the color image of the center of the cluster where we used an isothermal sphere (see Appendix) to model the Einstein ring for an assumed distance of background objects of $z=0.5$. 
+We made a colour image of the original center of the cluster without subtracting the BCG in order to differentiate between cluster members from background galaxies and field stars. This allows us to fit only the cluster galaxies. Figure [4.5] shows the colour image of the center of the cluster where we used an isothermal sphere (see Appendix) to model the Einstein ring for an assumed distance of background objects of $z=0.5$. 
 
-After choosing the galaxies that belong to the cluster by comparing their relative colors, we subtracted them using \texttt{GALFIT} and made the color image again changing the scaling values with the task \texttt{CONVERT} of \texttt{IRAF} so that we get a better color contrast to search for good candidates of lensed objects. By looking at this reduced color image, we have another visual constraint to choose the clusters in which it would be worth to do photometric redshifts and search for objects with the same redshift in different locations around the very center of the BCG (object that has being strong lensed). Figure [4.6] displays the color image of the BCG-subtracted center of Abell 754.
+After choosing the galaxies that belong to the cluster by comparing their relative colours, we subtracted them using \texttt{GALFIT} and made the colour image again changing the scaling values with the task \texttt{CONVERT} of \texttt{IRAF} so that we get a better colour contrast to search for good candidates of lensed objects. By looking at this reduced colour image, we have another visual constraint to choose the clusters in which it would be worth to do photometric redshifts and search for objects with the same redshift in different locations around the very center of the BCG (object that has being strong lensed). Figure [4.6] displays the colour image of the BCG-subtracted center of Abell 754.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=12cm]{images/cA754_galfit.jpg}
-\caption[Color image of A754 after fitting the bright objects]{Color image of A754 cluster (filters $i,g,U$) after the subtraction of the bright cluster galaxies. Note that after the subtraction of the BCG, objects with different colors show up in the central region and close to the Einstein radius.}
+\caption[Colour image of A754 after fitting the bright objects]{Colour image of A754 cluster (filters $i,g,U$) after the subtraction of the bright cluster galaxies. Note that after the subtraction of the BCG, objects with different colours show up in the central region and close to the Einstein radius.}
 \end{figure}
 
-The subtraction of the most prominent cluster members near the BCG is very important since their light doesn't allow for searching the lensing candidates, although in some cases this is not neccessary, in those cases the error is smaller since the background subtraction only depends on one component so it's not overestimated. Figure [4.7] shows the $i,r,g$ color image of the previously mentioned cluster Abell 1413. 
+The subtraction of the most prominent cluster members near the BCG is very important since their light doesn't allow for searching the lensing candidates, although in some cases this is not necessary, in those cases the error is smaller since the background subtraction only depends on one component so it's not overestimated. Figure [4.7] shows the $i,r,g$ colour image of the previously mentioned cluster Abell 1413. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/A1413_ring.jpg}
-\caption[Einstein ring in color image of A1413]{Einstein ring in the BCG-subtracted color image of Abell 1413. As seen in the symmetric ripples in very center of the BCG, this subtraction required the use of Fourier modes which allow for a better fitting of its brightness profile.}
+\caption[Einstein ring in colour image of A1413]{Einstein ring in the BCG-subtracted colour image of Abell 1413. As seen in the symmetric ripples in very center of the BCG, this subtraction required the use of Fourier modes which allow for a better fitting of its brightness profile.}
 \end{figure}
 
-Because we have 4 bands we were able to make different color images to see the contrast and make combinations that would allow us to see better the very red and very blue objects, hoping to find objects with the same colors that would be good candidates for lensed objects. Figure [4.8] displays the $g,r$, $i,r,g$ and $i,g,U$ color images for three clusters (Abell 961, Abell 2703 and Abell 1033). 
+Because we have 4 bands we were able to make different colour images to see the contrast and make combinations that would allow us to see better the very red and very blue objects, hoping to find objects with the same colours that would be good candidates for lensed objects. Figure [4.8] displays the $g,r$, the $i,r,g$ and $i,g,U$ colour images for three clusters (Abell 961, Abell 2703 and Abell 1033). 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=15cm]{images/full_small.jpg}
-\caption[Color images for various clusters]{Different color images for different combination of the $g,r,U,i$ filters for the clusters Abell 961, Abell 2703, Abell 1033. Left column for the images constructed only with the $g$ and $r$ filter, central column for $i,g,r$ and right column for $i,g,U$.}
+\includegraphics[width=14cm]{images/full_small.jpg}
+\caption[Colour images for various clusters]{Different colour images for different combination of the $g,r,U,i$ filters for the clusters Abell 961, Abell 2703, Abell 1033. Left column for the images constructed only with the $g$ and $r$ filter, central column for $i,g,r$ and right column for $i,g,U$.}
 \end{figure}
+
+Since the relevant objects for our study are galaxies, we must select them from the full sample in every case, as explained in the next section.
 
 \section{Star-galaxy determination}
 
 The first step in determining the photometric redshifts is to discriminate between field stars and the galaxies of the clusters so in order to do this, we used some of the parameters found by \texttt{SEXTRACTOR} that allow us to constraint the fitted data. These are \texttt{class-star}, \texttt{flux\_radius}, and \texttt{FWHM} (full width half maximum). Class-star uses the neural network star/galaxy of \texttt{SEXTRACTOR} that will give values close to 1 for stars and 0 for galaxies. \texttt{flux\_radius}, and \texttt{FWHM} are closely related to each other and give the radius which contains half of the light of the object so it will be small for stars and bigger for extended objects.
 
-In order to extract the same objects and make the segmentation masks for the desired objects in the different filters, we used \texttt{SEXTRACTOR} on dual mode and made aperture photometry on each of the relevant objects. Figure [4.9] shows the color magnitude diagram for Abell 754 where we used a zero point magnitude of 30.
-
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{images/color_mag.png}
-\caption[Color Magnitude diagram of Abell 754]{Color Magnitude diagram of Abell 754 with the differentiation of stars from galaxies.}
+\includegraphics[width=11cm]{images/color_mag.png}
+\caption[Colour Magnitude diagram of Abell 754]{Colour Magnitude diagram of Abell 754 with the differentiation of stars from galaxies.}
 \end{figure}
 
-We can also discriminate the stars from galaxies using the radius that contains most of the flux. Figure [4.10] shows the galaxies and stars in the mag vs \texttt{Flux\_rad} plane.
+In order to extract the same objects and make the segmentation masks for the desired objects in the different filters, we used \texttt{SEXTRACTOR} on dual mode and made aperture photometry on each of the relevant objects. Figure [4.9] shows the colour magnitude diagram for Abell 754 where we used a zero point magnitude of 30. We can also discriminate the stars from galaxies using the radius that contains most of the flux. Figure [4.10] shows the galaxies and stars in the mag vs \texttt{Flux\_rad} plane.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=12cm]{images/mag_vs_flux_rad.png}
+\includegraphics[width=11cm]{images/mag_vs_flux_rad.png}
 \caption[Magnitude vs Flux radius of Abell 754]{Magnitude vs Flux radius of Abell 754 to identify the galaxies using the criteria of their flux distribution.}
 \end{figure}
 
@@ -159,37 +159,37 @@ Once the discrimination of galaxies and stars has been completed, we can calcula
 
 Using multi band photometry data to get redshifts (photometric redshifts) is not only a useful method to get redshifts of fainter objects than accessible by spectroscopy, but also because the efficiency in terms of the number of objects with redshift estimates per unit telescope time is largely increased. Given the characteristics of our data (four bands with similar depth), getting photo-$z$'s of the background objects after the subtraction of the BCG's could in principle help us find lensed galaxies (background objects with the same redshift could be the same galaxy located at different locations so they are good lensing candidates).
 
-In order to calculate the photometric redshifts we must make very accurate photometry on the four bands trying to minimize the errors associated to the removal of the light from the BCG that causes the photometry methods to overestimate or underestimate the background thus corrupting the output magnitudes. As seen in Figure [4.11], the background in the vicinity of some of the objects is over removed after the subtraction of the light of the BCG, so this effect would cause objects with the same real redshift (lensed background galaxies) to have different redshifts after running the photo-$z$ code.
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/horizontal_cuts.png}
 \caption[Horizontal cuts to show overestimated background on Abell 1068]{Horizontal cuts on cluster Abell 1068 for four random regions. On the left, objects with an overestimated background (indicated with the red arrows) where the values of the surroundings go well below zero. On the right, objects surrounded by a more accurate and smooth background.}
 \end{figure}
 
+In order to calculate the photometric redshifts we must make very accurate photometry on the four bands trying to minimize the errors associated to the removal of the light from the BCG that causes the photometry methods to overestimate or underestimate the background thus corrupting the output magnitudes. As seen in Figure [4.11], the background in the vicinity of some of the objects is over removed after the subtraction of the light of the BCG, so this effect would cause objects with the same real redshift (lensed background galaxies) to have different redshifts after running the photo-$z$ code.
+
 In order to avoid this problem, we applied different methods for the photometry of the reduced data with a careful local background determination in every case. The very first approach (just for reference) was simply aperture photometry using \texttt{SEXTRACTOR} with the default parameters, the other methods were more precise and were made using the aperture photometry routines of \texttt{PHOTUTILS}. The first method is making aperture photometry with an annulus enclosing the surrounding background of every galaxy, the second method is choosing a fixed background (the mean value found with \texttt{IMSTATISTICS} of \texttt{IRAF}) and use it as the value for all the apertures, the third one is the average between the fixed background and the background value found in the annulus surrounding the objects. Figure [4.12] shows the objects on which we applied the photometry experiments for the galaxy cluster Abell 754.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=15cm]{images/aperture_photometry.png}
+\includegraphics[width=12cm]{images/aperture_photometry.png}
 \caption[Apertures for the aperture photometry procedures on Abell 754]{Apertures for the aperture photometry procedures for the core of galaxy cluster Abell 754. This is the full sample of objects without the discrimination of stars and galaxies from the cluster.}
 \end{figure}
 
 The physical coordinates of the objects  were obtained with \texttt{SEXTRACTOR} since the filtering and identification of the objects is quite straight forward. Once we have obtained the magnitudes of the galaxies in our four filters, and have chosen the method that yields the most satisfactory results (in our case the average between the fixed background and the one associated to the annuli), we can measure the photometric redshift of the galaxies in the inner region of the cluster.
 
-We use the photometric redshift code \texttt{EAZY}  by \textcolor{blue}{Brammer et al.} (\citeyear{Reference22}) which uses an extensive collection of spectral energy distributions for galaxies in the range $0<z<4$. It basically finds discontinuities such as Lyman break ($1200$ \AA) and the Balmer break ($4000$ \AA) in the SED of galaxies which give a constraint on the redshift. Fortunately, the code includes library from CFHT in the $i$ and $U$ bands but doesn't have the filters in the $g$ and $r$ bands so we used the SUBARU survey filter information to be able to compute the photometric redshifts using the four bands. The use of a $r$ band magnitude prior allows the code to correctly calibrate the redshifts since the location of the break might be misunderstood by the code. Figure [4.13] shows our obtained photometric redshifts for the cluster Abell 754 (376 galaxies after filtering out field stars and removing the brightest galaxies that belong to the cluster) for all of our photometry experiments and compared them to the ones found by Remco Van der Burg (private communication) on a larger field for the same cluster. 
+We use the photometric redshift code \texttt{EAZY}  by \textcolor{blue}{Brammer et al.} (\citeyear{Reference22}) which uses an extensive collection of spectral energy distributions for galaxies in the range $0<z<4$. It basically finds discontinuities such as Lyman break ($1200$ \AA) and the Balmer break ($4000$ \AA) in the SED of galaxies which give a constraint on the redshift. Fortunately, the code includes library from CFHT in the $i$ and $U$ bands but doesn't have the filters in the $g$ and $r$ bands so we used the SUBARU survey filter information to be able to compute the photometric redshifts using the four bands. The use of a $r$ band magnitude prior allows the code to correctly calibrate the redshifts since the location of the break might be misunderstood by the code. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=15cm]{images/photo_z_red_squares.png}
-\caption[Photometric redshift results for Abell 754]{Photometric redshift results for Abell 754. Top left: Results for the photometry method in which the background was determined with an annulus around the objecrs. Bottom right: Using a fixed background (mean of the background). Top left: An average between the two other methods. Bottom left: Van der Burg's results for the photo-$z$'s for a much larger sample (188,964 objects). The red squares represent the regions of the ``junk" data which we can neglect for the lensing analysis. The green squares indicate the regime of the background galaxies where we want to look for lensing candidates.}
+\includegraphics[width=14cm]{images/photo_z_red_squares.png}
+\caption[Photometric redshift results for Abell 754]{Photometric redshift results for Abell 754. Top left: Results for the photometry method in which the background was determined with an annulus around the objects. Bottom right: Using a fixed background (mean of the background). Top left: An average between the two other methods. Bottom left: Van der Burg's results for the photo-$z$'s for a much larger sample (188,964 objects). The red squares represent the regions of the ``junk" data which we can neglect for the lensing analysis. The green squares indicate the regime of the background galaxies where we want to look for lensing candidates.}
 \end{figure}
+
+Figure [4.13] shows our obtained photometric redshifts for the cluster Abell 754 (376 galaxies after filtering out field stars and removing the brightest galaxies that belong to the cluster) for all of our photometry experiments and compared them to the ones found by Remco Van der Burg (private communication) on a larger field for the same cluster. 
 
 One last filter has to be applied to the data. Since the calculated redshifts should be consistent with the expected values according to the COSMOS experiment, we need to select only the galaxies that have low redshifts (they are more suitable for being lensing candidates in the sample). For this, we only select the galaxies whose photo-$z$'s are in the low regime as shown with the green squares in Figure [4.13] and use their respective ID to identify their corresponding magnitude. 
 
-Now that we have selected the magnitude in every filter for the filtered galaxies, we analyze their flux distribution by ploting their arbitrary flux against $\lambda$, taking as reference the effective wavelengths of the filters $U,g,r,i,$ and see the shape of their distribution. If we find objects with very similar flux distributions (similar behavior in the plot), then we might check their coordinates and see weather this difference is a coincidence or they can be in fact the same object.
-
-Figure [4.14] shows the magnitude distribution for the final filtered sample of galaxies surrounding the BCG of Abell 2064. We see that two objects present a very similar magnitude distribution so it is an interesting target to look at. 
+Now that we have selected the magnitude in every filter for the filtered galaxies, we analyse their flux distribution by plotting their arbitrary flux against $\lambda$, taking as reference the effective wavelengths of the filters $U,g,r,i,$ and see the shape of their distribution. If we find objects with very similar flux distributions (similar behaviour in the plot), then we might check their coordinates and see weather this difference is a coincidence or they can be in fact the same object.
 
 \begin{figure}[H]
 \centering
@@ -197,14 +197,17 @@ Figure [4.14] shows the magnitude distribution for the final filtered sample of 
 \caption[Magnitude distribution of galaxies in Abell 2064]{Magnitude distribution for galaxies with low photometric redshift and their respective ID for cluster Abell 2064. Note that the only 17 galaxies belong to the low redshift regime out of the 320 galaxies over which we ran the photo-$z$ code.}
 \end{figure}
 
-Even though the two most prominent plots in Figure [4.14] appear to have a bad flux distribution, they are still interesting candidates since we care about the similarities between their distributions instead of how well behaved they are. Figure [4.15] shows the location of the objects that have a similar flux distribution with their corresponding ID in two different color images ($i,g,u$ and $i,r,g$).
+Figure [4.14] shows the magnitude distribution for the final filtered sample of galaxies surrounding the BCG of Abell 2064. We see that two objects present a very similar magnitude distribution so it is an interesting target to look at. 
+
+Even though the two most prominent plots in Figure [4.14] appear to have a bad flux distribution, they are still interesting candidates since we care about the similarities between their distributions instead of how well behaved they are. Figure [4.15] shows the location of the objects that have a similar flux distribution with their corresponding ID in two different colour images ($i,g,u$ and $i,r,g$).
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=15cm]{images/candidates.jpg}
-\caption[Lensing candidates Abell 2064]{Lensing candidates in Abell 2064. Left: Color image made with the $i,g,u$ filters. Right: Color image made with the $i,r,g$ filters. Note that an inspection by eye would miss the objects because they are very faint.}
+\caption[Lensing candidates Abell 2064]{Lensing candidates in Abell 2064. Left: Colour image made with the $i,g,u$ filters. Right: Colour image made with the $i,r,g$ filters. Note that an inspection by eye would miss the objects because they are very faint.}
 \end{figure}
 
 In principle, both galaxies seem to have a very related flux distribution so the two points seem to be good candidates for a more precise analysis, but unfortunately the photometric redshift for both galaxies is not similar and they are very faint to give trustworthy results, specially with the $U$-band data so it is discarded as a good candidate.
 
-All the procedures explained in this chapter were applied to our final sample of 30 clusters. ......
+All the procedures explained in this chapter were applied to our final sample of 30 clusters showing that, in concordance with the predictions of the previous chapter, the central region has a few objects that might be lensed. Unfortunately, none of these objects seem to be good strong lensing candidates after we studied their photometric redshifts and looked at their location around the BCG. It's important to note that for some of our clusters (Abell 119, Abell 1413, Abell 655, Abell 754 and Abell 795) we didn't have $U$ band data, which makes the calculation of the photometric redshift even less precise. The errors associated with the photo-$z$'s determination are big so there can still be some lensed galaxies that appear to have different colours and redshifts.
+
